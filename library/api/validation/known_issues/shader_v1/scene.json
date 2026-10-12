@@ -1,0 +1,25 @@
+{
+  "shader": "shaders/main.frag",
+  "quality": {
+    "low": {
+      "defines": {}
+    },
+    "medium": {
+      "defines": {}
+    },
+    "high": {
+      "defines": {}
+    }
+  },
+  "signals": {
+    "bass": {
+      "type": "envelope",
+      "expr": "clamp(audio.low*2,0,1)",
+      "attack": 0.025,
+      "release": 0.18
+    }
+  },
+  "uniforms": {
+    "u_pulse": "signal.bass"
+  }
+}
