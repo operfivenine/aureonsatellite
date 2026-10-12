@@ -1,0 +1,28 @@
+{
+  "format": "aureon.theme",
+  "package_type": "scene",
+  "format_version": 1,
+  "id": "org.aureon.en_starter_hybrid",
+  "version": "1.0.0",
+  "name": {
+    "en": "EN starter hybrid"
+  },
+  "author": {
+    "name": "Aureon reference kit"
+  },
+  "engine": {
+    "api_major": 1,
+    "min_aureon": "0.21.11"
+  },
+  "renderer": "scene.hybrid_mesh.experimental.v1",
+  "entry": "scene.json",
+  "features": {
+    "required": [
+      "scene.mesh.experimental.v1",
+      "scene.hybrid_mesh.experimental.v1",
+      "scene.standard_library.v1",
+      "scene.preview.v1"
+    ]
+  },
+  "preview": "preview.png"
+}
