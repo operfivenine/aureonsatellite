@@ -1,0 +1,125 @@
+{
+  "status": "PASS",
+  "edition": "EN01",
+  "date": "2026-10-12",
+  "reference_host": "0.21.11 v354 WIN12 + FIX02-FIX10 + AURP01 (user-selected frozen baseline)",
+  "native_prepare": [
+    {
+      "file": "examples/stock/Aureon_Holo_Planet_v3.aurp",
+      "status": "PASS"
+    },
+    {
+      "file": "examples/stock/Aureon_Spectral_Core_v3.aurp",
+      "status": "PASS"
+    },
+    {
+      "file": "examples/starters/shader_v2.aurs",
+      "status": "PASS"
+    },
+    {
+      "file": "examples/starters/canvas.aurp",
+      "status": "PASS"
+    },
+    {
+      "file": "examples/starters/surface.aurp",
+      "status": "PASS"
+    },
+    {
+      "file": "examples/starters/mesh.aurs",
+      "status": "PASS"
+    },
+    {
+      "file": "examples/starters/hybrid.aurs",
+      "status": "PASS"
+    }
+  ],
+  "negative_cases": [
+    {
+      "case": "missing-spectrum",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "missing-gyro",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "custom-model",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "unknown-field",
+      "status": "REJECTED_AS_EXPECTED"
+    },
+    {
+      "case": "extra-resource",
+      "status": "REJECTED_AS_EXPECTED"
+    }
+  ],
+  "known_host_issues": [
+    {
+      "case": "shader_v1_native_prepare",
+      "status": "KNOWN_HOST_FAILURE_REPRODUCED",
+      "descriptor_compile": "PASS",
+      "error_type": "AttributeError",
+      "error": "'NoneType' object has no attribute 'get'",
+      "host_modified": false
+    }
+  ],
+  "delivered_wrapper": {
+    "status": "PASS",
+    "package": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-04\\new-chat\\outputs\\AUREON_WIN12_FIX02_FIX10_AURP01_API_EN_2026-10-12\\examples\\starters\\surface.aurp",
+    "id": "org.aureon.en_starter_surface",
+    "version": "1.0.0",
+    "renderer": "projection.surface.experimental.v2",
+    "native_prepare": true,
+    "installed": false,
+    "new_GL_run": false,
+    "matching_reference_modules": true,
+    "different_host_files": []
+  },
+  "frozen_reference_modules_checked": 75,
+  "all_documentation_english": true,
+  "links_checked": 56,
+  "new_GL_run": false,
+  "earlier_same_task_GL_verified": true,
+  "new_GL_scope": "Six successful compile/link checks performed earlier in this task; identical starter and pinned host sources verified after stock-only scope correction; not rerun",
+  "gl_device": {
+    "format_version": [
+      3,
+      3
+    ],
+    "profile": "CoreProfile",
+    "renderer": "unavailable through Qt function wrapper"
+  },
+  "shader_compilation": [
+    {
+      "case": "shader_v2/low",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "shader_v2/medium",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "shader_v2/high",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "mesh/material",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "hybrid/material",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "hybrid/background",
+      "status": "COMPILE_LINK_PASS"
+    }
+  ],
+  "new_player_runs": false,
+  "new_audio_runs": false,
+  "new_EXE_runs": false,
+  "user_profile_modified": false,
+  "original_projects_modified": false
+}
