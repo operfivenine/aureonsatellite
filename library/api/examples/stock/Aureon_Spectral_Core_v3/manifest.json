@@ -1,0 +1,36 @@
+{
+  "format": "aureon.theme",
+  "package_type": "projection",
+  "format_version": 1,
+  "id": "org.aureon.spectral_core",
+  "version": "3.0.1",
+  "name": {
+    "en": "Spectral Core",
+    "ru": "Спектральное ядро",
+    "zh-cn": "光谱核心"
+  },
+  "author": {
+    "name": "Aureon"
+  },
+  "engine": {
+    "api_major": 1,
+    "min_aureon": "0.21.0"
+  },
+  "renderer": "projection.canvas.v1",
+  "entry": "projection.json",
+  "features": {
+    "required": [
+      "projection.hologram.experimental.v1",
+      "projection.light_canvas.experimental.v1",
+      "behavior.expression.v1"
+    ]
+  },
+  "capabilities": {
+    "required": [
+      "audio.reactive.v1",
+      "audio.spectrum.v1",
+      "time.elapsed.v1"
+    ]
+  },
+  "parameters": {}
+}
