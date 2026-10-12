@@ -1,0 +1,109 @@
+{
+  "id": "WIN12-FIX10-AURP01",
+  "date": "2026-10-11",
+  "reconstructed_from_win11": true,
+  "verified_source_files": 342,
+  "patch_files": 72,
+  "native_render": {
+    "success": true,
+    "checks": {
+      "transparent_corners": true,
+      "bass_and_attack_change_pixels": true,
+      "independent_rotation_changes_image": true,
+      "64_independent_bands_change_lighting": true,
+      "hide_releases_context": true,
+      "show_recreates_context": true,
+      "close_releases_context": true,
+      "raster_fallback": true
+    },
+    "device": {
+      "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+      "vendor": "NVIDIA Corporation",
+      "version": "3.3.0 NVIDIA 591.86",
+      "glsl_version": "3.30 NVIDIA via Cg compiler",
+      "context": {
+        "version": [
+          3,
+          3
+        ],
+        "profile": "CoreProfile",
+        "gles": false
+      },
+      "dedicated_memory_mb": 8192.0
+    },
+    "vertices": 27648,
+    "onsets": 7,
+    "frame_ms": {
+      "median": 0.5233500014583115,
+      "p95": 0.7210799994936676
+    }
+  },
+  "player_integration": {
+    "success": true,
+    "bundle_install": true,
+    "audio_real": true,
+    "backend": "gpu",
+    "audio_frames": 6,
+    "audio_peak": 0.9151199165431401,
+    "device": {
+      "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+      "vendor": "NVIDIA Corporation",
+      "version": "3.3.0 NVIDIA 591.86",
+      "glsl_version": "3.30 NVIDIA via Cg compiler",
+      "context": {
+        "version": [
+          3,
+          3
+        ],
+        "profile": "CoreProfile",
+        "gles": false
+      },
+      "dedicated_memory_mb": 8192.0
+    },
+    "legacy_projections": true,
+    "switch_back": true,
+    "pause_decay": true
+  },
+  "strict_shader_pairs": [
+    "gyro",
+    "surface",
+    "surface_post"
+  ],
+  "prepare_build_preserves_identity": true,
+  "exe_built": false,
+  "video_created": false,
+  "verified_apply_script_on_win11": true,
+  "repeat_application_no_changes": true,
+  "fix10_base_hash_validation": true,
+  "unit_tests": {
+    "total": 102,
+    "passed": 100,
+    "skipped": 2
+  },
+  "player_integration_reconstructed_source": {
+    "success": true,
+    "bundle_install": true,
+    "audio_real": true,
+    "backend": "gpu",
+    "audio_frames": 6,
+    "audio_peak": 0.92003071876931,
+    "device": {
+      "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+      "vendor": "NVIDIA Corporation",
+      "version": "3.3.0 NVIDIA 591.86",
+      "glsl_version": "3.30 NVIDIA via Cg compiler",
+      "context": {
+        "version": [
+          3,
+          3
+        ],
+        "profile": "CoreProfile",
+        "gles": false
+      },
+      "dedicated_memory_mb": 8192.0
+    },
+    "legacy_projections": true,
+    "switch_back": true,
+    "pause_decay": true
+  }
+}

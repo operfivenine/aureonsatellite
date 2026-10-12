@@ -1,0 +1,96 @@
+{
+  "base": "WIN12 + accepted FIX02-FIX10",
+  "base_path": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-09\\new-chat\\work\\win12\\Aureon_0.21.11_WIN12_SRC",
+  "changed_files": [
+    "assets/projections/Aureon_Gyro_Rings_v0_1_0_GYRO01.aurp",
+    "assets/projections/catalog.json",
+    "aureon_content/registry.py",
+    "aureon_packages/projection_surface.py",
+    "aureon_packages/schema.py",
+    "aureon_packages/store.py",
+    "build-manifest.json",
+    "packaging/examples/Aureon_Gyro_Rings_v0_1_0_GYRO01.aurp",
+    "packaging/examples/Aureon_Spectral_Landscape_v0_2_0_LANDSCAPE02.aurp",
+    "projection/gyro.frag",
+    "projection/gyro.py",
+    "projection/gyro.vert",
+    "projection/surface.frag",
+    "projection/surface.py",
+    "projection/surface.vert",
+    "projection/surface_audio.py",
+    "projection/surface_post.frag",
+    "projection/surface_post.vert",
+    "tests/test_aurp_surface.py",
+    "tests/test_gyro_rings.py"
+  ],
+  "unchanged_files": 321,
+  "unit_tests": {
+    "total": 102,
+    "passed": 100,
+    "skipped": 2
+  },
+  "strict_glsl_link": "gyro.vert + gyro.frag passed",
+  "native_render": {
+    "success": true,
+    "checks": {
+      "transparent_corners": true,
+      "bass_and_attack_change_pixels": true,
+      "independent_rotation_changes_image": true,
+      "64_independent_bands_change_lighting": true,
+      "hide_releases_context": true,
+      "show_recreates_context": true,
+      "close_releases_context": true,
+      "raster_fallback": true
+    },
+    "device": {
+      "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+      "vendor": "NVIDIA Corporation",
+      "version": "3.3.0 NVIDIA 591.86",
+      "glsl_version": "3.30 NVIDIA via Cg compiler",
+      "context": {
+        "version": [
+          3,
+          3
+        ],
+        "profile": "CoreProfile",
+        "gles": false
+      },
+      "dedicated_memory_mb": 8192.0
+    },
+    "vertices": 27648,
+    "onsets": 7,
+    "frame_ms": {
+      "median": 0.5233500014583115,
+      "p95": 0.7210799994936676
+    }
+  },
+  "player_integration": {
+    "success": true,
+    "bundle_install": true,
+    "audio_real": true,
+    "backend": "gpu",
+    "audio_frames": 6,
+    "audio_peak": 0.9151199165431401,
+    "device": {
+      "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+      "vendor": "NVIDIA Corporation",
+      "version": "3.3.0 NVIDIA 591.86",
+      "glsl_version": "3.30 NVIDIA via Cg compiler",
+      "context": {
+        "version": [
+          3,
+          3
+        ],
+        "profile": "CoreProfile",
+        "gles": false
+      },
+      "dedicated_memory_mb": 8192.0
+    },
+    "private_ini": "C:/Users/flipe/Documents/Codex/2026-10-11/aurs-aurp/work/gyro01/player-qa/profile/settings.ini",
+    "legacy_projections": true,
+    "switch_back": true,
+    "pause_decay": true
+  },
+  "exe_built": false,
+  "video_created": false
+}
