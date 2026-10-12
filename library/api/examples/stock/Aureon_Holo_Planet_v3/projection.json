@@ -1,0 +1,35 @@
+{
+  "canvas": {
+    "width": 179,
+    "height": 168,
+    "supersample": 2,
+    "bloom": 0.65
+  },
+  "nodes": [
+    {
+      "type": "group",
+      "translate": [
+        -0.1,
+        0
+      ],
+      "scale": [
+        0.7,
+        0.7
+      ],
+      "nodes": [
+        {
+          "type": "hologram",
+          "model": "planet",
+          "center": [
+            128,
+            91
+          ],
+          "radius": 66,
+          "primary": "#78dfff",
+          "secondary": "#a392ff",
+          "impact": "max(audio.beat, audio.flux * 0.5)"
+        }
+      ]
+    }
+  ]
+}
