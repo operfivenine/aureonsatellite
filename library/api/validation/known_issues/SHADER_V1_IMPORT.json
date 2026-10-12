@@ -1,0 +1,8 @@
+{
+  "case": "shader_v1_native_prepare",
+  "status": "KNOWN_HOST_FAILURE_REPRODUCED",
+  "descriptor_compile": "PASS",
+  "error_type": "AttributeError",
+  "error": "'NoneType' object has no attribute 'get'",
+  "host_modified": false
+}
