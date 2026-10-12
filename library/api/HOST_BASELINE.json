@@ -1,0 +1,310 @@
+{
+  "date": "2026-10-12",
+  "label": "WIN12 + FIX02\u2013FIX10 + AURP01",
+  "app_version": "0.21.11",
+  "build": "v354",
+  "other_aurp_stages": "frozen and excluded",
+  "original_complete_host": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-11\\aurs-aurp\\work\\aurp-full\\Aureon_WIN12_FIX10_AURP01_SRC",
+  "reference_modules": [
+    {
+      "path": "aureon_auto_quality.py",
+      "sha256": "d349391e466499b9e133a1ffa0091fc1c53f914ff2e489198ea52b2e9c175828"
+    },
+    {
+      "path": "aureon_camera_controls.py",
+      "sha256": "5eeac23beb97dcfea336cb119b2fb24e6228cf79faa09c3fd34acc0474c9ea56"
+    },
+    {
+      "path": "aureon_content/__init__.py",
+      "sha256": "dd1acb21991409f2a33108249d035c20670fa2180e6140c93f8a0ff6ebd657e4"
+    },
+    {
+      "path": "aureon_content/builtins.py",
+      "sha256": "d05bd758e940aaf75621428efacb95f47204697512cfb20ae5052a69f67571f7"
+    },
+    {
+      "path": "aureon_content/models.py",
+      "sha256": "7c5d1b70aa3ef789c93edb6681dbff9a42a1cdb9bb3f067cd500274b4822d2f8"
+    },
+    {
+      "path": "aureon_content/registry.py",
+      "sha256": "0e46ebbb6f7698e0363074a648e6a6a74b48f44c7c138f41fc2f0070470dbebe"
+    },
+    {
+      "path": "aureon_content/satellite_camera.py",
+      "sha256": "58a4da1ca3cd55f586f135a0f197a86997833fcfa945093dbf93f609d886ada6"
+    },
+    {
+      "path": "aureon_geometry/__init__.py",
+      "sha256": "dcca75c85619d926d4205311958e73ef7706907417c12ae9a33de5e5978f7547"
+    },
+    {
+      "path": "aureon_geometry/antialiasing.py",
+      "sha256": "cfbc0b8cae6889c12e550aa45babc20bad2f27cdb63e4651953c9220e49dd1fa"
+    },
+    {
+      "path": "aureon_geometry/extensions.py",
+      "sha256": "124e9108072ee3c5a2c56ca114ecba9985b51de4492387ca458d55398523564e"
+    },
+    {
+      "path": "aureon_geometry/gl_audio_bridge.py",
+      "sha256": "9e07a085d855627648d4a1c03174590f3d372afb8f931d8923b0c3f27d817e14"
+    },
+    {
+      "path": "aureon_geometry/gl_camera.py",
+      "sha256": "988d8dd0b5b0df0b5873319ddbe94bfc2a04444db57726767d995d0b77c244fe"
+    },
+    {
+      "path": "aureon_geometry/instancing.py",
+      "sha256": "033e19a2260db07e1a75c14b080f9f1a7c329f893a903d2a773a085313800590"
+    },
+    {
+      "path": "aureon_geometry/light_selection.py",
+      "sha256": "422e45afbd551c21238b8a922b03af6acc0da571b7e11f2f050e4e6022db4209"
+    },
+    {
+      "path": "aureon_geometry/object_graph.py",
+      "sha256": "4b79ee9cea0b30527fedde12c334ecb583f53062e25422e4fc3b649f9c40d4f9"
+    },
+    {
+      "path": "aureon_geometry/reflections.py",
+      "sha256": "18f0a6183986116490de29bef624dec5d96b43c72b0462726b5b2c232e1b9b07"
+    },
+    {
+      "path": "aureon_geometry/runtime.py",
+      "sha256": "af72462c1a0e6fb83e94e943472fa48a2c07f87bde889f8e0b51ef3c1039e692"
+    },
+    {
+      "path": "aureon_geometry/schema.py",
+      "sha256": "9fcdab0cb96d165beaf3f1a74c1eb07a015ec94958d881a99e4abe118f3bbcd2"
+    },
+    {
+      "path": "aureon_geometry/smoke.py",
+      "sha256": "c1ec0bfce7b67688ff4d761bb00de3cf08b9ef327c1ce056670c7067e5e2a8c9"
+    },
+    {
+      "path": "aureon_geometry/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "aureon_geometry/utils/gl_items.py",
+      "sha256": "97590d8fd7d9d0d313706141985b888e61040ace3727ed5727d0db24a9b78f12"
+    },
+    {
+      "path": "aureon_geometry/widget.py",
+      "sha256": "ae4c7a9035bf62d4a14234684003fcd2b5d276b93ab4f97b53853050afad49a3"
+    },
+    {
+      "path": "aureon_gl_uniforms.py",
+      "sha256": "9640d5a85cce1f7f4739cd5a8198592c4bf4be637deb0706ffca4f8034ef1d1d"
+    },
+    {
+      "path": "aureon_packages/__init__.py",
+      "sha256": "d7fa0914d7f153c658f0ec565ec4cc7863167a5c906c61dd000feb630f998dba"
+    },
+    {
+      "path": "aureon_packages/aurp_standard_library.py",
+      "sha256": "3d264343893d07a8a8a1b8969d6471197d3bcfd459d6bd269a5880303e27157e"
+    },
+    {
+      "path": "aureon_packages/expressions.py",
+      "sha256": "613599700ed8ecfcbd34d3ebaac42e52cf162ef6e90ef5895daef6bfd0389ba1"
+    },
+    {
+      "path": "aureon_packages/lights_config.py",
+      "sha256": "97852c9f002e16b7bc210c1314d0fb75b7e23d737b2aa1a6beeb3f43280fbcb5"
+    },
+    {
+      "path": "aureon_packages/limits.py",
+      "sha256": "8f207ff68e6d2dab842f1d3b408c2e807dd7da3e2317b550ddb07cd6f8f0eca2"
+    },
+    {
+      "path": "aureon_packages/previews.py",
+      "sha256": "37c10f0f081705ee903c111addca75728b9a5a2b6d9cdea4f8191a643a15ab7a"
+    },
+    {
+      "path": "aureon_packages/projection_surface.py",
+      "sha256": "51be79778777e82d3a16f342e67ffdc896ad8497e2c840c7870bc627ef37edcf"
+    },
+    {
+      "path": "aureon_packages/scene_audio.py",
+      "sha256": "79a5fe0fb6da4b754ddfd5b904d1611e9cf1bf0194ecf7b8b484c46cab19f64d"
+    },
+    {
+      "path": "aureon_packages/scene_runtime.py",
+      "sha256": "92ed8415be514ca50aed7b13e5a3c12410a0bed66b760f4d9908bfc5d3751406"
+    },
+    {
+      "path": "aureon_packages/scene_schema.py",
+      "sha256": "55e4d965436c53a49f0615b85295e26e864e8b34e745e3f48e9b1c2ccbdc0a64"
+    },
+    {
+      "path": "aureon_packages/scene_v2_runtime.py",
+      "sha256": "71f4647f1c4290dc3ece54203080a39b204978764a5cee9930269a244edfd0f3"
+    },
+    {
+      "path": "aureon_packages/scene_v2_schema.py",
+      "sha256": "7901b5cc3a11d9bc0ff8fda2bb79a078d22e21a516b32670ecf9e8c2532fa985"
+    },
+    {
+      "path": "aureon_packages/schema.py",
+      "sha256": "88ec1fe4421132d1976c1280b23b1cf33c1a3a2767fcfdcda7b5bfb7be4382f3"
+    },
+    {
+      "path": "aureon_packages/shader_library.py",
+      "sha256": "5eb64f3d69520045dc1dccaaf1f066bd42b8601a566e490dfb03674ee4bb0d2b"
+    },
+    {
+      "path": "aureon_packages/standard_library.py",
+      "sha256": "2590f507fbef39bb2d24fca2cc3ecf8066d3baf3e567e9a10ff64a925536ef19"
+    },
+    {
+      "path": "aureon_packages/store.py",
+      "sha256": "4152c06155ef00aa62a949ebdeefe6f5123b9a26d95fe17bf8f60d7b1ebd3dd0"
+    },
+    {
+      "path": "aureon_packages/textures.py",
+      "sha256": "68ce7ec11abcaa275094d2bcd12155431453109e5aae495d687a927093417018"
+    },
+    {
+      "path": "aureon_performance.py",
+      "sha256": "c4e7e3760333a0b2a49115afc1bc95544e39a9db2b340cdfd68e01dcb264a334"
+    },
+    {
+      "path": "aureon_preview_cache.py",
+      "sha256": "c73a399c56d401cf12f2ca86f648c0ab202c82fcdd82a6c0f2cb4139e76644aa"
+    },
+    {
+      "path": "aureon_visual_quality.py",
+      "sha256": "1c6ce1e104218d43be45fc8bcf4356932d87000b487ff79557858108a0348469"
+    },
+    {
+      "path": "idle/gl/__init__.py",
+      "sha256": "203f60a38ffa70c2ce12361fd3db38b915290ac3b6ed96f8b69880cb878912af"
+    },
+    {
+      "path": "idle/gl/antialiasing.py",
+      "sha256": "8749d289a37e97f4c8b2b7ddea366978519bb844854b000ec008f8590c07392b"
+    },
+    {
+      "path": "idle/gl/benchmark_scene.py",
+      "sha256": "4940b635142d9471e16b3429c73ee6a47b61da22cbed84f9b6d02ed3bf50ded6"
+    },
+    {
+      "path": "idle/gl/device_info.py",
+      "sha256": "ff8613c416137e5b98e75872e0e6978dd3b7de3f9de22fc854d91de70a53a4d2"
+    },
+    {
+      "path": "idle/gl/gl_scene_widget.py",
+      "sha256": "c5f2fac801b95aff5320a4dcb5fa3cebb50c75910cc726b2fd1cb95c882d49c0"
+    },
+    {
+      "path": "idle/gl/horizon_audio.py",
+      "sha256": "5ffa64bc158b081d05d9976379ad0f6b1ca6db49481b950289b30ba43b92943a"
+    },
+    {
+      "path": "idle/gl/lava_horizon.py",
+      "sha256": "76624e6a0d40cf315ddcc167dfaeb7ae7a2f6dc4e87b1b817798928b715db10c"
+    },
+    {
+      "path": "idle/gl/orbital_dawn.py",
+      "sha256": "a0b738164a1f5249a4d5e480eabfd64108100bd7c081617284dc9234e4aa9a38"
+    },
+    {
+      "path": "idle/gl/quality.py",
+      "sha256": "389681014878399bf62345163967fb1414c041bc7268c382cbdbf885fd386964"
+    },
+    {
+      "path": "idle/gl/scene_textures.py",
+      "sha256": "ff27cf6ab550b72db8537e5413eb56346a584ea48d8d9e10aaf8ec8564104acc"
+    },
+    {
+      "path": "idle/gl/shaders/antialias.frag",
+      "sha256": "773725918662f4c4a1f30a2e57fcfd4afcfcc47b6a7e259caead3cdc5950444d"
+    },
+    {
+      "path": "idle/gl/shaders/fullscreen.vert",
+      "sha256": "e311201c1a8330b8c897091f299f9aa443c755c21de3cbefbb8acb2c650c72bb"
+    },
+    {
+      "path": "idle/gl/stellar_horizon.py",
+      "sha256": "c3a6a8cc65ec42b9f605e9d1e715cd5da3f25b2fcec9ce334b8c0104b09aedec"
+    },
+    {
+      "path": "idle/gl/storm_tornado.py",
+      "sha256": "09d0a5822c7169b20d904692f36b7dcb7835b5e615678ddde0a5ac6905dafa56"
+    },
+    {
+      "path": "idle/gl/volcanic_valley.py",
+      "sha256": "88fb540625dd3e35d8ccade7f5e997b892fd98c464fc23ef5ffe8fd4090634fa"
+    },
+    {
+      "path": "idle/render_quality.py",
+      "sha256": "c4677a77209c761eb0487bf71c7a7d39e411a4af0164774f5c2fce315af0f4b2"
+    },
+    {
+      "path": "projection/__init__.py",
+      "sha256": "38388238e53cb970a89cf6768517c605053b3d8306968b57710468c0c31d55b9"
+    },
+    {
+      "path": "projection/controller.py",
+      "sha256": "c1257a8ca40ebf3e4652eeb70e5d39e27a9dae19c24825b4669036c2c8992b23"
+    },
+    {
+      "path": "projection/declarative.py",
+      "sha256": "95a4261d029f9370c327430410c1a808ee4fb49aef28bfed42319278a5f48441"
+    },
+    {
+      "path": "projection/fullscreen.vert",
+      "sha256": "db0cc3dbf92ede416c35781488bdb9f66727f7e6fdafe7302a3a5fae2f0e5a5f"
+    },
+    {
+      "path": "projection/gyro.frag",
+      "sha256": "e5102fb76f90f61e6ad72d706c3184c9ba75e2bdad344a0f788d249a18a16775"
+    },
+    {
+      "path": "projection/gyro.py",
+      "sha256": "0726130f56c89879fc469ed202a30eebc6442351484b14e0cee0116d68cf0e8e"
+    },
+    {
+      "path": "projection/gyro.vert",
+      "sha256": "5ba6ec0a822445c1e143a852ef66cbb30ec4de127a4b84d15f841e8af2a879b0"
+    },
+    {
+      "path": "projection/hologram.py",
+      "sha256": "b29ea02e7a44572d685497b2dd19bb7fc21df213ac3a4da7162cf08969d2c133"
+    },
+    {
+      "path": "projection/holographic_orbit.frag",
+      "sha256": "7cbd756383c208215386855d49250b58a86f2d09bfc9618efce6d6d2ecf03bc6"
+    },
+    {
+      "path": "projection/host.py",
+      "sha256": "4a0302ecfa208e403a87985c0bc78bd8209cda7be46ff57f749fef13f4b71bd7"
+    },
+    {
+      "path": "projection/surface.frag",
+      "sha256": "6a00fef5d05db88d00ca46cee3fbc87080da1b284e6333a864866d76babec03e"
+    },
+    {
+      "path": "projection/surface.py",
+      "sha256": "ea6ec6256a41828341983dfdac5fd843937397bdb23a32f07aa604da61befb99"
+    },
+    {
+      "path": "projection/surface.vert",
+      "sha256": "6e70d9685fbae5ddb8d198a1b3d23de884de1a0fa3af4457bc0950139a4e20c0"
+    },
+    {
+      "path": "projection/surface_audio.py",
+      "sha256": "98b6f58a3e06e29292980fde0bea400bab03f738f171ba22ec5610b70e6b8c95"
+    },
+    {
+      "path": "projection/surface_post.frag",
+      "sha256": "972595d139fca70ae9f6c382e23d533a4ad0f3e7f2727d6cadf6b5675fc7a9d8"
+    },
+    {
+      "path": "projection/surface_post.vert",
+      "sha256": "097e681eb7111aaa6bc341fa8ce4b6f0b286091ef3efca0f1c4c2bf0887932c5"
+    }
+  ]
+}

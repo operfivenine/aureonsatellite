@@ -1,0 +1,104 @@
+{
+  "reference_host": "0.21.11 v354 WIN12 + FIX02-FIX10 + AURP01 (user-selected frozen baseline)",
+  "source_zip": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-04\\g\\outputs\\Aureon-0.21.11-v354-WIN12-FIX10-AURP01-Installer-SRC.zip",
+  "source_zip_sha256": "874f2cfa7719d2dff7ec358510dab5e98953f0ed86099d06ec07765fd349a2f6",
+  "app_zip": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-04\\g\\outputs\\Aureon-0.21.11-v354-WIN12-FIX10-AURP01-App-x64.zip",
+  "app_zip_sha256": "88af458b403f8435dd794eb7676e39ccab99973662952f8c51fc706840a054f3",
+  "source_reference_modules_matching": 75,
+  "stock_content": [
+    {
+      "kind": "scene",
+      "name": "Default",
+      "id": "default",
+      "renderer": "builtin.painter"
+    },
+    {
+      "kind": "scene",
+      "name": "Warp",
+      "id": "warp",
+      "renderer": "builtin.painter"
+    },
+    {
+      "kind": "scene",
+      "name": "Orbital Dawn",
+      "id": "orbital_dawn",
+      "renderer": "builtin.painter"
+    },
+    {
+      "kind": "scene",
+      "name": "Orbital Sun",
+      "id": "orbital_dawn_gl",
+      "renderer": "builtin.gl"
+    },
+    {
+      "kind": "scene",
+      "name": "Storm Tornado",
+      "id": "storm_tornado_gl",
+      "renderer": "builtin.gl"
+    },
+    {
+      "kind": "scene",
+      "name": "Volcanic Valley",
+      "id": "volcanic_valley_gl",
+      "renderer": "builtin.gl"
+    },
+    {
+      "kind": "scene",
+      "name": "Stellar Horizon",
+      "id": "stellar_horizon_gl",
+      "renderer": "builtin.gl"
+    },
+    {
+      "kind": "scene",
+      "name": "Aureon Satellite",
+      "id": "lava_horizon_gl",
+      "renderer": "builtin.gl"
+    },
+    {
+      "kind": "projection",
+      "name": "Orbital Atlas",
+      "id": "orbital_atlas",
+      "renderer": "builtin.projection_window"
+    },
+    {
+      "kind": "projection",
+      "name": "Reactor Core",
+      "id": "reactor_core",
+      "renderer": "builtin.projection_window"
+    },
+    {
+      "kind": "projection",
+      "name": "Holo Planet",
+      "id": "org.aureon.holo_planet",
+      "renderer": "projection.canvas.v1",
+      "version": "3.0.1"
+    },
+    {
+      "kind": "projection",
+      "name": "Spectral Core",
+      "id": "org.aureon.spectral_core",
+      "renderer": "projection.canvas.v1",
+      "version": "3.0.1"
+    }
+  ],
+  "package_assets": [
+    {
+      "id": "org.aureon.holo_planet",
+      "source_member": "Aureon_0.21.11_WIN12_FIX10_AURP01_SRC/assets/projections/Aureon_Holo_Planet_v3.aurp",
+      "app_member": "Aureon/data/assets/projections/Aureon_Holo_Planet_v3.aurp",
+      "sha256": "8455761cafbc1575e0abca78328f43805b2518c06e0e1548e240df1efc778bc0"
+    },
+    {
+      "id": "org.aureon.spectral_core",
+      "source_member": "Aureon_0.21.11_WIN12_FIX10_AURP01_SRC/assets/projections/Aureon_Spectral_Core_v3.aurp",
+      "app_member": "Aureon/data/assets/projections/Aureon_Spectral_Core_v3.aurp",
+      "sha256": "ce1008bcdda02b4edcef20693fc68a649880a6d46267ac496a6c2a354cfa8c3c"
+    }
+  ],
+  "scope": "Registered stock content; optional examples/test fixtures are excluded from content examples",
+  "checked_criteria": [
+    "native builtins registration AST",
+    "bundled assets catalog",
+    "source/App package byte identity"
+  ]
+}

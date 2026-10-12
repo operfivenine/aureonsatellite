@@ -1,0 +1,870 @@
+{
+  "scope": "All public files except FILE_MANIFEST.json itself",
+  "files": [
+    {
+      "path": "API_INDEX.json",
+      "bytes": 65648,
+      "sha256": "6c51cee67fb99def7c0e05256143654970ff54d238a099a4efaa5678a2dbec4e"
+    },
+    {
+      "path": "API_REFERENCE.md",
+      "bytes": 5020,
+      "sha256": "119014abfcf7ee5fda07b3715f09b33720b9a6c542e51a66d483893695b56761"
+    },
+    {
+      "path": "AUDIO_ANIMATION.md",
+      "bytes": 4818,
+      "sha256": "be9a911fc20791895fd3bd21847aec37a695f1d52b6a486bfaab24ef7f30b617"
+    },
+    {
+      "path": "AURP_CANVAS.md",
+      "bytes": 3621,
+      "sha256": "947122b101e9da0a4574bdfd697605cea187a6fb873290da8ea594369271a495"
+    },
+    {
+      "path": "AURP_SURFACE.md",
+      "bytes": 3715,
+      "sha256": "1a71e65ba4651813af8dae3f9f10331210cfa02c6771762062bdb39a3af81165"
+    },
+    {
+      "path": "AURS_GEOMETRY.md",
+      "bytes": 10083,
+      "sha256": "154e2a0252790f8ca148d355283802573187737b7f8b50b10f3bf546fd842a93"
+    },
+    {
+      "path": "AURS_SHADER.md",
+      "bytes": 6183,
+      "sha256": "b26f06aa256f9f0a8ee15b6d1cf92ff6bac1ed9dd63b59eda7cfc074a2fe3808"
+    },
+    {
+      "path": "AUTHORING_GUIDE.md",
+      "bytes": 4441,
+      "sha256": "1bd9bc06260a0a3f1897d5e285670f527eda929949eff6ed07c742f5235ee422"
+    },
+    {
+      "path": "BASELINE_AND_EVIDENCE.md",
+      "bytes": 3389,
+      "sha256": "89ceb251c9c92926e1f5068659d6cd1ddf0d5b895da8c427c3a1b11204c528c7"
+    },
+    {
+      "path": "BUNDLED_CONTENT.json",
+      "bytes": 3308,
+      "sha256": "4ffdff1aa64f7c9a9f507c944b169ca2dca464a76bca45fc640f7b0c1da26743"
+    },
+    {
+      "path": "BUNDLED_CONTENT.md",
+      "bytes": 1907,
+      "sha256": "5470afa2d63949c153298b07f8584d86690bccf2c2d7e7ecad459f0dbc51474e"
+    },
+    {
+      "path": "COMPATIBILITY.md",
+      "bytes": 2787,
+      "sha256": "fcdb19be63486d652ddf325c0b959b19e4d8a01a7eb32317bb779961e3dcb264"
+    },
+    {
+      "path": "examples/starters/canvas/manifest.json",
+      "bytes": 651,
+      "sha256": "b57ef05305e8f21318f6ed4817948667f83d3d493552ada66049bf8ddab49cd5"
+    },
+    {
+      "path": "examples/starters/canvas/projection.json",
+      "bytes": 742,
+      "sha256": "c75027ee78e8819abd7146b9339556ef2c7405c7de0273934efc0d0f6faca7aa"
+    },
+    {
+      "path": "examples/starters/canvas.aurp",
+      "bytes": 835,
+      "sha256": "bbc8564c4bf8f3a8187f3c5530a164dc6d922afa916cc4c66a38f0dc5e903554"
+    },
+    {
+      "path": "examples/starters/hybrid/manifest.json",
+      "bytes": 627,
+      "sha256": "b1c85998837a96c13c561512e78c7943032f33fb75959540b64b5fa26b5f11b0"
+    },
+    {
+      "path": "examples/starters/hybrid/meshes/high.bin",
+      "bytes": 120,
+      "sha256": "9d1ad1600feaf798fd28f56a578c933139c97a8f36d8e744e5f43efbd2eb581f"
+    },
+    {
+      "path": "examples/starters/hybrid/meshes/low.bin",
+      "bytes": 120,
+      "sha256": "9d1ad1600feaf798fd28f56a578c933139c97a8f36d8e744e5f43efbd2eb581f"
+    },
+    {
+      "path": "examples/starters/hybrid/meshes/medium.bin",
+      "bytes": 120,
+      "sha256": "9d1ad1600feaf798fd28f56a578c933139c97a8f36d8e744e5f43efbd2eb581f"
+    },
+    {
+      "path": "examples/starters/hybrid/preview.png",
+      "bytes": 2642,
+      "sha256": "9072a9e16f987b25278c97a6e26fe51dd5b2af2f88d4093871847c46de3e3d02"
+    },
+    {
+      "path": "examples/starters/hybrid/scene.json",
+      "bytes": 4236,
+      "sha256": "e5429ee919efc1757660d1599369f944c418fdea379fe4863a05cf31403b8b3f"
+    },
+    {
+      "path": "examples/starters/hybrid/shaders/background.frag",
+      "bytes": 404,
+      "sha256": "4ec46fe14d8f7dcca1de2ccd1cf8ea86a846eb563ddc24ae496d9db67d2c0e56"
+    },
+    {
+      "path": "examples/starters/hybrid/shaders/main.frag",
+      "bytes": 85,
+      "sha256": "21f0283838a8fbad02aad0115db5f8e3feaa4a5dddd2ecc869f861ee56efd07b"
+    },
+    {
+      "path": "examples/starters/hybrid/shaders/main.vert",
+      "bytes": 269,
+      "sha256": "f1f25a1524c6281d3e915c27c8d81e7d2aef6ad9475de1ede024a8f9501d2afb"
+    },
+    {
+      "path": "examples/starters/hybrid.aurs",
+      "bytes": 4665,
+      "sha256": "8125892e52e7a124a314e7e5407ff293bb291f4347b155f561137fe75b4790c8"
+    },
+    {
+      "path": "examples/starters/mesh/manifest.json",
+      "bytes": 536,
+      "sha256": "fa783a3e00d69f2e69b8e84bfaba47aa5f31efa6daf2f76f762427b36afb305f"
+    },
+    {
+      "path": "examples/starters/mesh/meshes/high.bin",
+      "bytes": 120,
+      "sha256": "9d1ad1600feaf798fd28f56a578c933139c97a8f36d8e744e5f43efbd2eb581f"
+    },
+    {
+      "path": "examples/starters/mesh/meshes/low.bin",
+      "bytes": 120,
+      "sha256": "9d1ad1600feaf798fd28f56a578c933139c97a8f36d8e744e5f43efbd2eb581f"
+    },
+    {
+      "path": "examples/starters/mesh/meshes/medium.bin",
+      "bytes": 120,
+      "sha256": "9d1ad1600feaf798fd28f56a578c933139c97a8f36d8e744e5f43efbd2eb581f"
+    },
+    {
+      "path": "examples/starters/mesh/preview.png",
+      "bytes": 2642,
+      "sha256": "9072a9e16f987b25278c97a6e26fe51dd5b2af2f88d4093871847c46de3e3d02"
+    },
+    {
+      "path": "examples/starters/mesh/scene.json",
+      "bytes": 3532,
+      "sha256": "e0234261e4ed6a0d625d72e1300643e7eda465aa981485aae4e0c8b390b7fba7"
+    },
+    {
+      "path": "examples/starters/mesh/shaders/main.frag",
+      "bytes": 85,
+      "sha256": "21f0283838a8fbad02aad0115db5f8e3feaa4a5dddd2ecc869f861ee56efd07b"
+    },
+    {
+      "path": "examples/starters/mesh/shaders/main.vert",
+      "bytes": 269,
+      "sha256": "f1f25a1524c6281d3e915c27c8d81e7d2aef6ad9475de1ede024a8f9501d2afb"
+    },
+    {
+      "path": "examples/starters/mesh.aurs",
+      "bytes": 4132,
+      "sha256": "72215ec56e5b379a84656209fe54f9bcdf22d35a13b578155ab6de57f0c0efa1"
+    },
+    {
+      "path": "examples/starters/shader_v2/manifest.json",
+      "bytes": 581,
+      "sha256": "ddc4d18aaf2992990c8c36956ceadad6211b3846b834dd87312261be5ab06224"
+    },
+    {
+      "path": "examples/starters/shader_v2/scene.json",
+      "bytes": 450,
+      "sha256": "8078625aebb0c5c7bfb045524bb8b4880c64e73d4febc31c91dd6e044fdb4dd3"
+    },
+    {
+      "path": "examples/starters/shader_v2/shaders/main.frag",
+      "bytes": 351,
+      "sha256": "838f504fcd8252caf867a6017582bfe8eb8776de403cb56df168b93e80235e6d"
+    },
+    {
+      "path": "examples/starters/shader_v2.aurs",
+      "bytes": 1043,
+      "sha256": "922fc211b9477d99fd95e4aa6259647e16686a76874a59689fcb5e3a68c1c7be"
+    },
+    {
+      "path": "examples/starters/surface/manifest.json",
+      "bytes": 608,
+      "sha256": "f34766731841d6d700d025e529c954bcd086cf44ad5e1558584d9bd90228c571"
+    },
+    {
+      "path": "examples/starters/surface/projection.json",
+      "bytes": 349,
+      "sha256": "988be10c734e4af9535d3db641469df4b849233a299fafb3c5898aa3fc373539"
+    },
+    {
+      "path": "examples/starters/surface.aurp",
+      "bytes": 687,
+      "sha256": "a5023362a45a2d8781d887c0f7403e3d3a686a356ba01fad863c2654d8fc5954"
+    },
+    {
+      "path": "examples/stock/Aureon_Holo_Planet_v3/manifest.json",
+      "bytes": 761,
+      "sha256": "29bc94fd939381ba703d52f0fa61b09b4129ef77615832ed4b7d1d02a0e06ad9"
+    },
+    {
+      "path": "examples/stock/Aureon_Holo_Planet_v3/projection.json",
+      "bytes": 573,
+      "sha256": "bad44733d966b834857e9d852d2091f34fe8f477ea3b200820b6e906657d610f"
+    },
+    {
+      "path": "examples/stock/Aureon_Holo_Planet_v3.aurp",
+      "bytes": 877,
+      "sha256": "8455761cafbc1575e0abca78328f43805b2518c06e0e1548e240df1efc778bc0"
+    },
+    {
+      "path": "examples/stock/Aureon_Spectral_Core_v3/manifest.json",
+      "bytes": 753,
+      "sha256": "fe2cba84bd3e24ee913dbeb97d636eb2389ffe1982e0a1d54b005dcc3d508bdd"
+    },
+    {
+      "path": "examples/stock/Aureon_Spectral_Core_v3/projection.json",
+      "bytes": 576,
+      "sha256": "a5acd0bf2a5d614f8e2d68768f4020a829b35f9b540d57c4705e6144a80fc2a1"
+    },
+    {
+      "path": "examples/stock/Aureon_Spectral_Core_v3.aurp",
+      "bytes": 866,
+      "sha256": "ce1008bcdda02b4edcef20693fc68a649880a6d46267ac496a6c2a354cfa8c3c"
+    },
+    {
+      "path": "EXAMPLES_INDEX.json",
+      "bytes": 4331,
+      "sha256": "d43f721eea8b5f8ced09a9863520d9e216620c509fb920e71673f5c113f9e786"
+    },
+    {
+      "path": "GETTING_STARTED.md",
+      "bytes": 3351,
+      "sha256": "bdb942960e0439a5decc21772d7dbb2ccc2fc4f20f8ff912a2adbcff6be8975a"
+    },
+    {
+      "path": "glsl/aurs.standard.glsl",
+      "bytes": 198,
+      "sha256": "01fcd914e96c97c35ce88d71e050f196af5bf25041fa0d3d0dd0aa379d10afac"
+    },
+    {
+      "path": "glsl/aurs.standard.resolved.glsl",
+      "bytes": 35202,
+      "sha256": "508293e2625eb2d79b3c29d3b45786c65651e039b0a5b6383fbf8f1f3b1eadcf"
+    },
+    {
+      "path": "glsl/core.atmosphere.glsl",
+      "bytes": 3505,
+      "sha256": "361d68e0214b8afd96066efdf536f54c8d003cbf75846a7b851c8fd0e6c663dc"
+    },
+    {
+      "path": "glsl/core.attachments.glsl",
+      "bytes": 1795,
+      "sha256": "53dc6d39e51483b14231bcbe3aa02a76cfe8b9ea4b65d033c5e16cc4d5e96fa9"
+    },
+    {
+      "path": "glsl/core.camera.glsl",
+      "bytes": 653,
+      "sha256": "2f1108eff08e3918442dbbc708ff3ff27490ff67d57bf2fb1544f66cf533c7d4"
+    },
+    {
+      "path": "glsl/core.color.glsl",
+      "bytes": 553,
+      "sha256": "5b07b6485342a16296cdd5f54a16722f24218e8417cb7541d7b251bb72ce692f"
+    },
+    {
+      "path": "glsl/core.composition.glsl",
+      "bytes": 574,
+      "sha256": "4edc8787e6a2c4d71a443f7be577116f5fc3a63673c339842aed5d500d9a59cc"
+    },
+    {
+      "path": "glsl/core.environment.glsl",
+      "bytes": 746,
+      "sha256": "768eb92a27b36f26c68522267493ac9643f0cae4d887d330cf9a8037e231f9ae"
+    },
+    {
+      "path": "glsl/core.geometry.glsl",
+      "bytes": 1370,
+      "sha256": "1aee63a83dd683e89433b42059d3ce8bcb2bded769e9f7fe298e0f860056e947"
+    },
+    {
+      "path": "glsl/core.instances.glsl",
+      "bytes": 1501,
+      "sha256": "64d08760a3f47fcdb09816a6ce4b0624d8ca85377ca3949f48e261066e76c7c3"
+    },
+    {
+      "path": "glsl/core.lighting.glsl",
+      "bytes": 1231,
+      "sha256": "39e23d564c8d54506bf12f7a2fddac92f5bb2c52ab46c6cc2207a38eee19ede5"
+    },
+    {
+      "path": "glsl/core.materials.glsl",
+      "bytes": 1423,
+      "sha256": "16fc69c9d1c5ca8e502b9327b219848b39942b2bb33cc480f9a2a1d312c7dddd"
+    },
+    {
+      "path": "glsl/core.math.glsl",
+      "bytes": 773,
+      "sha256": "337640a97584267e63acb4374fa330ac1ab059c034478859f274f0e3aceda814"
+    },
+    {
+      "path": "glsl/core.motion.glsl",
+      "bytes": 3439,
+      "sha256": "0f92941123963e463234a35159bdf42a0a40649de7e72f5bdaecd35a17b35e43"
+    },
+    {
+      "path": "glsl/core.noise.glsl",
+      "bytes": 1941,
+      "sha256": "bc65491b79c17a35d903501cef258e93afb884e7f370a04f9240f448d99df300"
+    },
+    {
+      "path": "glsl/core.object.glsl",
+      "bytes": 109,
+      "sha256": "32435f8df3d0944422e55fc7bad5c2835f206e753dfe1067c647dd2f22a00436"
+    },
+    {
+      "path": "glsl/core.object_motion.glsl",
+      "bytes": 3772,
+      "sha256": "9c7f1491f31ee413caa0b5d7b168ec20db7719986a8faa63319f73d300678def"
+    },
+    {
+      "path": "glsl/core.presentation.glsl",
+      "bytes": 4478,
+      "sha256": "cf59267e0bff069bf0db8ac1cb5816333e9b749ffa8cfdc7b0e4747235c3dd50"
+    },
+    {
+      "path": "glsl/core.scene_lighting.glsl",
+      "bytes": 5021,
+      "sha256": "bbfc4ee88b73a54fed5a0a7137b7cdf1d1768ae716318f3fd6ae27757df32ebd"
+    },
+    {
+      "path": "glsl/core.sdf.glsl",
+      "bytes": 985,
+      "sha256": "a1a8c5b40f06eb5ac33ae4ebbe62927e59b893e2fee4331831a144f6296684c1"
+    },
+    {
+      "path": "glsl/core.trails_lod.glsl",
+      "bytes": 1716,
+      "sha256": "947fcef2e9a36365a7b517e24b1838e5e5bec0db968be5761aa5d9a9d5e7af7c"
+    },
+    {
+      "path": "glsl/core.world.glsl",
+      "bytes": 138,
+      "sha256": "c9bc5e5aefc09173d4bcb591b5414d584820ccf1237afc89af26af7d11b3c3e0"
+    },
+    {
+      "path": "glsl/experimental.normal_filtering.glsl",
+      "bytes": 1234,
+      "sha256": "d625dd53df8bd0f40c6ee84c73960715c9fbb6e3c0b698f647f59f72ddbe6528"
+    },
+    {
+      "path": "glsl/experimental.normal_mapping.glsl",
+      "bytes": 937,
+      "sha256": "8a28e57bd6736eedd702f4f1d906a8edb5d89fadf728e93fbeb0bc56542723ec"
+    },
+    {
+      "path": "glsl/experimental.scene_lights.glsl",
+      "bytes": 2570,
+      "sha256": "6851f42b495af3c7201bfea6eb3fa52edfcfe7032f819569b7a65138957ee811"
+    },
+    {
+      "path": "glsl/experimental.texture_materials.glsl",
+      "bytes": 981,
+      "sha256": "1cc2405f91a0aadc7bf44f2011b703477d185e0f622fcc1c50f0bc6571e0614e"
+    },
+    {
+      "path": "glsl/experimental.triplanar.glsl",
+      "bytes": 1631,
+      "sha256": "da3487ee0b8840f330ce4cc09e1da6b582db80d333b94ffe145bb0faba24bf70"
+    },
+    {
+      "path": "GLSL_CATALOG.md",
+      "bytes": 24367,
+      "sha256": "1f3e2edb6f6195f6dc8077b611526add70221c0608f8aa94d6b29b3d30fa5b02"
+    },
+    {
+      "path": "HOST_BASELINE.json",
+      "bytes": 11195,
+      "sha256": "a761a2b5cbfc4fff43872c5e261dca9422bcf0cb7b6c9bccfe13af3d661497bd"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2494,
+      "sha256": "1faebec1de6dd4e9dd4e6e49c6ed04027605a79267e2eba9b22271a7abee248d"
+    },
+    {
+      "path": "RENDERING_PROFILES.md",
+      "bytes": 2894,
+      "sha256": "cc776ef5af92c9784044b4e957fd2e02db752cc85d1985eaf491e4094e4d0432"
+    },
+    {
+      "path": "source/aureon_auto_quality.py",
+      "bytes": 7535,
+      "sha256": "d349391e466499b9e133a1ffa0091fc1c53f914ff2e489198ea52b2e9c175828"
+    },
+    {
+      "path": "source/aureon_bundled_projections.py",
+      "bytes": 1994,
+      "sha256": "edc98cae193a1ac3bf2f2086b0731aa41b7b59713c86f4ff85f6dec97cd96705"
+    },
+    {
+      "path": "source/aureon_camera_controls.py",
+      "bytes": 695,
+      "sha256": "5eeac23beb97dcfea336cb119b2fb24e6228cf79faa09c3fd34acc0474c9ea56"
+    },
+    {
+      "path": "source/aureon_content/__init__.py",
+      "bytes": 297,
+      "sha256": "dd1acb21991409f2a33108249d035c20670fa2180e6140c93f8a0ff6ebd657e4"
+    },
+    {
+      "path": "source/aureon_content/builtins.py",
+      "bytes": 2036,
+      "sha256": "d05bd758e940aaf75621428efacb95f47204697512cfb20ae5052a69f67571f7"
+    },
+    {
+      "path": "source/aureon_content/models.py",
+      "bytes": 1629,
+      "sha256": "7c5d1b70aa3ef789c93edb6681dbff9a42a1cdb9bb3f067cd500274b4822d2f8"
+    },
+    {
+      "path": "source/aureon_content/registry.py",
+      "bytes": 5129,
+      "sha256": "0e46ebbb6f7698e0363074a648e6a6a74b48f44c7c138f41fc2f0070470dbebe"
+    },
+    {
+      "path": "source/aureon_content/satellite_camera.py",
+      "bytes": 777,
+      "sha256": "58a4da1ca3cd55f586f135a0f197a86997833fcfa945093dbf93f609d886ada6"
+    },
+    {
+      "path": "source/aureon_geometry/__init__.py",
+      "bytes": 247,
+      "sha256": "dcca75c85619d926d4205311958e73ef7706907417c12ae9a33de5e5978f7547"
+    },
+    {
+      "path": "source/aureon_geometry/antialiasing.py",
+      "bytes": 2122,
+      "sha256": "cfbc0b8cae6889c12e550aa45babc20bad2f27cdb63e4651953c9220e49dd1fa"
+    },
+    {
+      "path": "source/aureon_geometry/extensions.py",
+      "bytes": 6581,
+      "sha256": "124e9108072ee3c5a2c56ca114ecba9985b51de4492387ca458d55398523564e"
+    },
+    {
+      "path": "source/aureon_geometry/gl_audio_bridge.py",
+      "bytes": 2607,
+      "sha256": "9e07a085d855627648d4a1c03174590f3d372afb8f931d8923b0c3f27d817e14"
+    },
+    {
+      "path": "source/aureon_geometry/gl_camera.py",
+      "bytes": 2744,
+      "sha256": "988d8dd0b5b0df0b5873319ddbe94bfc2a04444db57726767d995d0b77c244fe"
+    },
+    {
+      "path": "source/aureon_geometry/instancing.py",
+      "bytes": 654,
+      "sha256": "033e19a2260db07e1a75c14b080f9f1a7c329f893a903d2a773a085313800590"
+    },
+    {
+      "path": "source/aureon_geometry/light_selection.py",
+      "bytes": 3421,
+      "sha256": "422e45afbd551c21238b8a922b03af6acc0da571b7e11f2f050e4e6022db4209"
+    },
+    {
+      "path": "source/aureon_geometry/object_graph.py",
+      "bytes": 15421,
+      "sha256": "4b79ee9cea0b30527fedde12c334ecb583f53062e25422e4fc3b649f9c40d4f9"
+    },
+    {
+      "path": "source/aureon_geometry/reflections.py",
+      "bytes": 4274,
+      "sha256": "18f0a6183986116490de29bef624dec5d96b43c72b0462726b5b2c232e1b9b07"
+    },
+    {
+      "path": "source/aureon_geometry/runtime.py",
+      "bytes": 11088,
+      "sha256": "af72462c1a0e6fb83e94e943472fa48a2c07f87bde889f8e0b51ef3c1039e692"
+    },
+    {
+      "path": "source/aureon_geometry/schema.py",
+      "bytes": 12403,
+      "sha256": "9fcdab0cb96d165beaf3f1a74c1eb07a015ec94958d881a99e4abe118f3bbcd2"
+    },
+    {
+      "path": "source/aureon_geometry/smoke.py",
+      "bytes": 7192,
+      "sha256": "c1ec0bfce7b67688ff4d761bb00de3cf08b9ef327c1ce056670c7067e5e2a8c9"
+    },
+    {
+      "path": "source/aureon_geometry/utils/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "source/aureon_geometry/utils/gl_items.py",
+      "bytes": 1982,
+      "sha256": "97590d8fd7d9d0d313706141985b888e61040ace3727ed5727d0db24a9b78f12"
+    },
+    {
+      "path": "source/aureon_geometry/widget.py",
+      "bytes": 29829,
+      "sha256": "ae4c7a9035bf62d4a14234684003fcd2b5d276b93ab4f97b53853050afad49a3"
+    },
+    {
+      "path": "source/aureon_gl_uniforms.py",
+      "bytes": 4726,
+      "sha256": "9640d5a85cce1f7f4739cd5a8198592c4bf4be637deb0706ffca4f8034ef1d1d"
+    },
+    {
+      "path": "source/aureon_packages/__init__.py",
+      "bytes": 65,
+      "sha256": "d7fa0914d7f153c658f0ec565ec4cc7863167a5c906c61dd000feb630f998dba"
+    },
+    {
+      "path": "source/aureon_packages/aurp_standard_library.py",
+      "bytes": 2979,
+      "sha256": "3d264343893d07a8a8a1b8969d6471197d3bcfd459d6bd269a5880303e27157e"
+    },
+    {
+      "path": "source/aureon_packages/expressions.py",
+      "bytes": 6398,
+      "sha256": "613599700ed8ecfcbd34d3ebaac42e52cf162ef6e90ef5895daef6bfd0389ba1"
+    },
+    {
+      "path": "source/aureon_packages/lights_config.py",
+      "bytes": 2979,
+      "sha256": "97852c9f002e16b7bc210c1314d0fb75b7e23d737b2aa1a6beeb3f43280fbcb5"
+    },
+    {
+      "path": "source/aureon_packages/limits.py",
+      "bytes": 2095,
+      "sha256": "8f207ff68e6d2dab842f1d3b408c2e807dd7da3e2317b550ddb07cd6f8f0eca2"
+    },
+    {
+      "path": "source/aureon_packages/previews.py",
+      "bytes": 1741,
+      "sha256": "37c10f0f081705ee903c111addca75728b9a5a2b6d9cdea4f8191a643a15ab7a"
+    },
+    {
+      "path": "source/aureon_packages/projection_surface.py",
+      "bytes": 1943,
+      "sha256": "51be79778777e82d3a16f342e67ffdc896ad8497e2c840c7870bc627ef37edcf"
+    },
+    {
+      "path": "source/aureon_packages/scene_audio.py",
+      "bytes": 5121,
+      "sha256": "79a5fe0fb6da4b754ddfd5b904d1611e9cf1bf0194ecf7b8b484c46cab19f64d"
+    },
+    {
+      "path": "source/aureon_packages/scene_runtime.py",
+      "bytes": 3633,
+      "sha256": "92ed8415be514ca50aed7b13e5a3c12410a0bed66b760f4d9908bfc5d3751406"
+    },
+    {
+      "path": "source/aureon_packages/scene_schema.py",
+      "bytes": 9677,
+      "sha256": "55e4d965436c53a49f0615b85295e26e864e8b34e745e3f48e9b1c2ccbdc0a64"
+    },
+    {
+      "path": "source/aureon_packages/scene_v2_runtime.py",
+      "bytes": 24868,
+      "sha256": "71f4647f1c4290dc3ece54203080a39b204978764a5cee9930269a244edfd0f3"
+    },
+    {
+      "path": "source/aureon_packages/scene_v2_schema.py",
+      "bytes": 19934,
+      "sha256": "7901b5cc3a11d9bc0ff8fda2bb79a078d22e21a516b32670ecf9e8c2532fa985"
+    },
+    {
+      "path": "source/aureon_packages/schema.py",
+      "bytes": 16866,
+      "sha256": "88ec1fe4421132d1976c1280b23b1cf33c1a3a2767fcfdcda7b5bfb7be4382f3"
+    },
+    {
+      "path": "source/aureon_packages/shader_library.py",
+      "bytes": 336,
+      "sha256": "5eb64f3d69520045dc1dccaaf1f066bd42b8601a566e490dfb03674ee4bb0d2b"
+    },
+    {
+      "path": "source/aureon_packages/standard_library.py",
+      "bytes": 53302,
+      "sha256": "2590f507fbef39bb2d24fca2cc3ecf8066d3baf3e567e9a10ff64a925536ef19"
+    },
+    {
+      "path": "source/aureon_packages/store.py",
+      "bytes": 27747,
+      "sha256": "4152c06155ef00aa62a949ebdeefe6f5123b9a26d95fe17bf8f60d7b1ebd3dd0"
+    },
+    {
+      "path": "source/aureon_packages/textures.py",
+      "bytes": 5310,
+      "sha256": "68ce7ec11abcaa275094d2bcd12155431453109e5aae495d687a927093417018"
+    },
+    {
+      "path": "source/aureon_performance.py",
+      "bytes": 10035,
+      "sha256": "c4e7e3760333a0b2a49115afc1bc95544e39a9db2b340cdfd68e01dcb264a334"
+    },
+    {
+      "path": "source/aureon_preview_cache.py",
+      "bytes": 487,
+      "sha256": "c73a399c56d401cf12f2ca86f648c0ab202c82fcdd82a6c0f2cb4139e76644aa"
+    },
+    {
+      "path": "source/aureon_visual_quality.py",
+      "bytes": 3153,
+      "sha256": "1c6ce1e104218d43be45fc8bcf4356932d87000b487ff79557858108a0348469"
+    },
+    {
+      "path": "source/idle/gl/__init__.py",
+      "bytes": 3046,
+      "sha256": "203f60a38ffa70c2ce12361fd3db38b915290ac3b6ed96f8b69880cb878912af"
+    },
+    {
+      "path": "source/idle/gl/antialiasing.py",
+      "bytes": 5119,
+      "sha256": "8749d289a37e97f4c8b2b7ddea366978519bb844854b000ec008f8590c07392b"
+    },
+    {
+      "path": "source/idle/gl/benchmark_scene.py",
+      "bytes": 841,
+      "sha256": "4940b635142d9471e16b3429c73ee6a47b61da22cbed84f9b6d02ed3bf50ded6"
+    },
+    {
+      "path": "source/idle/gl/device_info.py",
+      "bytes": 1876,
+      "sha256": "ff8613c416137e5b98e75872e0e6978dd3b7de3f9de22fc854d91de70a53a4d2"
+    },
+    {
+      "path": "source/idle/gl/gl_scene_widget.py",
+      "bytes": 31275,
+      "sha256": "c5f2fac801b95aff5320a4dcb5fa3cebb50c75910cc726b2fd1cb95c882d49c0"
+    },
+    {
+      "path": "source/idle/gl/horizon_audio.py",
+      "bytes": 3994,
+      "sha256": "5ffa64bc158b081d05d9976379ad0f6b1ca6db49481b950289b30ba43b92943a"
+    },
+    {
+      "path": "source/idle/gl/lava_horizon.py",
+      "bytes": 6351,
+      "sha256": "76624e6a0d40cf315ddcc167dfaeb7ae7a2f6dc4e87b1b817798928b715db10c"
+    },
+    {
+      "path": "source/idle/gl/orbital_dawn.py",
+      "bytes": 11840,
+      "sha256": "a0b738164a1f5249a4d5e480eabfd64108100bd7c081617284dc9234e4aa9a38"
+    },
+    {
+      "path": "source/idle/gl/quality.py",
+      "bytes": 221,
+      "sha256": "389681014878399bf62345163967fb1414c041bc7268c382cbdbf885fd386964"
+    },
+    {
+      "path": "source/idle/gl/scene_textures.py",
+      "bytes": 8171,
+      "sha256": "ff27cf6ab550b72db8537e5413eb56346a584ea48d8d9e10aaf8ec8564104acc"
+    },
+    {
+      "path": "source/idle/gl/shaders/antialias.frag",
+      "bytes": 3688,
+      "sha256": "773725918662f4c4a1f30a2e57fcfd4afcfcc47b6a7e259caead3cdc5950444d"
+    },
+    {
+      "path": "source/idle/gl/shaders/fullscreen.vert",
+      "bytes": 143,
+      "sha256": "e311201c1a8330b8c897091f299f9aa443c755c21de3cbefbb8acb2c650c72bb"
+    },
+    {
+      "path": "source/idle/gl/stellar_horizon.py",
+      "bytes": 2669,
+      "sha256": "c3a6a8cc65ec42b9f605e9d1e715cd5da3f25b2fcec9ce334b8c0104b09aedec"
+    },
+    {
+      "path": "source/idle/gl/storm_tornado.py",
+      "bytes": 12233,
+      "sha256": "09d0a5822c7169b20d904692f36b7dcb7835b5e615678ddde0a5ac6905dafa56"
+    },
+    {
+      "path": "source/idle/gl/volcanic_valley.py",
+      "bytes": 4797,
+      "sha256": "88fb540625dd3e35d8ccade7f5e997b892fd98c464fc23ef5ffe8fd4090634fa"
+    },
+    {
+      "path": "source/idle/render_quality.py",
+      "bytes": 683,
+      "sha256": "c4677a77209c761eb0487bf71c7a7d39e411a4af0164774f5c2fce315af0f4b2"
+    },
+    {
+      "path": "source/projection/__init__.py",
+      "bytes": 45,
+      "sha256": "38388238e53cb970a89cf6768517c605053b3d8306968b57710468c0c31d55b9"
+    },
+    {
+      "path": "source/projection/controller.py",
+      "bytes": 23919,
+      "sha256": "c1257a8ca40ebf3e4652eeb70e5d39e27a9dae19c24825b4669036c2c8992b23"
+    },
+    {
+      "path": "source/projection/declarative.py",
+      "bytes": 10681,
+      "sha256": "95a4261d029f9370c327430410c1a808ee4fb49aef28bfed42319278a5f48441"
+    },
+    {
+      "path": "source/projection/fullscreen.vert",
+      "bytes": 151,
+      "sha256": "db0cc3dbf92ede416c35781488bdb9f66727f7e6fdafe7302a3a5fae2f0e5a5f"
+    },
+    {
+      "path": "source/projection/gyro.frag",
+      "bytes": 1511,
+      "sha256": "e5102fb76f90f61e6ad72d706c3184c9ba75e2bdad344a0f788d249a18a16775"
+    },
+    {
+      "path": "source/projection/gyro.py",
+      "bytes": 3403,
+      "sha256": "0726130f56c89879fc469ed202a30eebc6442351484b14e0cee0116d68cf0e8e"
+    },
+    {
+      "path": "source/projection/gyro.vert",
+      "bytes": 993,
+      "sha256": "5ba6ec0a822445c1e143a852ef66cbb30ec4de127a4b84d15f841e8af2a879b0"
+    },
+    {
+      "path": "source/projection/hologram.py",
+      "bytes": 16282,
+      "sha256": "b29ea02e7a44572d685497b2dd19bb7fc21df213ac3a4da7162cf08969d2c133"
+    },
+    {
+      "path": "source/projection/holographic_orbit.frag",
+      "bytes": 4083,
+      "sha256": "7cbd756383c208215386855d49250b58a86f2d09bfc9618efce6d6d2ecf03bc6"
+    },
+    {
+      "path": "source/projection/host.py",
+      "bytes": 6909,
+      "sha256": "4a0302ecfa208e403a87985c0bc78bd8209cda7be46ff57f749fef13f4b71bd7"
+    },
+    {
+      "path": "source/projection/surface.frag",
+      "bytes": 1428,
+      "sha256": "6a00fef5d05db88d00ca46cee3fbc87080da1b284e6333a864866d76babec03e"
+    },
+    {
+      "path": "source/projection/surface.py",
+      "bytes": 14691,
+      "sha256": "ea6ec6256a41828341983dfdac5fd843937397bdb23a32f07aa604da61befb99"
+    },
+    {
+      "path": "source/projection/surface.vert",
+      "bytes": 1180,
+      "sha256": "6e70d9685fbae5ddb8d198a1b3d23de884de1a0fa3af4457bc0950139a4e20c0"
+    },
+    {
+      "path": "source/projection/surface_audio.py",
+      "bytes": 3758,
+      "sha256": "98b6f58a3e06e29292980fde0bea400bab03f738f171ba22ec5610b70e6b8c95"
+    },
+    {
+      "path": "source/projection/surface_post.frag",
+      "bytes": 562,
+      "sha256": "972595d139fca70ae9f6c382e23d533a4ad0f3e7f2727d6cadf6b5675fc7a9d8"
+    },
+    {
+      "path": "source/projection/surface_post.vert",
+      "bytes": 143,
+      "sha256": "097e681eb7111aaa6bc341fa8ce4b6f0b286091ef3efca0f1c4c2bf0887932c5"
+    },
+    {
+      "path": "source/README.md",
+      "bytes": 583,
+      "sha256": "bcde4b129ac4fc8e961671823c2a4941930547221ebb2eb89d5d3efd41575d70"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 51850,
+      "sha256": "5b8289cb99aa09dd6c3a6edb06535eec72ec005e6b83a1a2eed144289dd60799"
+    },
+    {
+      "path": "tools/pack_theme.py",
+      "bytes": 2410,
+      "sha256": "703c651462a44a5aea9134e749c59596cfefa7b6ba8a531c256a70d78c3284ab"
+    },
+    {
+      "path": "tools/validate_theme.py",
+      "bytes": 2761,
+      "sha256": "bbf5054b808db94d02dc7271f0828eb48570cce2263332cd370602da12a0b335"
+    },
+    {
+      "path": "validation/EN01_CHECK.json",
+      "bytes": 3334,
+      "sha256": "9245692578e7919ce307736da06ffa9526128fc21fee50c62b341d9e9c36bd7c"
+    },
+    {
+      "path": "validation/known_issues/shader_v1/manifest.json",
+      "bytes": 545,
+      "sha256": "4c41ff42aadda2832cbebbbb5214e3336ea1846e655201526a50ca4b414caa6e"
+    },
+    {
+      "path": "validation/known_issues/shader_v1/scene.json",
+      "bytes": 405,
+      "sha256": "e76c73667e4a30f3b7bb5f8a777acd31414cdf539436c53bb7f04d8f638af5e7"
+    },
+    {
+      "path": "validation/known_issues/shader_v1/shaders/main.frag",
+      "bytes": 351,
+      "sha256": "3d73a293e5ab9e3bfc19e7ed0e667970f71c411beffc2a2ce7234382ae47b643"
+    },
+    {
+      "path": "validation/known_issues/shader_v1.aurs",
+      "bytes": 1007,
+      "sha256": "b0cc2a3eb447f68068c3b76f075eb9595497161666295fc5a53edc33b535822e"
+    },
+    {
+      "path": "validation/known_issues/SHADER_V1_IMPORT.json",
+      "bytes": 241,
+      "sha256": "2b320c5a5198d221cb55a88532d062d3bec093b49d074b368cc6035e852c81a9"
+    },
+    {
+      "path": "validation/known_issues/SHADER_V1_IMPORT.md",
+      "bytes": 681,
+      "sha256": "1d34d88000278b32da057466963c96b7674884ce6cf5dcc9c969e825b7434e2e"
+    },
+    {
+      "path": "validation/preserved/aurp/Aureon_AURP01_validation.json",
+      "bytes": 2861,
+      "sha256": "ac107dbfd9401f31f266e777b777bfaa978505e48a7160e21b8eb7b204503e11"
+    },
+    {
+      "path": "validation/preserved/aurp/Gyro_Rings_GYRO01_validation.json",
+      "bytes": 2925,
+      "sha256": "d116d778e06ef164627d5b5eda75781ef275986cef31747c64d62aa24b3d0f8e"
+    },
+    {
+      "path": "validation/preserved/fix10/Aureon-WIN12-FIX09-validation.json",
+      "bytes": 33205,
+      "sha256": "778897a9df5303c31897b6e4686a1999ce71b4a8ad3c5d96d87f2bbf32ad168c"
+    },
+    {
+      "path": "validation/preserved/fix10/Aureon-WIN12-FIX10-validation.json",
+      "bytes": 29349,
+      "sha256": "4b6fefc678d4b4199dbd0cc219a10b7d451d29a83fd9d17446c856081b7268ba"
+    },
+    {
+      "path": "validation/preserved/STARTER_GL_EARLIER_SAME_TASK.json",
+      "bytes": 1088,
+      "sha256": "65ab8d020cc837efc81413c4658025a71fb269c2670f2c3928f52a53af8410d7"
+    },
+    {
+      "path": "VALIDATION_TROUBLESHOOTING.md",
+      "bytes": 3234,
+      "sha256": "73a4ec9d6c489087c1e2462f844eafc2fb6c32af3cb26491bf9b3a269f58783c"
+    }
+  ]
+}

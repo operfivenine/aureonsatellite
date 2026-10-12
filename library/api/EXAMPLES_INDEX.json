@@ -1,0 +1,109 @@
+{
+  "edition": "EN01",
+  "reference_host": "0.21.11 v354 WIN12 + FIX02-FIX10 + AURP01 (user-selected frozen baseline)",
+  "examples": [
+    {
+      "file": "examples/stock/Aureon_Holo_Planet_v3.aurp",
+      "status": "Verified shipped stock Canvas projection; matching source/App ZIP bytes",
+      "id": "org.aureon.holo_planet",
+      "version": "3.0.1",
+      "renderer": "projection.canvas.v1",
+      "required_features": [
+        "projection.hologram.experimental.v1",
+        "projection.light_canvas.experimental.v1",
+        "behavior.expression.v1"
+      ],
+      "sha256": "8455761cafbc1575e0abca78328f43805b2518c06e0e1548e240df1efc778bc0",
+      "bytes": 877
+    },
+    {
+      "file": "examples/stock/Aureon_Spectral_Core_v3.aurp",
+      "status": "Verified shipped stock Canvas projection; matching source/App ZIP bytes",
+      "id": "org.aureon.spectral_core",
+      "version": "3.0.1",
+      "renderer": "projection.canvas.v1",
+      "required_features": [
+        "projection.hologram.experimental.v1",
+        "projection.light_canvas.experimental.v1",
+        "behavior.expression.v1"
+      ],
+      "sha256": "ce1008bcdda02b4edcef20693fc68a649880a6d46267ac496a6c2a354cfa8c3c",
+      "bytes": 866
+    },
+    {
+      "file": "examples/starters/shader_v2.aurs",
+      "status": "Minimal editable EN starter; structural geometry preview placeholder where present",
+      "id": "org.aureon.en_starter_shader_v2",
+      "version": "1.0.0",
+      "renderer": "scene.fullscreen_frag.v2",
+      "required_features": [
+        "scene.fullscreen_frag.v2",
+        "behavior.envelope.v1",
+        "scene.uniforms.v1",
+        "scene.standard_library.v1"
+      ],
+      "sha256": "922fc211b9477d99fd95e4aa6259647e16686a76874a59689fcb5e3a68c1c7be",
+      "bytes": 1043
+    },
+    {
+      "file": "examples/starters/canvas.aurp",
+      "status": "Minimal editable EN starter; structural geometry preview placeholder where present",
+      "id": "org.aureon.en_starter_canvas",
+      "version": "1.0.0",
+      "renderer": "projection.canvas.v1",
+      "required_features": [
+        "projection.ring.v1",
+        "projection.radial_glow.v1",
+        "projection.light_canvas.experimental.v1",
+        "projection.standard_library.experimental.v1",
+        "behavior.envelope.v1"
+      ],
+      "sha256": "bbc8564c4bf8f3a8187f3c5530a164dc6d922afa916cc4c66a38f0dc5e903554",
+      "bytes": 835
+    },
+    {
+      "file": "examples/starters/surface.aurp",
+      "status": "Minimal editable EN starter; structural geometry preview placeholder where present",
+      "id": "org.aureon.en_starter_surface",
+      "version": "1.0.0",
+      "renderer": "projection.surface.experimental.v2",
+      "required_features": [
+        "projection.surface.experimental.v2",
+        "projection.spectrum64.experimental.v2",
+        "projection.gyro_rings.experimental.v1"
+      ],
+      "sha256": "a5023362a45a2d8781d887c0f7403e3d3a686a356ba01fad863c2654d8fc5954",
+      "bytes": 687
+    },
+    {
+      "file": "examples/starters/mesh.aurs",
+      "status": "Minimal editable EN starter; structural geometry preview placeholder where present",
+      "id": "org.aureon.en_starter_mesh",
+      "version": "1.0.0",
+      "renderer": "scene.mesh.experimental.v1",
+      "required_features": [
+        "scene.mesh.experimental.v1",
+        "scene.preview.v1"
+      ],
+      "sha256": "72215ec56e5b379a84656209fe54f9bcdf22d35a13b578155ab6de57f0c0efa1",
+      "bytes": 4132
+    },
+    {
+      "file": "examples/starters/hybrid.aurs",
+      "status": "Minimal editable EN starter; structural geometry preview placeholder where present",
+      "id": "org.aureon.en_starter_hybrid",
+      "version": "1.0.0",
+      "renderer": "scene.hybrid_mesh.experimental.v1",
+      "required_features": [
+        "scene.mesh.experimental.v1",
+        "scene.hybrid_mesh.experimental.v1",
+        "scene.standard_library.v1",
+        "scene.preview.v1"
+      ],
+      "sha256": "8125892e52e7a124a314e7e5407ff293bb291f4347b155f561137fe75b4790c8",
+      "bytes": 4665
+    }
+  ],
+  "excluded": "Outside-theme reference packages, optional build examples and later frozen AURP stages",
+  "scope": "Two exact stock Canvas packages plus five generic schema fixtures"
+}

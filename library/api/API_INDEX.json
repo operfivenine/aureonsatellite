@@ -1,0 +1,2144 @@
+{
+  "snapshot_date": "2026-10-12",
+  "reference_host": "0.21.11 v354 WIN12 + FIX02-FIX10 + AURP01 (user-selected frozen baseline)",
+  "library": {
+    "id": "aurs.standard",
+    "api_version": "1.1",
+    "status": "stable",
+    "namespace": "aur_",
+    "implementation_revision": 10
+  },
+  "profiles": {
+    "scene.fullscreen_frag.v1": {
+      "accepted_features": [
+        "behavior.envelope.v1",
+        "behavior.expression.v1",
+        "behavior.integrator.v1",
+        "scene.fullscreen_frag.v1",
+        "scene.quality.v1",
+        "scene.uniforms.v1"
+      ],
+      "required_base_features": [],
+      "capabilities": [
+        "audio.events.v1",
+        "audio.reactive.v1",
+        "audio.spectrum.v1",
+        "time.elapsed.v1"
+      ],
+      "status": "stable shader profile"
+    },
+    "scene.fullscreen_frag.v2": {
+      "accepted_features": [
+        "behavior.camera.v2",
+        "behavior.envelope.v1",
+        "behavior.events.v2",
+        "behavior.expression.v1",
+        "behavior.history.v2",
+        "behavior.integrator.v1",
+        "behavior.math.v2",
+        "behavior.modes.v2",
+        "behavior.presets.v2",
+        "behavior.state.v2",
+        "behavior.temporal.v2",
+        "behavior.transport.v1",
+        "scene.atmosphere_core.v1",
+        "scene.attachments.v1",
+        "scene.camera_manual.experimental.v1",
+        "scene.camera_presets.experimental.v1",
+        "scene.environment_core.v1",
+        "scene.fullscreen_frag.v1",
+        "scene.fullscreen_frag.v2",
+        "scene.instances.v1",
+        "scene.lighting_rig.v1",
+        "scene.lights_config.experimental.v1",
+        "scene.motion_core.v1",
+        "scene.normal_filtering.experimental.v1",
+        "scene.normal_mapping.experimental.v1",
+        "scene.object_core.v1",
+        "scene.object_motion.v1",
+        "scene.presentation_core.v1",
+        "scene.preview.v1",
+        "scene.quality.v1",
+        "scene.quality_extreme.experimental.v1",
+        "scene.scene_lights.experimental.v1",
+        "scene.shaderlib.v1",
+        "scene.spectrum.v2",
+        "scene.standard_library.v1",
+        "scene.texture_materials.experimental.v1",
+        "scene.textures2d.experimental.v1",
+        "scene.trails_lod.v1",
+        "scene.triplanar.experimental.v1",
+        "scene.uniforms.v1"
+      ],
+      "required_base_features": [],
+      "capabilities": [
+        "audio.events.v1",
+        "audio.reactive.v1",
+        "audio.spectrum.v1",
+        "time.elapsed.v1"
+      ],
+      "status": "stable shader profile"
+    },
+    "scene.mesh.experimental.v1": {
+      "accepted_features": [
+        "scene.mesh.experimental.v1",
+        "scene.preview.v1",
+        "scene.quality.v1"
+      ],
+      "required_base_features": [
+        "scene.mesh.experimental.v1"
+      ],
+      "capabilities": [
+        "audio.events.v1",
+        "audio.reactive.v1",
+        "audio.spectrum.v1",
+        "time.elapsed.v1"
+      ],
+      "status": "experimental"
+    },
+    "scene.hybrid_mesh.experimental.v1": {
+      "accepted_features": [
+        "scene.hybrid_mesh.experimental.v1",
+        "scene.mesh.experimental.v1",
+        "scene.mesh_animation.experimental.v1",
+        "scene.mesh_bindings.experimental.v1",
+        "scene.mesh_camera_settings.experimental.v1",
+        "scene.mesh_light_selection.experimental.v1",
+        "scene.mesh_materials.experimental.v1",
+        "scene.mesh_objects.experimental.v1",
+        "scene.mesh_reflection_resolution.experimental.v1",
+        "scene.mesh_reflections.experimental.v1",
+        "scene.mesh_transparency.experimental.v1",
+        "scene.preview.v1",
+        "scene.quality.v1",
+        "scene.standard_library.v1",
+        "scene.textures2d.experimental.v1"
+      ],
+      "required_base_features": [
+        "scene.mesh.experimental.v1",
+        "scene.hybrid_mesh.experimental.v1",
+        "scene.standard_library.v1"
+      ],
+      "capabilities": [
+        "audio.events.v1",
+        "audio.reactive.v1",
+        "audio.spectrum.v1",
+        "time.elapsed.v1"
+      ],
+      "status": "experimental"
+    }
+  },
+  "passes": [
+    {
+      "id": "pass01.camera",
+      "name": "Camera",
+      "feature": "behavior.camera.v2"
+    },
+    {
+      "id": "pass02.reactive",
+      "name": "Reactive Behavior",
+      "feature": "behavior.temporal.v2"
+    },
+    {
+      "id": "pass03.environment",
+      "name": "World / Environment",
+      "feature": "scene.environment_core.v1"
+    },
+    {
+      "id": "pass04.object",
+      "name": "Main Object / Geometry + Materials",
+      "feature": "scene.object_core.v1"
+    },
+    {
+      "id": "pass05.lighting",
+      "name": "Lighting / Material Response / Scene Lighting Rig",
+      "feature": "scene.lighting_rig.v1"
+    },
+    {
+      "id": "pass06.atmosphere",
+      "name": "Atmosphere / Volumetrics / Particles",
+      "feature": "scene.atmosphere_core.v1"
+    },
+    {
+      "id": "pass07.motion",
+      "name": "Events / Motion / Secondary Animation",
+      "feature": "scene.motion_core.v1"
+    },
+    {
+      "id": "pass08.presentation",
+      "name": "Polish / Quality / Presentation",
+      "feature": "scene.presentation_core.v1"
+    }
+  ],
+  "frozen_api_1_0_symbols": [
+    "AurLightRig",
+    "AurMaterial",
+    "AurPresentation",
+    "aur_aaCoverage",
+    "aur_aaLine",
+    "aur_addRim",
+    "aur_ambientMaterial",
+    "aur_applyFog",
+    "aur_attenuation",
+    "aur_beamCone",
+    "aur_beamTube",
+    "aur_bendX",
+    "aur_bloomContribution",
+    "aur_brdfLight",
+    "aur_cameraRay",
+    "aur_contrast",
+    "aur_depthFade",
+    "aur_detailScale",
+    "aur_diffuse",
+    "aur_distributionGGX",
+    "aur_dither",
+    "aur_dustField",
+    "aur_easeInOut",
+    "aur_easeSmoother",
+    "aur_emissiveSpill",
+    "aur_eventActive",
+    "aur_eventEaseOut",
+    "aur_eventGroup",
+    "aur_eventProgress",
+    "aur_eventPulse",
+    "aur_eventRing",
+    "aur_eventSeed",
+    "aur_eventSigned",
+    "aur_eventStrength",
+    "aur_eventVariant",
+    "aur_exposure",
+    "aur_fbm2",
+    "aur_fbm3",
+    "aur_filmGrain",
+    "aur_fogExp",
+    "aur_fogExp2",
+    "aur_fogNoise",
+    "aur_followMix",
+    "aur_fresnel",
+    "aur_fresnelSchlick",
+    "aur_geometrySchlickGGX",
+    "aur_geometrySmith",
+    "aur_glow",
+    "aur_grade",
+    "aur_hash11",
+    "aur_hash21",
+    "aur_hash22",
+    "aur_hash31",
+    "aur_hash33",
+    "aur_hazeDensity",
+    "aur_heightFog",
+    "aur_heightFogDensity",
+    "aur_layerBand",
+    "aur_liftGammaGain",
+    "aur_lightRig",
+    "aur_lineMask",
+    "aur_lit",
+    "aur_lookAt",
+    "aur_luminance",
+    "aur_material",
+    "aur_materialVariation",
+    "aur_motionCycle",
+    "aur_motionPingPong",
+    "aur_motionSine",
+    "aur_motionSmoothCycle",
+    "aur_motionTriangle",
+    "aur_noise2",
+    "aur_noise3",
+    "aur_opChamferUnion",
+    "aur_opIntersect",
+    "aur_opOnion",
+    "aur_opRound",
+    "aur_opSmoothUnion",
+    "aur_opSubtract",
+    "aur_opUnion",
+    "aur_palette",
+    "aur_phaseHG",
+    "aur_pivotRotateX",
+    "aur_pivotRotateY",
+    "aur_pivotRotateZ",
+    "aur_pointLight",
+    "aur_polarRepeat",
+    "aur_present",
+    "aur_presentation",
+    "aur_qualityLevel",
+    "aur_qualitySelect",
+    "aur_remap",
+    "aur_repeat1",
+    "aur_repeat2",
+    "aur_repeat3",
+    "aur_rim",
+    "aur_rimLight",
+    "aur_rot2",
+    "aur_rotateX",
+    "aur_rotateY",
+    "aur_rotateZ",
+    "aur_sat",
+    "aur_saturation",
+    "aur_screen",
+    "aur_sdBox",
+    "aur_sdCapsule",
+    "aur_sdCylinderY",
+    "aur_sdPlane",
+    "aur_sdRoundBox",
+    "aur_sdSphere",
+    "aur_sdTorus",
+    "aur_secondarySway",
+    "aur_segmentDistance",
+    "aur_sequenceWindow",
+    "aur_shadeLightRig",
+    "aur_shadeMaterial",
+    "aur_shadowTerm",
+    "aur_slideTransform",
+    "aur_smin",
+    "aur_softBloomMask",
+    "aur_softClip",
+    "aur_specular",
+    "aur_spotCone",
+    "aur_spotLight",
+    "aur_subpixelOffset",
+    "aur_tonemapAces",
+    "aur_tonemapReinhard",
+    "aur_twistY",
+    "aur_vignette"
+  ],
+  "frozen_api_1_1_symbols": [
+    "AurLightRig",
+    "AurMaterial",
+    "AurPresentation",
+    "aur_aaCoverage",
+    "aur_aaLine",
+    "aur_addRim",
+    "aur_ambientMaterial",
+    "aur_applyFog",
+    "aur_attenuation",
+    "aur_beamCone",
+    "aur_beamTube",
+    "aur_bendX",
+    "aur_bloomContribution",
+    "aur_brdfLight",
+    "aur_cameraRay",
+    "aur_contrast",
+    "aur_depthFade",
+    "aur_detailScale",
+    "aur_diffuse",
+    "aur_distributionGGX",
+    "aur_dither",
+    "aur_dustField",
+    "aur_easeInOut",
+    "aur_easeSmoother",
+    "aur_emissiveSpill",
+    "aur_eventActive",
+    "aur_eventEaseOut",
+    "aur_eventGroup",
+    "aur_eventProgress",
+    "aur_eventPulse",
+    "aur_eventRing",
+    "aur_eventSeed",
+    "aur_eventSigned",
+    "aur_eventStrength",
+    "aur_eventVariant",
+    "aur_exposure",
+    "aur_fbm2",
+    "aur_fbm3",
+    "aur_filmGrain",
+    "aur_fogExp",
+    "aur_fogExp2",
+    "aur_fogNoise",
+    "aur_followMix",
+    "aur_fresnel",
+    "aur_fresnelSchlick",
+    "aur_geometrySchlickGGX",
+    "aur_geometrySmith",
+    "aur_glow",
+    "aur_grade",
+    "aur_hash11",
+    "aur_hash21",
+    "aur_hash22",
+    "aur_hash31",
+    "aur_hash33",
+    "aur_hazeDensity",
+    "aur_heightFog",
+    "aur_heightFogDensity",
+    "aur_layerBand",
+    "aur_liftGammaGain",
+    "aur_lightRig",
+    "aur_lineMask",
+    "aur_lit",
+    "aur_lookAt",
+    "aur_luminance",
+    "aur_material",
+    "aur_materialVariation",
+    "aur_motionCycle",
+    "aur_motionPingPong",
+    "aur_motionSine",
+    "aur_motionSmoothCycle",
+    "aur_motionTriangle",
+    "aur_noise2",
+    "aur_noise3",
+    "aur_opChamferUnion",
+    "aur_opIntersect",
+    "aur_opOnion",
+    "aur_opRound",
+    "aur_opSmoothUnion",
+    "aur_opSubtract",
+    "aur_opUnion",
+    "aur_palette",
+    "aur_phaseHG",
+    "aur_pivotRotateX",
+    "aur_pivotRotateY",
+    "aur_pivotRotateZ",
+    "aur_pointLight",
+    "aur_polarRepeat",
+    "aur_present",
+    "aur_presentation",
+    "aur_qualityLevel",
+    "aur_qualitySelect",
+    "aur_remap",
+    "aur_repeat1",
+    "aur_repeat2",
+    "aur_repeat3",
+    "aur_rim",
+    "aur_rimLight",
+    "aur_rot2",
+    "aur_rotateX",
+    "aur_rotateY",
+    "aur_rotateZ",
+    "aur_sat",
+    "aur_saturation",
+    "aur_screen",
+    "aur_sdBox",
+    "aur_sdCapsule",
+    "aur_sdCylinderY",
+    "aur_sdPlane",
+    "aur_sdRoundBox",
+    "aur_sdSphere",
+    "aur_sdTorus",
+    "aur_secondarySway",
+    "aur_segmentDistance",
+    "aur_sequenceWindow",
+    "aur_shadeLightRig",
+    "aur_shadeMaterial",
+    "aur_shadowTerm",
+    "aur_slideTransform",
+    "aur_smin",
+    "aur_softBloomMask",
+    "aur_softClip",
+    "aur_specular",
+    "aur_spotCone",
+    "aur_spotLight",
+    "aur_subpixelOffset",
+    "aur_tonemapAces",
+    "aur_tonemapReinhard",
+    "aur_twistY",
+    "aur_vignette",
+    "AurPathSample",
+    "AurObjectPose",
+    "aur_objectUnit",
+    "aur_objectFrame",
+    "aur_objectEuler",
+    "aur_objectPose",
+    "aur_objectFollow",
+    "aur_objectToLocal",
+    "aur_objectToWorld",
+    "aur_objectNormal",
+    "aur_objectDistance",
+    "aur_pathLine",
+    "aur_pathOrbit",
+    "aur_pathShuttle",
+    "aur_shuttleHeading",
+    "aur_objectCompose",
+    "aur_objectSocket",
+    "aur_objectDirection",
+    "aur_attachmentJet",
+    "aur_attachmentBeacon",
+    "AurInstance",
+    "aur_instance",
+    "aur_instanceReaction",
+    "aur_instanceRing",
+    "aur_lodWeight",
+    "aur_trailFade",
+    "aur_trailSegment"
+  ],
+  "api_1_1_additive_features": [
+    "scene.object_motion.v1",
+    "scene.attachments.v1",
+    "scene.instances.v1",
+    "scene.trails_lod.v1"
+  ],
+  "modules": [
+    {
+      "id": "core.math",
+      "requires": [],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.math.glsl",
+      "functions": [
+        {
+          "name": "aur_sat",
+          "signature": "float aur_sat(float x)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_sat",
+          "signature": "vec2 aur_sat(vec2 x)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_sat",
+          "signature": "vec3 aur_sat(vec3 x)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_remap",
+          "signature": "float aur_remap(float x, float a, float b, float c, float d)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_rot2",
+          "signature": "mat2 aur_rot2(float a)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_smin",
+          "signature": "float aur_smin(float a, float b, float k)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_repeat1",
+          "signature": "float aur_repeat1(float x, float spacing)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_repeat2",
+          "signature": "vec2 aur_repeat2(vec2 p, vec2 spacing)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.noise",
+      "requires": [
+        "core.math"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.noise.glsl",
+      "functions": [
+        {
+          "name": "aur_hash11",
+          "signature": "float aur_hash11(float p)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_hash21",
+          "signature": "float aur_hash21(vec2 p)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_hash22",
+          "signature": "vec2 aur_hash22(vec2 p)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_hash31",
+          "signature": "float aur_hash31(vec3 p)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_noise2",
+          "signature": "float aur_noise2(vec2 p)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_noise3",
+          "signature": "float aur_noise3(vec3 p)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_fbm2",
+          "signature": "float aur_fbm2(vec2 p)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_fbm3",
+          "signature": "float aur_fbm3(vec3 p)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.sdf",
+      "requires": [
+        "core.math"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.sdf.glsl",
+      "functions": [
+        {
+          "name": "aur_sdSphere",
+          "signature": "float aur_sdSphere(vec3 p, float r)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_sdBox",
+          "signature": "float aur_sdBox(vec3 p, vec3 b)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_sdRoundBox",
+          "signature": "float aur_sdRoundBox(vec3 p, vec3 b, float r)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_sdCylinderY",
+          "signature": "float aur_sdCylinderY(vec3 p, vec2 h)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_sdCapsule",
+          "signature": "float aur_sdCapsule(vec3 p, vec3 a, vec3 b, float r)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_sdTorus",
+          "signature": "float aur_sdTorus(vec3 p, vec2 t)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_opUnion",
+          "signature": "float aur_opUnion(float a, float b)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_opIntersect",
+          "signature": "float aur_opIntersect(float a, float b)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_opSubtract",
+          "signature": "float aur_opSubtract(float a, float b)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_opSmoothUnion",
+          "signature": "float aur_opSmoothUnion(float a, float b, float k)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.lighting",
+      "requires": [
+        "core.math"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.lighting.glsl",
+      "functions": [
+        {
+          "name": "aur_diffuse",
+          "signature": "float aur_diffuse(vec3 n, vec3 l)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_fresnel",
+          "signature": "float aur_fresnel(vec3 n, vec3 v, float power)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_rim",
+          "signature": "float aur_rim(vec3 n, vec3 v, float width, float power)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_specular",
+          "signature": "float aur_specular(vec3 n, vec3 l, vec3 v, float roughness)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_attenuation",
+          "signature": "float aur_attenuation(float distanceToLight, float radius)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_shadowTerm",
+          "signature": "float aur_shadowTerm(float currentShadow, float fieldDistance, float travel, float softness)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_lit",
+          "signature": "vec3 aur_lit(vec3 baseColor, vec3 n, vec3 l, vec3 v, vec3 lightColor, float diffuseGain, float specularGain, float roughness)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.environment",
+      "requires": [
+        "core.math"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.environment.glsl",
+      "functions": [
+        {
+          "name": "aur_fogExp",
+          "signature": "float aur_fogExp(float distanceValue, float density)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_fogExp2",
+          "signature": "float aur_fogExp2(float distanceValue, float density)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_depthFade",
+          "signature": "float aur_depthFade(float distanceValue, float nearDistance, float farDistance)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_heightFog",
+          "signature": "float aur_heightFog(float worldY, float baseHeight, float falloff)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_applyFog",
+          "signature": "vec3 aur_applyFog(vec3 color, vec3 fogColor, float fogAmount)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.color",
+      "requires": [
+        "core.math"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.color.glsl",
+      "functions": [
+        {
+          "name": "aur_palette",
+          "signature": "vec3 aur_palette(float t, vec3 a, vec3 b, vec3 c, vec3 d)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_tonemapReinhard",
+          "signature": "vec3 aur_tonemapReinhard(vec3 c)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_tonemapAces",
+          "signature": "vec3 aur_tonemapAces(vec3 x)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_saturation",
+          "signature": "vec3 aur_saturation(vec3 c, float amount)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_contrast",
+          "signature": "vec3 aur_contrast(vec3 c, float amount)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.composition",
+      "requires": [
+        "core.math"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.composition.glsl",
+      "functions": [
+        {
+          "name": "aur_glow",
+          "signature": "float aur_glow(float signedDistance, float width, float intensity)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_lineMask",
+          "signature": "float aur_lineMask(float distanceValue, float width, float softness)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_vignette",
+          "signature": "float aur_vignette(vec2 centeredUv, float strength)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_screen",
+          "signature": "vec3 aur_screen(vec3 base, vec3 layer)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.camera",
+      "requires": [
+        "core.math"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.camera.glsl",
+      "functions": [
+        {
+          "name": "aur_lookAt",
+          "signature": "mat3 aur_lookAt(vec3 ro, vec3 target, float roll)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_cameraRay",
+          "signature": "vec3 aur_cameraRay(vec2 centeredUv, float aspect, vec3 ro, vec3 target, float fovDeg, float roll)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.geometry",
+      "requires": [
+        "core.math",
+        "core.sdf"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.geometry.glsl",
+      "functions": [
+        {
+          "name": "aur_rotateX",
+          "signature": "vec3 aur_rotateX(vec3 p, float a)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_rotateY",
+          "signature": "vec3 aur_rotateY(vec3 p, float a)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_rotateZ",
+          "signature": "vec3 aur_rotateZ(vec3 p, float a)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_twistY",
+          "signature": "vec3 aur_twistY(vec3 p, float amount)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_bendX",
+          "signature": "vec3 aur_bendX(vec3 p, float amount)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_repeat3",
+          "signature": "vec3 aur_repeat3(vec3 p, vec3 spacing)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_polarRepeat",
+          "signature": "vec2 aur_polarRepeat(vec2 p, float count)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_opOnion",
+          "signature": "float aur_opOnion(float d, float thickness)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_opRound",
+          "signature": "float aur_opRound(float d, float radius)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_opChamferUnion",
+          "signature": "float aur_opChamferUnion(float a, float b, float radius)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_sdPlane",
+          "signature": "float aur_sdPlane(vec3 p, vec3 normal, float offset)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.materials",
+      "requires": [
+        "core.math",
+        "core.lighting"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.materials.glsl",
+      "functions": [
+        {
+          "name": "aur_material",
+          "signature": "AurMaterial aur_material(vec3 baseColor, float roughness, float metalness, vec3 emission, float ao)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_materialVariation",
+          "signature": "vec3 aur_materialVariation(vec3 baseColor, float variation, float amount)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_shadeMaterial",
+          "signature": "vec3 aur_shadeMaterial(AurMaterial m, vec3 n, vec3 l, vec3 v, vec3 lightColor, float lightStrength, float shadow)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_addRim",
+          "signature": "vec3 aur_addRim(vec3 color, vec3 rimColor, vec3 n, vec3 v, float power, float strength)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": [
+        {
+          "name": "AurMaterial",
+          "fields": [
+            "vec3 baseColor",
+            "vec3 emission",
+            "float roughness",
+            "float metalness",
+            "float ao"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core.scene_lighting",
+      "requires": [
+        "core.math",
+        "core.lighting",
+        "core.materials"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.scene_lighting.glsl",
+      "functions": [
+        {
+          "name": "aur_lightRig",
+          "signature": "AurLightRig aur_lightRig( vec3 ambientColor, float ambientStrength, vec3 keyDirection, vec3 keyColor, float keyIntensity, vec3 fillDirection, vec3 fillColor, float fillIntensity, vec3 rimDirection, vec3 rimColor, float rimIntensity)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_fresnelSchlick",
+          "signature": "vec3 aur_fresnelSchlick(float cosTheta, vec3 f0)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_distributionGGX",
+          "signature": "float aur_distributionGGX(vec3 n, vec3 h, float roughness)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_geometrySchlickGGX",
+          "signature": "float aur_geometrySchlickGGX(float ndv, float roughness)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_geometrySmith",
+          "signature": "float aur_geometrySmith(vec3 n, vec3 v, vec3 l, float roughness)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_brdfLight",
+          "signature": "vec3 aur_brdfLight(AurMaterial m, vec3 n, vec3 v, vec3 l, vec3 lightColor, float intensity, float shadow)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_ambientMaterial",
+          "signature": "vec3 aur_ambientMaterial(AurMaterial m, vec3 ambientColor, float strength)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_rimLight",
+          "signature": "vec3 aur_rimLight(vec3 n, vec3 v, vec3 lightDirection, vec3 color, float intensity)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_shadeLightRig",
+          "signature": "vec3 aur_shadeLightRig(AurMaterial m, vec3 n, vec3 v, AurLightRig rig, float keyShadow)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_pointLight",
+          "signature": "vec3 aur_pointLight(AurMaterial m, vec3 n, vec3 v, vec3 p, vec3 lightPosition, vec3 lightColor, float intensity, float radius, float shadow)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_spotCone",
+          "signature": "float aur_spotCone(vec3 fromLightToPoint, vec3 lightForward, float innerCos, float outerCos)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_spotLight",
+          "signature": "vec3 aur_spotLight(AurMaterial m, vec3 n, vec3 v, vec3 p, vec3 lightPosition, vec3 lightForward, vec3 lightColor, float intensity, float radius, float innerCos, float outerCos, float shadow)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_emissiveSpill",
+          "signature": "vec3 aur_emissiveSpill(vec3 p, vec3 sourcePosition, vec3 sourceColor, float intensity, float radius)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": [
+        {
+          "name": "AurLightRig",
+          "fields": [
+            "vec3 ambientColor",
+            "float ambientStrength",
+            "vec3 keyDirection",
+            "vec3 keyColor",
+            "float keyIntensity",
+            "vec3 fillDirection",
+            "vec3 fillColor",
+            "float fillIntensity",
+            "vec3 rimDirection",
+            "vec3 rimColor",
+            "float rimIntensity"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core.atmosphere",
+      "requires": [
+        "core.math",
+        "core.noise",
+        "core.environment",
+        "core.composition"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.atmosphere.glsl",
+      "functions": [
+        {
+          "name": "aur_phaseHG",
+          "signature": "float aur_phaseHG(float cosTheta, float g)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_layerBand",
+          "signature": "float aur_layerBand(float worldY, float centerY, float halfWidth, float feather)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_heightFogDensity",
+          "signature": "float aur_heightFogDensity(vec3 p, float baseHeight, float density, float falloff)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_hazeDensity",
+          "signature": "float aur_hazeDensity(float travel, float startDistance, float endDistance, float density)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_segmentDistance",
+          "signature": "float aur_segmentDistance(vec3 p, vec3 a, vec3 b)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_beamTube",
+          "signature": "float aur_beamTube(vec3 p, vec3 a, vec3 b, float radius, float feather)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_beamCone",
+          "signature": "float aur_beamCone(vec3 p, vec3 origin, vec3 direction, float lengthValue, float radiusNear, float radiusFar, float feather)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_hash33",
+          "signature": "vec3 aur_hash33(vec3 p)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_dustField",
+          "signature": "float aur_dustField(vec3 p, float cellSize, float particleRadius, float density, float seed)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_fogNoise",
+          "signature": "float aur_fogNoise(vec3 p, float scale, float amount)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_scatterStep",
+          "signature": "void aur_scatterStep(inout vec3 scatter, inout float transmittance, vec3 sourceColor, float density, float stepLength)",
+          "contract": "implementation helper"
+        },
+        {
+          "name": "aur_softBloomMask",
+          "signature": "float aur_softBloomMask(float luminanceValue, float threshold, float knee)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_bloomContribution",
+          "signature": "vec3 aur_bloomContribution(vec3 emissionColor, float mask, float strength)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.motion",
+      "requires": [
+        "core.math",
+        "core.geometry"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.motion.glsl",
+      "functions": [
+        {
+          "name": "aur_motionSine",
+          "signature": "float aur_motionSine(float t, float speed, float phase)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_motionCycle",
+          "signature": "float aur_motionCycle(float t, float speed, float phase)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_motionTriangle",
+          "signature": "float aur_motionTriangle(float t, float speed, float phase)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_motionPingPong",
+          "signature": "float aur_motionPingPong(float t, float speed, float phase)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_motionSmoothCycle",
+          "signature": "float aur_motionSmoothCycle(float t, float speed, float phase)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_sequenceWindow",
+          "signature": "float aur_sequenceWindow(float t, float period, float start, float duration, float feather)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_easeInOut",
+          "signature": "float aur_easeInOut(float x)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_easeSmoother",
+          "signature": "float aur_easeSmoother(float x)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_pivotRotateX",
+          "signature": "vec3 aur_pivotRotateX(vec3 p, vec3 pivot, float angle)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_pivotRotateY",
+          "signature": "vec3 aur_pivotRotateY(vec3 p, vec3 pivot, float angle)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_pivotRotateZ",
+          "signature": "vec3 aur_pivotRotateZ(vec3 p, vec3 pivot, float angle)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_slideTransform",
+          "signature": "vec3 aur_slideTransform(vec3 p, vec3 direction, float distanceValue, float amount)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_secondarySway",
+          "signature": "float aur_secondarySway(float t, float speed, float primary, float lag, float amplitude)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_followMix",
+          "signature": "float aur_followMix(float currentLike, float targetLike, float amount)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventActive",
+          "signature": "float aur_eventActive(vec4 e)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventProgress",
+          "signature": "float aur_eventProgress(vec4 e)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventStrength",
+          "signature": "float aur_eventStrength(vec4 e)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventSeed",
+          "signature": "float aur_eventSeed(vec4 e)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventGroup",
+          "signature": "float aur_eventGroup(vec4 e)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventEaseOut",
+          "signature": "float aur_eventEaseOut(vec4 e, float powerValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventPulse",
+          "signature": "float aur_eventPulse(vec4 e, float attackFraction, float decayPower)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventRing",
+          "signature": "float aur_eventRing(vec4 e, float phase, float width)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventVariant",
+          "signature": "float aur_eventVariant(vec4 e, float count)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_eventSigned",
+          "signature": "float aur_eventSigned(vec4 e)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.presentation",
+      "requires": [
+        "core.math",
+        "core.noise",
+        "core.color",
+        "core.composition",
+        "core.atmosphere"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.presentation.glsl",
+      "functions": [
+        {
+          "name": "aur_luminance",
+          "signature": "float aur_luminance(vec3 c)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_qualityLevel",
+          "signature": "float aur_qualityLevel()",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_qualitySelect",
+          "signature": "float aur_qualitySelect(float lowValue, float mediumValue, float highValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_qualitySelect",
+          "signature": "vec3 aur_qualitySelect(vec3 lowValue, vec3 mediumValue, vec3 highValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_qualitySelect",
+          "signature": "float aur_qualitySelect(float lowValue, float mediumValue, float highValue, float extremeValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_qualitySelect",
+          "signature": "vec3 aur_qualitySelect(vec3 lowValue, vec3 mediumValue, vec3 highValue, vec3 extremeValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_detailScale",
+          "signature": "float aur_detailScale(float lowValue, float mediumValue, float highValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_aaCoverage",
+          "signature": "float aur_aaCoverage(float signedDistance)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_aaLine",
+          "signature": "float aur_aaLine(float signedDistance, float halfWidth)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_subpixelOffset",
+          "signature": "vec2 aur_subpixelOffset(int sampleIndex)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_exposure",
+          "signature": "vec3 aur_exposure(vec3 color, float stops)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_liftGammaGain",
+          "signature": "vec3 aur_liftGammaGain(vec3 color, vec3 lift, vec3 gammaValue, vec3 gain)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_grade",
+          "signature": "vec3 aur_grade(vec3 color, float contrastValue, float saturationValue, vec3 tint)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_softClip",
+          "signature": "vec3 aur_softClip(vec3 color, float shoulder)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_filmGrain",
+          "signature": "float aur_filmGrain(vec2 pixel, float timeValue, float amount)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_dither",
+          "signature": "vec3 aur_dither(vec3 color, vec2 pixel, float amount)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_presentation",
+          "signature": "AurPresentation aur_presentation(float exposureValue, float contrastValue, float saturationValue, float vignetteValue, float bloomThreshold, float bloomKnee, float bloomStrength, float grainValue, float ditherValue, vec3 tintValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_present",
+          "signature": "vec3 aur_present(vec3 hdrColor, vec2 centeredUv, vec2 fragCoord, float timeValue, AurPresentation p)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": [
+        {
+          "name": "AurPresentation",
+          "fields": [
+            "float exposure",
+            "float contrast",
+            "float saturation",
+            "float vignette",
+            "float bloomThreshold",
+            "float bloomKnee",
+            "float bloomStrength",
+            "float grain",
+            "float dither",
+            "vec3 tint"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core.object",
+      "requires": [
+        "core.math",
+        "core.noise",
+        "core.sdf",
+        "core.geometry",
+        "core.lighting",
+        "core.materials"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.object.glsl",
+      "functions": [],
+      "structs": []
+    },
+    {
+      "id": "core.world",
+      "requires": [
+        "core.math",
+        "core.noise",
+        "core.sdf",
+        "core.lighting",
+        "core.environment",
+        "core.color",
+        "core.composition",
+        "core.camera"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.world.glsl",
+      "functions": [],
+      "structs": []
+    },
+    {
+      "id": "core.object_motion",
+      "requires": [
+        "core.math"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.object_motion.glsl",
+      "functions": [
+        {
+          "name": "aur_objectUnit",
+          "signature": "vec3 aur_objectUnit(vec3 v, vec3 fallbackValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectFrame",
+          "signature": "mat3 aur_objectFrame(vec3 forwardValue, vec3 upHint)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectEuler",
+          "signature": "mat3 aur_objectEuler(vec3 angles)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectPose",
+          "signature": "AurObjectPose aur_objectPose(vec3 positionValue, vec3 angles, float scaleValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectFollow",
+          "signature": "AurObjectPose aur_objectFollow(AurPathSample path, vec3 upHint, vec3 fallbackForward, float scaleValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectToLocal",
+          "signature": "vec3 aur_objectToLocal(AurObjectPose o,vec3 worldPosition)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectToWorld",
+          "signature": "vec3 aur_objectToWorld(AurObjectPose o,vec3 localPosition)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectNormal",
+          "signature": "vec3 aur_objectNormal(AurObjectPose o,vec3 localNormal)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectDistance",
+          "signature": "float aur_objectDistance(AurObjectPose o,float localDistance)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_pathLine",
+          "signature": "AurPathSample aur_pathLine(vec3 origin,vec3 velocity,float timeValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_pathOrbit",
+          "signature": "AurPathSample aur_pathOrbit(vec3 center,vec3 axis,float radius,float angularSpeed,float phase,float timeValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_pathShuttle",
+          "signature": "AurPathSample aur_pathShuttle(vec3 a,vec3 b,float period,float phase,float timeValue)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_shuttleHeading",
+          "signature": "vec3 aur_shuttleHeading(vec3 a,vec3 b,vec3 upHint,float period,float phase,float timeValue,float turnFraction)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": [
+        {
+          "name": "AurPathSample",
+          "fields": [
+            "vec3 position",
+            "vec3 velocity"
+          ]
+        },
+        {
+          "name": "AurObjectPose",
+          "fields": [
+            "vec3 position",
+            "mat3 rotation",
+            "float scale"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core.attachments",
+      "requires": [
+        "core.object_motion"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.attachments.glsl",
+      "functions": [
+        {
+          "name": "aur_objectCompose",
+          "signature": "AurObjectPose aur_objectCompose(AurObjectPose parent, AurObjectPose child)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectSocket",
+          "signature": "AurObjectPose aur_objectSocket(AurObjectPose parent,vec3 localPosition,vec3 localAngles)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_objectDirection",
+          "signature": "vec3 aur_objectDirection(AurObjectPose pose,vec3 direction)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_attachmentJet",
+          "signature": "float aur_attachmentJet(vec3 worldPoint,AurObjectPose socket,float lengthValue,float radius,float timeValue,float strength)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_attachmentBeacon",
+          "signature": "float aur_attachmentBeacon(vec3 worldPoint,AurObjectPose socket,float radius,float timeValue,float frequency,float phase)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "core.instances",
+      "requires": [
+        "core.noise",
+        "core.object_motion"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.instances.glsl",
+      "functions": [
+        {
+          "name": "aur_instance",
+          "signature": "AurInstance aur_instance(int index,float groupSeed,vec2 speedRange,vec2 scaleRange,vec2 gainRange)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_instanceReaction",
+          "signature": "float aur_instanceReaction(AurInstance instance,float bandValue,float broadValue,float broadMix)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_instanceRing",
+          "signature": "vec3 aur_instanceRing(int index,int count,float radius,float phase)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": [
+        {
+          "name": "AurInstance",
+          "fields": [
+            "float seed",
+            "float phase",
+            "float speed",
+            "float scale",
+            "float gain",
+            "int band"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "core.trails_lod",
+      "requires": [
+        "core.math"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/core.trails_lod.glsl",
+      "functions": [
+        {
+          "name": "aur_lodWeight",
+          "signature": "float aur_lodWeight(float distanceValue,float nearDistance,float farDistance)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_trailFade",
+          "signature": "float aur_trailFade(float age,float lifetime)",
+          "contract": "stable API 1.1"
+        },
+        {
+          "name": "aur_trailSegment",
+          "signature": "float aur_trailSegment(vec3 ro,vec3 rd,float depth,vec3 a,vec3 b,float radius)",
+          "contract": "stable API 1.1"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "aurs.standard",
+      "requires": [
+        "core.world",
+        "core.object",
+        "core.scene_lighting",
+        "core.atmosphere",
+        "core.motion",
+        "core.presentation",
+        "core.object_motion",
+        "core.attachments",
+        "core.instances",
+        "core.trails_lod"
+      ],
+      "status": "stable implementation / compatibility",
+      "file": "glsl/aurs.standard.glsl",
+      "functions": [],
+      "structs": []
+    },
+    {
+      "id": "experimental.texture_materials",
+      "requires": [
+        "core.materials"
+      ],
+      "status": "experimental",
+      "file": "glsl/experimental.texture_materials.glsl",
+      "functions": [
+        {
+          "name": "aur_textureMaterial",
+          "signature": "AurMaterial aur_textureMaterial(vec3 colorSample, vec3 ormSample, vec3 emissionSample, vec3 tint, float roughnessScale, float metalnessScale, float aoStrength, float emissionStrength)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_packORM",
+          "signature": "vec3 aur_packORM(float occlusion, float roughness, float metalness)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_textureUV",
+          "signature": "vec2 aur_textureUV(vec2 uv, vec2 tiling, vec2 offset)",
+          "contract": "experimental"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "experimental.normal_mapping",
+      "requires": [],
+      "status": "experimental",
+      "file": "glsl/experimental.normal_mapping.glsl",
+      "functions": [
+        {
+          "name": "aur_decodeNormal",
+          "signature": "vec3 aur_decodeNormal(vec3 sampleValue, float strength, float greenSign)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_normalMap",
+          "signature": "vec3 aur_normalMap(vec3 geometricNormal, vec3 tangentU, vec3 tangentV, vec3 sampleValue, float strength, float greenSign)",
+          "contract": "experimental"
+        }
+      ],
+      "structs": []
+    },
+    {
+      "id": "experimental.triplanar",
+      "requires": [
+        "experimental.normal_mapping"
+      ],
+      "status": "experimental",
+      "file": "glsl/experimental.triplanar.glsl",
+      "functions": [
+        {
+          "name": "aur_triplanar",
+          "signature": "AurTriplanar aur_triplanar(vec3 position, vec3 normal, float scale, float sharpness)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_triplanarBlend",
+          "signature": "vec3 aur_triplanarBlend(AurTriplanar p, vec3 x, vec3 y, vec3 z)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_triplanarNormal",
+          "signature": "vec3 aur_triplanarNormal(AurTriplanar p, vec3 x, vec3 y, vec3 z, float strength, float greenSign)",
+          "contract": "experimental"
+        }
+      ],
+      "structs": [
+        {
+          "name": "AurTriplanar",
+          "fields": [
+            "vec2 uvX",
+            "vec2 uvY",
+            "vec2 uvZ",
+            "vec3 weights",
+            "vec3 signs",
+            "vec3 normal"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "experimental.scene_lights",
+      "requires": [
+        "core.scene_lighting",
+        "core.object_motion"
+      ],
+      "status": "experimental",
+      "file": "glsl/experimental.scene_lights.glsl",
+      "functions": [
+        {
+          "name": "aur_sceneDirectional",
+          "signature": "AurSceneLight aur_sceneDirectional(vec3 direction, vec3 color, float intensity)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_scenePoint",
+          "signature": "AurSceneLight aur_scenePoint(vec3 position, vec3 color, float intensity, float radius)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_sceneSpot",
+          "signature": "AurSceneLight aur_sceneSpot(vec3 position, vec3 direction, vec3 color, float intensity, float radius, float innerDegrees, float outerDegrees)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_sceneLightAttach",
+          "signature": "AurSceneLight aur_sceneLightAttach(AurSceneLight l, AurObjectPose pose)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_sceneLightGain",
+          "signature": "AurSceneLight aur_sceneLightGain(AurSceneLight l, float gain)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_sceneLightShade",
+          "signature": "vec3 aur_sceneLightShade(AurSceneLight l, AurMaterial material, vec3 position, vec3 normal, vec3 viewDirection, float visibility)",
+          "contract": "experimental"
+        }
+      ],
+      "structs": [
+        {
+          "name": "AurSceneLight",
+          "fields": [
+            "int kind",
+            "vec3 position",
+            "vec3 direction",
+            "vec3 color",
+            "float intensity",
+            "float radius",
+            "float innerCos",
+            "float outerCos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "experimental.normal_filtering",
+      "requires": [
+        "experimental.normal_mapping",
+        "core.materials"
+      ],
+      "status": "experimental",
+      "file": "glsl/experimental.normal_filtering.glsl",
+      "functions": [
+        {
+          "name": "aur_normalVariance5",
+          "signature": "float aur_normalVariance5(vec3 centerSample, vec3 plusU, vec3 minusU, vec3 plusV, vec3 minusV, float strength, float greenSign)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_filteredRoughness",
+          "signature": "float aur_filteredRoughness(float roughness, float normalVariance)",
+          "contract": "experimental"
+        },
+        {
+          "name": "aur_filterNormalMaterial",
+          "signature": "AurMaterial aur_filterNormalMaterial(AurMaterial material, float normalVariance)",
+          "contract": "experimental"
+        }
+      ],
+      "structs": []
+    }
+  ],
+  "shader_limits_WIN08": {
+    "archive_bytes": 838860800,
+    "expanded_bytes": 1677721600,
+    "resource_bytes": 419430400,
+    "json_bytes": 52428800,
+    "archive_entries": 7200,
+    "signals": 4800,
+    "expression_chars": 25600,
+    "expression_nodes": 9600,
+    "expression_depth": 1200,
+    "shader_bytes": 13107200,
+    "quality_defines": 1600,
+    "uniforms": 4800,
+    "textures": 400,
+    "image_axis": 204800,
+    "texture_bytes": 3355443200,
+    "lights": 400,
+    "camera_shots": 800,
+    "camera_presets": 800,
+    "camera_impulses": 800,
+    "event_types": 400,
+    "event_slots": 800,
+    "v1_loops": 800,
+    "v1_loop_budget": 409600,
+    "v2_loops": 3200,
+    "v2_loop_budget": 3276800,
+    "loop_iterations": 25600,
+    "loop_depth": 400,
+    "canvas_axis": 51200,
+    "supersample": 300,
+    "raster_scale": 400,
+    "projection_nodes": 12800,
+    "projection_depth": 800,
+    "holograms": 200,
+    "polygon_points": 12800,
+    "projection_image_pixels": 419430400
+  },
+  "audio": {
+    "shader_v2": [
+      "beat",
+      "brightness",
+      "crest",
+      "energy",
+      "fast",
+      "flare",
+      "flux",
+      "glint",
+      "high",
+      "low",
+      "medium",
+      "mid",
+      "onset",
+      "onset_strength",
+      "phase",
+      "presence",
+      "slow",
+      "zone0",
+      "zone1",
+      "zone2",
+      "zone3",
+      "zone4",
+      "zone5",
+      "zone6",
+      "zone7"
+    ],
+    "hybrid_expressions": [
+      "beat",
+      "energy",
+      "high",
+      "low",
+      "mid",
+      "presence"
+    ],
+    "runtime": [
+      "ambient",
+      "audio_active",
+      "audio_mode",
+      "paused",
+      "playing",
+      "reactive"
+    ],
+    "mesh_batch_audio_weights_order": [
+      "rms",
+      "low",
+      "mid",
+      "high",
+      "beat"
+    ]
+  },
+  "expression_functions": {
+    "sin": {
+      "minimum_arguments": 1,
+      "maximum_arguments": 1
+    },
+    "cos": {
+      "minimum_arguments": 1,
+      "maximum_arguments": 1
+    },
+    "abs": {
+      "minimum_arguments": 1,
+      "maximum_arguments": 1
+    },
+    "min": {
+      "minimum_arguments": 2,
+      "maximum_arguments": 4
+    },
+    "max": {
+      "minimum_arguments": 2,
+      "maximum_arguments": 4
+    },
+    "clamp": {
+      "minimum_arguments": 3,
+      "maximum_arguments": 3
+    },
+    "sqrt": {
+      "minimum_arguments": 1,
+      "maximum_arguments": 1
+    },
+    "exp": {
+      "minimum_arguments": 1,
+      "maximum_arguments": 1
+    },
+    "floor": {
+      "minimum_arguments": 1,
+      "maximum_arguments": 1
+    },
+    "ceil": {
+      "minimum_arguments": 1,
+      "maximum_arguments": 1
+    },
+    "fract": {
+      "minimum_arguments": 1,
+      "maximum_arguments": 1
+    },
+    "pow": {
+      "minimum_arguments": 2,
+      "maximum_arguments": 2
+    },
+    "lerp": {
+      "minimum_arguments": 3,
+      "maximum_arguments": 3
+    },
+    "smoothstep": {
+      "minimum_arguments": 3,
+      "maximum_arguments": 3
+    }
+  },
+  "shader_v2_signal_presets": [
+    "bass_punch",
+    "beat_punch",
+    "air",
+    "music_energy",
+    "broadband_pressure",
+    "slow_orbit"
+  ],
+  "hybrid_limits": {
+    "mesh_vertices_per_quality": 2000000,
+    "vertex_stride_bytes": 40,
+    "batches_per_quality": 128,
+    "shader_bytes": 131072,
+    "materials": 24,
+    "material_uniforms": 12,
+    "shared_signals": 32,
+    "textures": 8,
+    "texture_axis": 2048,
+    "texture_file_bytes": 8388608,
+    "texture_decoded_with_mips_bytes": 67108864,
+    "templates": 24,
+    "nodes": 2048,
+    "ancestry_depth": 8,
+    "authored_lights": 64,
+    "expanded_template_vertices": 2000000,
+    "light_slots": {
+      "low": 1,
+      "medium": 2,
+      "high": 4
+    },
+    "reflection_planes": 3,
+    "reflection_pass_maxima": {
+      "low": 0,
+      "medium": 1,
+      "high": 2
+    },
+    "reflection_long_side_max": 4096,
+    "route_keys": 128,
+    "camera_presets": 12,
+    "reflection_long_side_max_without_extension": 1024,
+    "reflection_long_side_extension": "scene.mesh_reflection_resolution.experimental.v1",
+    "reflection_size_multiple": 32,
+    "quality_names": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "allowed_signal_types": [
+      "expression",
+      "envelope",
+      "integrator",
+      "gate",
+      "spring"
+    ]
+  },
+  "standard_library_source_comparison": {
+    "current_hybrid05": {
+      "path": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-06\\neon-rain-zip-aurs-manifest-json-2\\work\\orbital_city_hybrid05\\source\\aureon_packages\\standard_library.py",
+      "sha256": "2590f507fbef39bb2d24fca2cc3ecf8066d3baf3e567e9a10ff64a925536ef19"
+    },
+    "win08_baseline": {
+      "path": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-06\\neon-rain-zip-aurs-manifest-json-2\\work\\win08_baseline\\aureon_packages\\standard_library.py",
+      "sha256": "2590f507fbef39bb2d24fca2cc3ecf8066d3baf3e567e9a10ff64a925536ef19"
+    },
+    "archived_scenes04": {
+      "path": "C:\\Users\\flipe\\Downloads\\Aureon\\03_Materials\\\u041a\u043e\u043c\u043f\u043b\u0435\u043a\u0442\u044b\\2026-09-29__files-mentioned-by-the-user-aureon\\AURS_API_SCENES04_2026-10-02\\source\\aureon_packages\\standard_library.py",
+      "sha256": "2590f507fbef39bb2d24fca2cc3ecf8066d3baf3e567e9a10ff64a925536ef19"
+    },
+    "byte_identical": true,
+    "current_glass05": {
+      "path": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-06\\neon-rain-zip-aurs-manifest-json-2\\work\\neon_concourse_glass05\\source\\aureon_packages\\standard_library.py",
+      "sha256": "2590f507fbef39bb2d24fca2cc3ecf8066d3baf3e567e9a10ff64a925536ef19"
+    },
+    "current_win12_fix10_aurp01": {
+      "path": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-11\\aurs-aurp\\work\\aurp-full\\Aureon_WIN12_FIX10_AURP01_SRC\\aureon_packages\\standard_library.py",
+      "sha256": "2590f507fbef39bb2d24fca2cc3ecf8066d3baf3e567e9a10ff64a925536ef19"
+    }
+  },
+  "revision": "EN01",
+  "geometry_antialiasing": {
+    "host_revision": "GLASS05 AA",
+    "required_feature_id": null,
+    "observed_RTX3070": {
+      "low": "FXAA",
+      "medium": "MSAA 2x + FXAA",
+      "high": "MSAA 4x + FXAA"
+    },
+    "reflection": "FXAA, no MSAA",
+    "temporal_history": false,
+    "UI": "after filter",
+    "evidence": "validation/glass05/aa_report.json"
+  },
+  "audit_window_moscow": [
+    "2026-10-11T13:05:00+03:00",
+    "2026-10-11T23:05:00+03:00"
+  ],
+  "scene_profile_feature_changes_since_REV02": {
+    "scene.fullscreen_frag.v1": {
+      "added": [],
+      "removed": []
+    },
+    "scene.fullscreen_frag.v2": {
+      "added": [],
+      "removed": []
+    },
+    "scene.mesh.experimental.v1": {
+      "added": [],
+      "removed": []
+    },
+    "scene.hybrid_mesh.experimental.v1": {
+      "added": [],
+      "removed": []
+    }
+  },
+  "projection_profiles": {
+    "projection.canvas.v1": {
+      "status": "Existing Canvas path",
+      "accepted_features": [
+        "behavior.envelope.v1",
+        "behavior.expression.v1",
+        "behavior.integrator.v1",
+        "projection.arc.v1",
+        "projection.ellipse.v1",
+        "projection.gradient.v1",
+        "projection.group.v1",
+        "projection.gyro_rings.experimental.v1",
+        "projection.hologram.experimental.v1",
+        "projection.image.v1",
+        "projection.light_canvas.experimental.v1",
+        "projection.line.v1",
+        "projection.polygon.v1",
+        "projection.polyline.v1",
+        "projection.radial_glow.v1",
+        "projection.ring.v1",
+        "projection.spectrum64.experimental.v2",
+        "projection.standard_library.experimental.v1",
+        "projection.surface.experimental.v2",
+        "projection.transform.v1"
+      ],
+      "note": "Manifest feature vocabulary is shared with surface; projection document schemas remain separate",
+      "library": {
+        "id": "aurp.standard",
+        "api_version": "1.0-foundation",
+        "feature": "projection.standard_library.experimental.v1"
+      }
+    },
+    "projection.surface.experimental.v2": {
+      "status": "experimental",
+      "entry": "projection.json",
+      "package_files": [
+        "manifest.json",
+        "projection.json"
+      ],
+      "required_base_features": [
+        "projection.surface.experimental.v2",
+        "projection.spectrum64.experimental.v2"
+      ],
+      "model_specific_features": {
+        "gyro_rings": [
+          "projection.gyro_rings.experimental.v1"
+        ],
+        "spectral_landscape": []
+      },
+      "models": [
+        "spectral_landscape",
+        "gyro_rings"
+      ],
+      "canvas_bounds": [
+        64,
+        512
+      ],
+      "canvas_conversion": "number then int",
+      "detail_bounds": [
+        16,
+        64
+      ],
+      "amplitude_bounds": [
+        0.2,
+        1.5
+      ],
+      "glow_bounds": [
+        0,
+        1
+      ],
+      "intensity_bounds": [
+        0.2,
+        1.5
+      ],
+      "tilt_bounds": [
+        25,
+        70
+      ],
+      "yaw_bounds": [
+        -35,
+        35
+      ],
+      "unknown_fields_rejected": true,
+      "user_glsl": false,
+      "user_mesh": false,
+      "audio_spectrum_bands": 64,
+      "audio_analyzer_hz": 20,
+      "artistic_glow_required": true,
+      "validator_allows_zero_glow": true,
+      "advanced_auto_supported": false
+    }
+  },
+  "application_quality_policy": {
+    "host_revision": "FIX10",
+    "is_package_schema": false,
+    "manual_per_scene": true,
+    "profile_limit": 256,
+    "resolution_percent": [
+      25,
+      50,
+      75,
+      100
+    ],
+    "imported_aurs_fields": [
+      "resolution",
+      "antialiasing",
+      "detail"
+    ],
+    "auto_levels": [
+      "lowest",
+      "low",
+      "medium",
+      "high"
+    ],
+    "gpu_p95_budget_ms": 14,
+    "frame_p95_budget_ms": 17,
+    "raster_cpu_p95_budget_ms": 14,
+    "downshift_bad_windows": 2,
+    "window_seconds": 2,
+    "automatic_promotion": false,
+    "manual_priority": true,
+    "aurp_supported": false,
+    "downshift_overload_thresholds_ms": {
+      "gpu_scene": 19,
+      "cpu": 19,
+      "composition": 25
+    },
+    "calibration_minimum_samples": {
+      "gpu_scene": 8,
+      "composition": 30,
+      "cpu": 30
+    }
+  },
+  "documentation_language": "en",
+  "other_aurp_stages": "frozen; excluded"
+}
