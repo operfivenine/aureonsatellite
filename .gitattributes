@@ -1,0 +1,2 @@
+# Preserve exact bytes for authoring manifests, packages and reference files.
+* -text
