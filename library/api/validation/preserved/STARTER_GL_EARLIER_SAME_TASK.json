@@ -1,0 +1,39 @@
+{
+  "origin": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-04\\new-chat\\work\\api-en-win12\\attempt-04\\validation\\EN01_CHECK.json",
+  "origin_sha256": "aebc49943969e988785a23d840e61a07c35aceca299c2313c4468abeca44981f",
+  "scope": "Extract of successful GL starter checks earlier in the same task; source identity reverified; unrelated earlier theme checks excluded",
+  "gl_device": {
+    "format_version": [
+      3,
+      3
+    ],
+    "profile": "CoreProfile",
+    "renderer": "unavailable through Qt function wrapper"
+  },
+  "shader_compilation": [
+    {
+      "case": "shader_v2/low",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "shader_v2/medium",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "shader_v2/high",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "mesh/material",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "hybrid/material",
+      "status": "COMPILE_LINK_PASS"
+    },
+    {
+      "case": "hybrid/background",
+      "status": "COMPILE_LINK_PASS"
+    }
+  ]
+}
