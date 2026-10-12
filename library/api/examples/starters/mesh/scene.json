@@ -1,0 +1,217 @@
+{
+  "libraries": [
+    "aurs.geometry.experimental"
+  ],
+  "environment": {
+    "fog_color": [
+      0.03,
+      0.03,
+      0.06
+    ],
+    "fog_density": 0,
+    "ambient": 1,
+    "planet_fill": 0,
+    "fill_origin": [
+      0,
+      0,
+      0
+    ]
+  },
+  "quality": {
+    "low": {
+      "mesh": "meshes/low.bin",
+      "batches": [
+        {
+          "offset": 0,
+          "count": 3,
+          "mode": "triangles",
+          "model": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lit": 0,
+          "emission": 0,
+          "fog": 0,
+          "rim": 0,
+          "style": 0,
+          "point_size": 1,
+          "point_pixels": 1,
+          "blend": false,
+          "depth": 0,
+          "surface_gain": 1,
+          "audio": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "medium": {
+      "mesh": "meshes/medium.bin",
+      "batches": [
+        {
+          "offset": 0,
+          "count": 3,
+          "mode": "triangles",
+          "model": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lit": 0,
+          "emission": 0,
+          "fog": 0,
+          "rim": 0,
+          "style": 0,
+          "point_size": 1,
+          "point_pixels": 1,
+          "blend": false,
+          "depth": 0,
+          "surface_gain": 1,
+          "audio": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    },
+    "high": {
+      "mesh": "meshes/high.bin",
+      "batches": [
+        {
+          "offset": 0,
+          "count": 3,
+          "mode": "triangles",
+          "model": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "lit": 0,
+          "emission": 0,
+          "fog": 0,
+          "rim": 0,
+          "style": 0,
+          "point_size": 1,
+          "point_pixels": 1,
+          "blend": false,
+          "depth": 0,
+          "surface_gain": 1,
+          "audio": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ]
+    }
+  },
+  "camera": {
+    "times": [
+      0,
+      10,
+      20,
+      30
+    ],
+    "eyes": [
+      [
+        0,
+        -6,
+        3
+      ],
+      [
+        4,
+        -4,
+        3
+      ],
+      [
+        0,
+        -6,
+        4
+      ],
+      [
+        0,
+        -6,
+        3
+      ]
+    ],
+    "targets": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "fov": 45,
+    "near": 0.1,
+    "far": 1000,
+    "presets": []
+  },
+  "statistics": {
+    "buildings": 0,
+    "objects": 1
+  }
+}
