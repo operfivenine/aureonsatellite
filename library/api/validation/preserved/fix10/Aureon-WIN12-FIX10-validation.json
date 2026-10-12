@@ -1,0 +1,1081 @@
+{
+  "base": "WIN12 + accepted fixes through FIX09",
+  "changed": [
+    "aureon_benchmark.py",
+    "aureon_geometry/widget.py",
+    "aureon_i18n.py",
+    "aureon_idle.py",
+    "aureon_settings.py",
+    "idle/gl/__init__.py",
+    "idle/gl/device_info.py",
+    "player.py",
+    "tests/test_win10_gl_diagnostics.py"
+  ],
+  "added": [
+    "aureon_auto_quality.py",
+    "aureon_calibration.py",
+    "tests/test_auto_quality.py"
+  ],
+  "source_only": true,
+  "unit": {
+    "run": 92,
+    "passed": 90,
+    "skipped": 2
+  },
+  "results": {
+    "smoke": {
+      "mode": "smoke",
+      "rows": [
+        {
+          "scene": "orbital_dawn_gl",
+          "elapsed": 4.584364100002858,
+          "result": {
+            "quality": "high",
+            "target_met": true,
+            "results": {
+              "lowest": {
+                "gpu_scene": {
+                  "p95": 0.141312,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.745899998553796,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "low": {
+                "gpu_scene": {
+                  "p95": 1.071104,
+                  "samples": 32
+                },
+                "composition": {
+                  "p95": 7.641399999556597,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "medium": {
+                "gpu_scene": {
+                  "p95": 2.276352,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.757999999739695,
+                  "samples": 124
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "high": {
+                "gpu_scene": {
+                  "p95": 2.870272,
+                  "samples": 32
+                },
+                "composition": {
+                  "p95": 7.639700001163874,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              }
+            },
+            "device": {
+              "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+              "vendor": "NVIDIA Corporation",
+              "version": "3.3.0 NVIDIA 591.86",
+              "glsl_version": "3.30 NVIDIA via Cg compiler",
+              "context": {
+                "version": [
+                  3,
+                  3
+                ],
+                "profile": "CoreProfile",
+                "gles": false
+              },
+              "dedicated_memory_mb": 8192.0
+            },
+            "target": [
+              1100,
+              606
+            ]
+          },
+          "levels": {
+            "lowest": [
+              550,
+              303
+            ],
+            "low": [
+              1100,
+              606
+            ],
+            "medium": [
+              1100,
+              606
+            ],
+            "high": [
+              1100,
+              606
+            ]
+          },
+          "mesh_msaa": {}
+        },
+        {
+          "scene": "storm_tornado_gl",
+          "elapsed": 4.590353299998242,
+          "result": {
+            "quality": "high",
+            "target_met": true,
+            "results": {
+              "lowest": {
+                "gpu_scene": {
+                  "p95": 1.466368,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.859299999836367,
+                  "samples": 124
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "low": {
+                "gpu_scene": {
+                  "p95": 2.798592,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.722700000158511,
+                  "samples": 123
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "medium": {
+                "gpu_scene": {
+                  "p95": 2.74944,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.633799999894109,
+                  "samples": 124
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "high": {
+                "gpu_scene": {
+                  "p95": 2.786304,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.722099999227794,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              }
+            },
+            "device": {
+              "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+              "vendor": "NVIDIA Corporation",
+              "version": "3.3.0 NVIDIA 591.86",
+              "glsl_version": "3.30 NVIDIA via Cg compiler",
+              "context": {
+                "version": [
+                  3,
+                  3
+                ],
+                "profile": "CoreProfile",
+                "gles": false
+              },
+              "dedicated_memory_mb": 8192.0
+            },
+            "target": [
+              1100,
+              606
+            ]
+          },
+          "levels": {
+            "lowest": [
+              550,
+              303
+            ],
+            "low": [
+              1100,
+              606
+            ],
+            "medium": [
+              1100,
+              606
+            ],
+            "high": [
+              1100,
+              606
+            ]
+          },
+          "mesh_msaa": {}
+        },
+        {
+          "scene": "volcanic_valley_gl",
+          "elapsed": 4.59320889999799,
+          "result": {
+            "quality": "high",
+            "target_met": true,
+            "results": {
+              "lowest": {
+                "gpu_scene": {
+                  "p95": 2.239488,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.582099999126513,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "low": {
+                "gpu_scene": {
+                  "p95": 3.661824,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.803499996953178,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "medium": {
+                "gpu_scene": {
+                  "p95": 3.844096,
+                  "samples": 32
+                },
+                "composition": {
+                  "p95": 7.628800001839409,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "high": {
+                "gpu_scene": {
+                  "p95": 4.462592,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.785000001604203,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              }
+            },
+            "device": {
+              "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+              "vendor": "NVIDIA Corporation",
+              "version": "3.3.0 NVIDIA 591.86",
+              "glsl_version": "3.30 NVIDIA via Cg compiler",
+              "context": {
+                "version": [
+                  3,
+                  3
+                ],
+                "profile": "CoreProfile",
+                "gles": false
+              },
+              "dedicated_memory_mb": 8192.0
+            },
+            "target": [
+              1100,
+              606
+            ]
+          },
+          "levels": {
+            "lowest": [
+              550,
+              303
+            ],
+            "low": [
+              1100,
+              606
+            ],
+            "medium": [
+              1100,
+              606
+            ],
+            "high": [
+              1100,
+              606
+            ]
+          },
+          "mesh_msaa": {}
+        },
+        {
+          "scene": "stellar_horizon_gl",
+          "elapsed": 4.591091800000868,
+          "result": {
+            "quality": "high",
+            "target_met": true,
+            "results": {
+              "lowest": {
+                "gpu_scene": {
+                  "p95": 0.238592,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.887700001447229,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "low": {
+                "gpu_scene": {
+                  "p95": 1.640448,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.853800001612399,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "medium": {
+                "gpu_scene": {
+                  "p95": 2.249728,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.862700000259792,
+                  "samples": 124
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "high": {
+                "gpu_scene": {
+                  "p95": 2.556928,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.746600000245962,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              }
+            },
+            "device": {
+              "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+              "vendor": "NVIDIA Corporation",
+              "version": "3.3.0 NVIDIA 591.86",
+              "glsl_version": "3.30 NVIDIA via Cg compiler",
+              "context": {
+                "version": [
+                  3,
+                  3
+                ],
+                "profile": "CoreProfile",
+                "gles": false
+              },
+              "dedicated_memory_mb": 8192.0
+            },
+            "target": [
+              1100,
+              606
+            ]
+          },
+          "levels": {
+            "lowest": [
+              550,
+              303
+            ],
+            "low": [
+              1100,
+              606
+            ],
+            "medium": [
+              1100,
+              606
+            ],
+            "high": [
+              1100,
+              606
+            ]
+          },
+          "mesh_msaa": {}
+        },
+        {
+          "scene": "lava_horizon_gl",
+          "elapsed": 4.596129400000791,
+          "result": {
+            "quality": "high",
+            "target_met": true,
+            "results": {
+              "lowest": {
+                "gpu_scene": {
+                  "p95": 1.56672,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.834799998818198,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "low": {
+                "gpu_scene": {
+                  "p95": 2.617344,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.772099997964688,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "medium": {
+                "gpu_scene": {
+                  "p95": 2.875392,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.766200000332901,
+                  "samples": 124
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "high": {
+                "gpu_scene": {
+                  "p95": 2.793472,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.637299997441005,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              }
+            },
+            "device": {
+              "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+              "vendor": "NVIDIA Corporation",
+              "version": "3.3.0 NVIDIA 591.86",
+              "glsl_version": "3.30 NVIDIA via Cg compiler",
+              "context": {
+                "version": [
+                  3,
+                  3
+                ],
+                "profile": "CoreProfile",
+                "gles": false
+              },
+              "dedicated_memory_mb": 8192.0
+            },
+            "target": [
+              1100,
+              606
+            ]
+          },
+          "levels": {
+            "lowest": [
+              550,
+              303
+            ],
+            "low": [
+              1100,
+              606
+            ],
+            "medium": [
+              1100,
+              606
+            ],
+            "high": [
+              1100,
+              606
+            ]
+          },
+          "mesh_msaa": {}
+        },
+        {
+          "scene": "orbital_dawn_reactive",
+          "elapsed": 2.407418200000393,
+          "result": {
+            "quality": "high",
+            "target_met": true,
+            "results": {
+              "lowest": {
+                "gpu_scene": {
+                  "p95": null,
+                  "samples": 0
+                },
+                "composition": {
+                  "p95": null,
+                  "samples": 0
+                },
+                "cpu": {
+                  "p95": 5.348200000298675,
+                  "samples": 53
+                }
+              },
+              "high": {
+                "gpu_scene": {
+                  "p95": null,
+                  "samples": 0
+                },
+                "composition": {
+                  "p95": null,
+                  "samples": 0
+                },
+                "cpu": {
+                  "p95": 7.204800000181422,
+                  "samples": 53
+                }
+              }
+            },
+            "device": {
+              "renderer": "QPainter",
+              "vendor": "Intel64 Family 6 Model 183 Stepping 1, GenuineIntel",
+              "version": "6.11.2"
+            },
+            "target": [
+              1100,
+              606
+            ]
+          },
+          "levels": {
+            "lowest": [
+              550,
+              303
+            ],
+            "high": [
+              1100,
+              606
+            ]
+          },
+          "mesh_msaa": {}
+        },
+        {
+          "scene": "lava_horizon_gl_reactive",
+          "elapsed": 4.660661400001118,
+          "result": {
+            "quality": "high",
+            "target_met": true,
+            "results": {
+              "lowest": {
+                "gpu_scene": {
+                  "p95": 2.108416,
+                  "samples": 32
+                },
+                "composition": {
+                  "p95": 7.809799997630762,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "low": {
+                "gpu_scene": {
+                  "p95": 2.0736,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.567200002085883,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "medium": {
+                "gpu_scene": {
+                  "p95": 2.628608,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.762699999148026,
+                  "samples": 124
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "high": {
+                "gpu_scene": {
+                  "p95": 2.609152,
+                  "samples": 31
+                },
+                "composition": {
+                  "p95": 7.8337999984796625,
+                  "samples": 125
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              }
+            },
+            "device": {
+              "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+              "vendor": "NVIDIA Corporation",
+              "version": "3.3.0 NVIDIA 591.86",
+              "glsl_version": "3.30 NVIDIA via Cg compiler",
+              "context": {
+                "version": [
+                  3,
+                  3
+                ],
+                "profile": "CoreProfile",
+                "gles": false
+              },
+              "dedicated_memory_mb": 8192.0
+            },
+            "target": [
+              1100,
+              606
+            ]
+          },
+          "levels": {
+            "lowest": [
+              550,
+              303
+            ],
+            "low": [
+              550,
+              303
+            ],
+            "medium": [
+              550,
+              303
+            ],
+            "high": [
+              550,
+              303
+            ]
+          },
+          "mesh_msaa": {}
+        },
+        {
+          "scene": "org.aureon.neon_concourse",
+          "elapsed": 5.094139500000892,
+          "result": {
+            "quality": "high",
+            "target_met": true,
+            "results": {
+              "lowest": {
+                "gpu_scene": {
+                  "p95": 1.229824,
+                  "samples": 60
+                },
+                "composition": {
+                  "p95": 4.8076999992190395,
+                  "samples": 240
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "low": {
+                "gpu_scene": {
+                  "p95": 1.804288,
+                  "samples": 60
+                },
+                "composition": {
+                  "p95": 4.827199998544529,
+                  "samples": 240
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "medium": {
+                "gpu_scene": {
+                  "p95": 1.93536,
+                  "samples": 46
+                },
+                "composition": {
+                  "p95": 6.079500002670102,
+                  "samples": 182
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "high": {
+                "gpu_scene": {
+                  "p95": 1.965056,
+                  "samples": 45
+                },
+                "composition": {
+                  "p95": 6.227199999557342,
+                  "samples": 177
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              }
+            },
+            "device": {
+              "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+              "vendor": "NVIDIA Corporation",
+              "version": "3.3.0 NVIDIA 591.86",
+              "glsl_version": "3.30 NVIDIA via Cg compiler",
+              "context": {
+                "version": [
+                  3,
+                  3
+                ],
+                "profile": "CoreProfile",
+                "gles": false
+              },
+              "dedicated_memory_mb": 8192.0
+            },
+            "target": [
+              1238,
+              694
+            ]
+          },
+          "levels": {
+            "lowest": [
+              619,
+              347
+            ],
+            "low": [
+              1238,
+              694
+            ],
+            "medium": [
+              1238,
+              694
+            ],
+            "high": [
+              1238,
+              694
+            ]
+          },
+          "mesh_msaa": {
+            "lowest": 0,
+            "low": 0,
+            "medium": 2,
+            "high": 4
+          }
+        }
+      ],
+      "screenshot": true,
+      "success": true
+    },
+    "full": {
+      "mode": "full",
+      "rows": [
+        {
+          "scene": "volcanic_valley_gl",
+          "elapsed": 16.471373600001243,
+          "result": {
+            "quality": "high",
+            "target_met": true,
+            "results": {
+              "lowest": {
+                "gpu_scene": {
+                  "p95": 1.746944,
+                  "samples": 90
+                },
+                "composition": {
+                  "p95": 7.8585000010207295,
+                  "samples": 359
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "low": {
+                "gpu_scene": {
+                  "p95": 9.293824,
+                  "samples": 92
+                },
+                "composition": {
+                  "p95": 7.764800000586547,
+                  "samples": 367
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "medium": {
+                "gpu_scene": {
+                  "p95": 9.740288,
+                  "samples": 89
+                },
+                "composition": {
+                  "p95": 7.910900003480492,
+                  "samples": 359
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              },
+              "high": {
+                "gpu_scene": {
+                  "p95": 10.817536,
+                  "samples": 86
+                },
+                "composition": {
+                  "p95": 11.101299998699687,
+                  "samples": 346
+                },
+                "cpu": {
+                  "p95": null,
+                  "samples": 0
+                }
+              }
+            },
+            "device": {
+              "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+              "vendor": "NVIDIA Corporation",
+              "version": "3.3.0 NVIDIA 591.86",
+              "glsl_version": "3.30 NVIDIA via Cg compiler",
+              "context": {
+                "version": [
+                  3,
+                  3
+                ],
+                "profile": "CoreProfile",
+                "gles": false
+              },
+              "dedicated_memory_mb": 8192.0
+            },
+            "target": [
+              1100,
+              606
+            ]
+          },
+          "levels": {
+            "lowest": [
+              550,
+              303
+            ],
+            "low": [
+              1100,
+              606
+            ],
+            "medium": [
+              1100,
+              606
+            ],
+            "high": [
+              1100,
+              606
+            ]
+          }
+        }
+      ],
+      "screenshot": true,
+      "success": true
+    },
+    "adaptive": {
+      "mode": "adaptive",
+      "rows": [
+        {
+          "scene": "volcanic_valley_gl",
+          "actual_adaptive_states": [
+            {
+              "quality": "medium",
+              "gpu_p95": 67.559424,
+              "frame_p95": 77.25280000158818
+            },
+            {
+              "quality": "low",
+              "gpu_p95": null,
+              "frame_p95": 11.791400000220165
+            },
+            {
+              "quality": "lowest",
+              "gpu_p95": 60.529664,
+              "frame_p95": 71.23549999960233
+            }
+          ],
+          "target": [
+            4800,
+            2631
+          ],
+          "render": [
+            960,
+            526
+          ],
+          "gpu": {
+            "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+            "vendor": "NVIDIA Corporation",
+            "version": "3.3.0 NVIDIA 591.86",
+            "glsl_version": "3.30 NVIDIA via Cg compiler",
+            "context": {
+              "version": [
+                3,
+                3
+              ],
+              "profile": "CoreProfile",
+              "gles": false
+            },
+            "dedicated_memory_mb": 8192.0
+          }
+        }
+      ],
+      "final_lowest_metrics": {
+        "cpu_behavior": {
+          "current": 0.0485,
+          "average": 0.026931914893617022,
+          "p95": 0.0489,
+          "max": 0.0814,
+          "samples": 94
+        },
+        "uniform_prep": {
+          "current": 0.0603,
+          "average": 0.030485106382978727,
+          "p95": 0.0371,
+          "max": 0.0733,
+          "samples": 94
+        },
+        "uniform_upload": {
+          "current": 0.0349,
+          "average": 0.03860851063829787,
+          "p95": 0.0547,
+          "max": 0.0661,
+          "samples": 94
+        },
+        "gpu_scene": {
+          "current": 3.826688,
+          "average": 3.0987130434782606,
+          "p95": 3.707904,
+          "max": 3.826688,
+          "samples": 23
+        },
+        "composition": {
+          "current": 14.143500000500353,
+          "average": 10.937768382358199,
+          "p95": 20.656599997892044,
+          "max": 37.85539999807952,
+          "samples": 136
+        },
+        "elapsed": 1.5014637999993283,
+        "textures": {
+          "count": 0,
+          "estimated_bytes": 0,
+          "decode_ms": 0.0,
+          "upload_ms": 0.0,
+          "sizes": ""
+        },
+        "antialiasing": "FXAA",
+        "antialiasing_reason": "",
+        "scene": "volcanic_valley_gl_reactive",
+        "gpu_available": true,
+        "gpu_reason": "",
+        "gpu_sample_stride": 4
+      },
+      "success": true
+    },
+    "ui": {
+      "success": true,
+      "rows": [
+        {
+          "style": "classic",
+          "language": "en",
+          "standard_selector": true
+        },
+        {
+          "style": "classic",
+          "language": "ru",
+          "standard_selector": true
+        },
+        {
+          "style": "classic",
+          "language": "zh-cn",
+          "standard_selector": true
+        },
+        {
+          "style": "glass",
+          "language": "en",
+          "standard_selector": true
+        },
+        {
+          "style": "glass",
+          "language": "ru",
+          "standard_selector": true
+        },
+        {
+          "style": "glass",
+          "language": "zh-cn",
+          "standard_selector": true
+        }
+      ],
+      "raster_downshift_and_manual_priority": true
+    }
+  },
+  "limitations": [
+    "GTX 1050/Intel performance not tested locally",
+    "Additional playing-audio resume test not executed: approval review service usage limit"
+  ],
+  "archive": {
+    "path": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-09\\new-chat\\outputs\\Aureon-0.21.11-v354-WIN12-FIX10-Auto-Calibration.zip",
+    "bytes": 333247,
+    "sha256": "a3dcfb6eecc6863396a20a363f0a7f6a38ea39c704b528e78c27507f01e20849",
+    "files": 22
+  }
+}

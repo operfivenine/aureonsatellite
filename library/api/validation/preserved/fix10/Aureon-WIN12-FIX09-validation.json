@@ -1,0 +1,1317 @@
+{
+  "base": "WIN12 + all accepted fixes through FIX08",
+  "changed": [
+    "aureon_geometry/widget.py",
+    "aureon_i18n.py",
+    "aureon_idle.py",
+    "aureon_settings.py",
+    "aureon_settings_core.py",
+    "idle/gl/__init__.py",
+    "idle/gl/gl_scene_widget.py",
+    "idle/gl/shaders/lava_horizon.frag",
+    "idle/gl/shaders/orbital_dawn.frag",
+    "idle/gl/shaders/stellar_horizon.frag",
+    "idle/gl/shaders/storm_tornado.frag",
+    "idle/gl/shaders/volcanic_valley.frag",
+    "idle/orbital_dawn.py",
+    "idle/orbital_dawn_reactive.py",
+    "idle/raster_antialiasing.py",
+    "idle/render_quality.py",
+    "idle/warp_audio_drive.py",
+    "player.py"
+  ],
+  "added": [
+    "aureon_visual_quality.py",
+    "tests/test_advanced_quality.py"
+  ],
+  "unit": {
+    "run": 84,
+    "passed": 82,
+    "skipped": 2
+  },
+  "graphics": {
+    "rows": [
+      {
+        "scene": "orbital_dawn_gl",
+        "case": "preset",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "orbital_dawn_gl",
+        "case": "antialiasing-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "orbital_dawn_gl",
+        "case": "stars-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "orbital_dawn_gl",
+        "case": "atmosphere-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "orbital_dawn_gl",
+        "case": "all-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "orbital_dawn_gl",
+        "case": "quarter-no-aa",
+        "quality": "low",
+        "render": [
+          275,
+          152
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "orbital_dawn_gl",
+        "case": "detail-high",
+        "quality": "high",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "orbital_dawn_gl_reactive",
+        "case": "shared-profile",
+        "quality": "high"
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "case": "preset",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "case": "antialiasing-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "case": "shadows-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "case": "reflections-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "case": "all-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "case": "quarter-no-aa",
+        "quality": "low",
+        "render": [
+          275,
+          152
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "case": "detail-high",
+        "quality": "high",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "storm_tornado_gl_reactive",
+        "case": "shared-profile",
+        "quality": "high"
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "case": "preset",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "case": "antialiasing-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "case": "shadows-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "case": "occlusion-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "case": "smoke-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "case": "particles-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "case": "all-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "case": "quarter-no-aa",
+        "quality": "low",
+        "render": [
+          275,
+          152
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "case": "detail-high",
+        "quality": "high",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "volcanic_valley_gl_reactive",
+        "case": "shared-profile",
+        "quality": "high"
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "case": "preset",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "case": "antialiasing-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "case": "stars-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "case": "nebula-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "case": "reflections-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "case": "all-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "case": "quarter-no-aa",
+        "quality": "low",
+        "render": [
+          275,
+          152
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "case": "detail-high",
+        "quality": "high",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "stellar_horizon_gl_reactive",
+        "case": "shared-profile",
+        "quality": "high"
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "preset",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "antialiasing-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "stars-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "shadows-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "soft_shadows-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "highlights-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "all-off",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "quarter-no-aa",
+        "quality": "low",
+        "render": [
+          275,
+          152
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "detail-high",
+        "quality": "high",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "soft-highlights",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "case": "detail-extreme",
+        "quality": "extreme",
+        "render": [
+          1100,
+          606
+        ],
+        "gpu": {
+          "renderer": "NVIDIA GeForce RTX 3070/PCIe/SSE2",
+          "vendor": "NVIDIA Corporation",
+          "version": "3.3.0 NVIDIA 591.86",
+          "glsl_version": "3.30 NVIDIA via Cg compiler",
+          "context": {
+            "version": [
+              3,
+              3
+            ],
+            "profile": "CoreProfile",
+            "gles": false
+          }
+        }
+      },
+      {
+        "scene": "lava_horizon_gl_reactive",
+        "case": "shared-profile",
+        "quality": "extreme"
+      },
+      {
+        "scene": "org.aureon.neon_concourse",
+        "case": "preset",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ]
+      },
+      {
+        "scene": "org.aureon.neon_concourse",
+        "case": "quarter-no-aa",
+        "quality": "low",
+        "render": [
+          275,
+          152
+        ]
+      },
+      {
+        "scene": "org.aureon.neon_concourse",
+        "case": "detail-low",
+        "quality": "low",
+        "render": [
+          550,
+          303
+        ]
+      },
+      {
+        "scene": "org.aureon.neon_concourse",
+        "case": "reset",
+        "quality": "low",
+        "render": [
+          1100,
+          606
+        ]
+      }
+    ],
+    "scope": "Unswitched private desktop; actual native GL context and FBO",
+    "success": true,
+    "detail_override_resize_no_recompile": true
+  },
+  "reference": {
+    "rows": [
+      {
+        "scene": "orbital_dawn_gl",
+        "quality": "low",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "orbital_dawn_gl",
+        "quality": "medium",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "orbital_dawn_gl",
+        "quality": "high",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "quality": "low",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "quality": "medium",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "storm_tornado_gl",
+        "quality": "high",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "quality": "low",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "quality": "medium",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "volcanic_valley_gl",
+        "quality": "high",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "quality": "low",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "quality": "medium",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "stellar_horizon_gl",
+        "quality": "high",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "quality": "low",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "quality": "medium",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "quality": "high",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      },
+      {
+        "scene": "lava_horizon_gl",
+        "quality": "extreme",
+        "size": [
+          950,
+          519
+        ],
+        "max_channel_difference": 0,
+        "changed_channels": 0
+      }
+    ],
+    "success": true
+  },
+  "ui": {
+    "ui": [
+      {
+        "style": "classic",
+        "language": "en",
+        "scene_change": true,
+        "reactive_shared": true,
+        "scene_reset": true
+      },
+      {
+        "style": "classic",
+        "language": "ru",
+        "scene_change": true,
+        "reactive_shared": true,
+        "scene_reset": true
+      },
+      {
+        "style": "classic",
+        "language": "zh-cn",
+        "scene_change": true,
+        "reactive_shared": true,
+        "scene_reset": true
+      },
+      {
+        "style": "glass",
+        "language": "en",
+        "scene_change": true,
+        "reactive_shared": true,
+        "scene_reset": true
+      },
+      {
+        "style": "glass",
+        "language": "ru",
+        "scene_change": true,
+        "reactive_shared": true,
+        "scene_reset": true
+      },
+      {
+        "style": "glass",
+        "language": "zh-cn",
+        "scene_change": true,
+        "reactive_shared": true,
+        "scene_reset": true
+      }
+    ],
+    "raster": [
+      {
+        "scene": "default",
+        "preset_identical": true,
+        "stars_effective": true,
+        "overlay_identical": true
+      },
+      {
+        "scene": "warp",
+        "preset_identical": true,
+        "stars_effective": true,
+        "overlay_identical": true
+      },
+      {
+        "scene": "warp_audio_drive",
+        "preset_identical": true,
+        "stars_effective": true,
+        "overlay_identical": true
+      },
+      {
+        "scene": "orbital_dawn",
+        "preset_identical": true,
+        "stars_effective": true,
+        "overlay_identical": true
+      },
+      {
+        "scene": "orbital_dawn_reactive",
+        "preset_identical": true,
+        "stars_effective": true,
+        "overlay_identical": true
+      }
+    ],
+    "success": true
+  },
+  "source_only": true,
+  "archive": {
+    "path": "C:\\Users\\flipe\\Documents\\Codex\\2026-10-09\\new-chat\\outputs\\Aureon-0.21.11-v354-WIN12-FIX09-Advanced.zip",
+    "bytes": 425920,
+    "sha256": "8ada151bcc53904079965f6190a563d1f9884bffa3bdae1792fbb9e3e2ede26c",
+    "files": 39
+  }
+}
