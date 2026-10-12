@@ -1,0 +1,22 @@
+{
+  "canvas": {
+    "width": 208,
+    "height": 186
+  },
+  "surface": {
+    "model": "gyro_rings",
+    "detail": 48,
+    "amplitude": 1,
+    "glow": 0.5,
+    "intensity": 1
+  },
+  "palette": {
+    "primary": "#41d7ff",
+    "secondary": "#795afa",
+    "accent": "#ff548f"
+  },
+  "camera": {
+    "tilt": 48,
+    "yaw": -12
+  }
+}

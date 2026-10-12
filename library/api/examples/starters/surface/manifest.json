@@ -1,0 +1,26 @@
+{
+  "format": "aureon.theme",
+  "package_type": "projection",
+  "format_version": 1,
+  "id": "org.aureon.en_starter_surface",
+  "version": "1.0.0",
+  "name": {
+    "en": "EN starter surface"
+  },
+  "author": {
+    "name": "Aureon reference kit"
+  },
+  "engine": {
+    "api_major": 1,
+    "min_aureon": "0.21.11"
+  },
+  "renderer": "projection.surface.experimental.v2",
+  "entry": "projection.json",
+  "features": {
+    "required": [
+      "projection.surface.experimental.v2",
+      "projection.spectrum64.experimental.v2",
+      "projection.gyro_rings.experimental.v1"
+    ]
+  }
+}
