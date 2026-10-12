@@ -79,7 +79,7 @@ Aureon объединяет воспроизведение и визуальны
 
 ### Создать свою сцену или проекцию
 
-**[API-библиотека для авторов (EN)](library/api/README.md)** описывает **WIN12 + FIX02–FIX10 + AURP01**: API стандартной библиотеки AURS **1.1**, пять технических starters и инструменты упаковки / проверки.
+**[API-библиотека для авторов (EN)](library/api/README.md)** описывает API стандартной библиотеки AURS **1.1**, пять технических starters и инструменты упаковки / проверки.
 
 [Начать разработку (EN)](library/api/GETTING_STARTED.md) · [Справочник API (EN)](library/api/API_REFERENCE.md) · [Скачать комплект для авторов](library/aureon-authoring-api-en.zip)
 

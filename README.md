@@ -79,7 +79,7 @@ Expand Aureon with custom visual scenes and floating projections.
 
 ### Create your own scene or projection
 
-The **[Authoring API reference (EN)](library/api/README.md)** covers **WIN12 + FIX02–FIX10 + AURP01**, with AURS standard library API **1.1**, five editable technical starters, and packaging / validation tools.
+The **[Authoring API reference (EN)](library/api/README.md)** covers AURS standard library API **1.1**, five editable technical starters, and packaging / validation tools.
 
 [Getting started](library/api/GETTING_STARTED.md) · [API reference](library/api/API_REFERENCE.md) · [Download the authoring kit](library/aureon-authoring-api-en.zip)
 
