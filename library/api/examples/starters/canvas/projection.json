@@ -1,0 +1,42 @@
+{
+  "canvas": {
+    "width": 208,
+    "height": 186,
+    "supersample": 2,
+    "bloom": 0.15
+  },
+  "libraries": [
+    "aurp.standard"
+  ],
+  "signals": {
+    "bass": {
+      "type": "envelope",
+      "expr": "clamp(audio.low*2,0,1)",
+      "attack": 0.025,
+      "release": 0.18
+    }
+  },
+  "nodes": [
+    {
+      "type": "radial_glow",
+      "center": [
+        104,
+        93
+      ],
+      "radius": "28+signal.bass*16",
+      "color": "#419dff",
+      "strength": 0.35
+    },
+    {
+      "type": "ring",
+      "center": [
+        104,
+        93
+      ],
+      "rx": "36+aur_sat(signal.bass)*14",
+      "ry": "24+aur_sat(signal.bass)*9",
+      "color": "#6fdcff",
+      "width": 2
+    }
+  ]
+}

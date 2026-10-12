@@ -1,0 +1,28 @@
+{
+  "format": "aureon.theme",
+  "package_type": "projection",
+  "format_version": 1,
+  "id": "org.aureon.en_starter_canvas",
+  "version": "1.0.0",
+  "name": {
+    "en": "EN starter canvas"
+  },
+  "author": {
+    "name": "Aureon reference kit"
+  },
+  "engine": {
+    "api_major": 1,
+    "min_aureon": "0.21.11"
+  },
+  "renderer": "projection.canvas.v1",
+  "entry": "projection.json",
+  "features": {
+    "required": [
+      "projection.ring.v1",
+      "projection.radial_glow.v1",
+      "projection.light_canvas.experimental.v1",
+      "projection.standard_library.experimental.v1",
+      "behavior.envelope.v1"
+    ]
+  }
+}
