@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="#скачать"><img src="assets/readme/button-download.svg" alt="Download for Windows"></a>
+  <a href="https://github.com/operfivenine/aureonsatellite/releases/download/v0.22.3-v367/Aureon-0.22.3-v367-Setup-x64.exe"><img src="assets/readme/button-download.svg" alt="Download for Windows"></a>
   <a href="docs/user-guide.ru.md"><img src="assets/readme/button-guide.svg" alt="Read the user guide"></a>
   <a href="https://boosty.to/oper59"><img src="assets/readme/button-support.svg" alt="Support Aureon"></a>
 </p>
@@ -33,9 +33,9 @@ Aureon объединяет воспроизведение и визуальны
 
 ## Скачать
 
-**Aureon 0.21.11 · v354 · Windows x64**
+**Aureon 0.22.3 · v367 · Windows x64**
 
-**[Скачать установщик — 177.3 МиБ](https://github.com/operfivenine/aureonsatellite/releases/download/v0.21.11-v354/Aureon-0.21.11-v354-Setup-x64.exe)** · [Релиз и контрольные суммы](https://github.com/operfivenine/aureonsatellite/releases/tag/v0.21.11-v354)
+**[Скачать установщик — 177.3 МиБ](https://github.com/operfivenine/aureonsatellite/releases/download/v0.22.3-v367/Aureon-0.22.3-v367-Setup-x64.exe)** · [Описание релиза](https://github.com/operfivenine/aureonsatellite/releases/tag/v0.22.3-v367)
 
 Приложение уже установлено? Начните с [руководства пользователя](docs/user-guide.ru.md).
 

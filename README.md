@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="#download"><img src="assets/readme/button-download.svg" alt="Download for Windows"></a>
+  <a href="https://github.com/operfivenine/aureonsatellite/releases/download/v0.22.3-v367/Aureon-0.22.3-v367-Setup-x64.exe"><img src="assets/readme/button-download.svg" alt="Download for Windows"></a>
   <a href="docs/user-guide.md"><img src="assets/readme/button-guide.svg" alt="Read the user guide"></a>
   <a href="https://boosty.to/oper59"><img src="assets/readme/button-support.svg" alt="Support Aureon"></a>
 </p>
@@ -33,9 +33,9 @@ The application is free to use. Supporting its creator is optional.
 
 ## Download
 
-**Aureon 0.21.11 · v354 · Windows x64**
+**Aureon 0.22.3 · v367 · Windows x64**
 
-**[Download the installer — 177.3 MiB](https://github.com/operfivenine/aureonsatellite/releases/download/v0.21.11-v354/Aureon-0.21.11-v354-Setup-x64.exe)** · [Release notes and checksums](https://github.com/operfivenine/aureonsatellite/releases/tag/v0.21.11-v354)
+**[Download the installer — 177.3 MiB](https://github.com/operfivenine/aureonsatellite/releases/download/v0.22.3-v367/Aureon-0.22.3-v367-Setup-x64.exe)** · [Release notes](https://github.com/operfivenine/aureonsatellite/releases/tag/v0.22.3-v367)
 
 Already have Aureon installed? Start with the [user guide](docs/user-guide.md).
 
