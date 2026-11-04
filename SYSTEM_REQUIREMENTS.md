@@ -2,28 +2,24 @@
 
 [← Aureon](README.md) · [Русский](SYSTEM_REQUIREMENTS.ru.md)
 
-## System requirements
+## Tested systems
 
-| Component | Requirement / tested configuration |
-| --- | --- |
-| Architecture | Windows x64. ARM64 emulation has not been tested. |
-| OS | Windows 11 24H2 / 25H2 tested, including IoT Enterprise LTSC 24H2. |
-| Installer | Windows 10 build 19045 or later; application runtime on Windows 10 was not tested here. |
-| OpenGL scenes | OpenGL 3.3 Core driver. Iris Xe, GTX 1050 and RTX 3070 tested. |
-| QPainter scenes | Orbital Dawn and Warp use CPU rendering; their scene renderer does not require a dedicated GPU. |
-| CPU / RAM | Minimum not measured. The lowest tested configuration is Core i5-7300HQ / 12 GB; this does not establish a 12 GB RAM requirement. |
-| Graphics memory | Iris Xe shared memory and 2 / 8 GB discrete VRAM tested. |
-| Components | Python and Qt are included in the Windows package; no separate Python installation is required. |
+| System | CPU / RAM | GPU | OS / environment | Result |
+| --- | --- | --- | --- | --- |
+| HP OMEN | i5-7300HQ / 12 GB | GTX 1050 · 2 GB | Windows 11 IoT Enterprise LTSC 24H2 · 26100.9550 | Tested; up to 60 FPS¹ |
+| MSI Evo E13 Flip | i7-1185G7 / 16 GB | Iris Xe | Windows 11 25H2 · 26200.9457 | Tested; up to 60 FPS¹ |
+| Desktop | i5-13600KF / 32 GB | RTX 3070 · 8 GB | **Windows 11 26H2 · 26300.9711** | **Tests passed**; 60+ FPS¹ |
+| Linux · VM | — | VMware SVGA3D | Mint 22.3 Cinnamon / X11 · x86_64 | 324 passed, 15 skipped; tray, mini-player, projections and packages |
+| macOS · VM | Intel x86_64 | — | macOS · virtual machine | Baseline: 324 passed, 13 skipped²; menus, DPR, launch, signing and DMG |
+| iMac · physical device | Intel Core i3 · 4 cores · 3.6 GHz / RAM — | Radeon Pro 555X | macOS · Intel | All tested AURS scenes render correctly |
 
-## Tested devices
+¹ FPS guidelines are retained from earlier Windows measurements, not new v385 measurements on 26H2. No Linux/macOS FPS values are reported. A dash means details were not provided.
 
-| Device | CPU / RAM | GPU | Windows |
-| --- | --- | --- | --- |
-| HP OMEN | i5-7300HQ / 12 GB | GTX 1050 · 2 GB | IoT Enterprise LTSC 24H2 · 26100.9550 |
-| MSI Evo E13 Flip | i7-1185G7 / 16 GB | Iris Xe · shared memory | 25H2 · 26200.9457 |
-| Desktop | i5-13600KF / 32 GB | RTX 3070 · 8 GB | Pro 25H2 · 26200.9457 |
+² Later macOS checks covered UI changes and packaging; the complete suite was not rerun.
 
 ## Average draw rate of built-in GL scenes
+
+These are earlier Windows measurements; a fresh v385 run is not claimed.
 
 Each GPU / scene row is the arithmetic mean of the available drawn-frames/s values in the run table. Missing values are excluded; quality and window size varied between runs. This summarizes observations rather than identical-settings benchmarks or diagnostic FPS.
 

@@ -7,12 +7,14 @@
 <h3 align="center">Your personal music satellite.</h3>
 
 <p align="center">
-  <img src="assets/readme/badge-windows.svg" alt="Platform: Windows">
+  <img src="assets/readme/badge-windows.svg" alt="Windows x64">
+  <img src="assets/readme/badge-linux.svg" alt="Linux Beta">
+  <img src="assets/readme/badge-macos.svg" alt="macOS Beta">
   <img src="assets/readme/badge-freeware.svg" alt="Distribution: Freeware">
 </p>
 
 <p align="center">
-  <a href="https://github.com/operfivenine/aureonsatellite/releases/download/v0.22.3-v367/Aureon-0.22.3-v367-Setup-x64.exe"><img src="assets/readme/button-download.svg" alt="Download for Windows"></a>
+  <a href="#download"><img src="assets/readme/button-download.svg" alt="Choose your platform"></a>
   <a href="docs/user-guide.md"><img src="assets/readme/button-guide.svg" alt="Read the user guide"></a>
   <a href="https://boosty.to/oper59"><img src="assets/readme/button-support.svg" alt="Support Aureon"></a>
 </p>
@@ -21,9 +23,9 @@
 
 <p align="center"><a href="README.md">English</a> · <a href="README.ru.md">Русский</a></p>
 
-**Aureon is a free Windows media player with music-reactive visual scenes, custom projections, and a minimal interface.** Play your local music and video, choose a scene, and make the player part of your listening space.
+**Aureon is a free media player for Windows, Linux and macOS with music-reactive visual scenes, custom projections, and a minimal interface.** Play your local music and video, choose a scene, and make the player part of your listening space.
 
-![Aureon playing music with the Aureon Satellite scene](assets/readme/aureon-player.jpg)
+<p align="center"><img width="800" src="assets/readme/animated/player.webp" alt="Aureon player with the Aureon Satellite scene"></p>
 
 ## About
 
@@ -33,17 +35,25 @@ The application is free to use. Supporting its creator is optional.
 
 ## Download
 
-**Aureon 0.22.3 · v367 · Windows x64**
+**Aureon 0.23.0 · v385 — Windows / Linux Beta / macOS Beta**
 
-**[Download the installer — 177.3 MiB](https://github.com/operfivenine/aureonsatellite/releases/download/v0.22.3-v367/Aureon-0.22.3-v367-Setup-x64.exe)** · [Release notes](https://github.com/operfivenine/aureonsatellite/releases/tag/v0.22.3-v367)
+8 built-in scenes · 4 projections · AURS API 1.1. **Reactive v2** is the default for new profiles; existing profiles keep their saved engine choice.
 
-Already have Aureon installed? Start with the [user guide](docs/user-guide.md).
+| Build | System | Packages |
+| --- | --- | --- |
+| **Windows** | x64 · Windows 10 22H2 / 11 | [EXE installer](https://github.com/operfivenine/aureonsatellite/releases/download/v0.23.0-v385/Aureon-0.23.0-v385-Setup-x64.exe) |
+| **Linux · Beta** | x86_64 · tested on Mint 22.3 Cinnamon / X11 | [Run installer](https://github.com/operfivenine/aureonsatellite/releases/download/v0.23.0-v385/Aureon-0.23.0-v385-Linux-Setup-x86_64.run) · [DEB](https://github.com/operfivenine/aureonsatellite/releases/download/v0.23.0-v385/Aureon-0.23.0-v385-Linux-x86_64.deb) |
+| **macOS · Beta** | Intel x86_64 · macOS 14+ | [DMG](https://github.com/operfivenine/aureonsatellite/releases/download/v0.23.0-v385/Aureon-0.23.0-v385-macOS-Beta-x86_64.dmg) |
+
+[Package details →](docs/downloads.md) · [Windows changelog →](docs/changelog-windows.md)
+
+Already installed? Start with the [user guide](docs/user-guide.md). Current guide recordings were captured on Windows.
 
 ## Features
 
 | Playback | Visuals | Personalization |
 | --- | --- | --- |
-| Local music and video | 7 built-in visual scenes | Interface colors |
+| Local music and video | 8 built-in visual scenes | Interface colors |
 | Queue and search | Music-reactive animation | Classic / Transparent Glass |
 | Shuffle and Repeat | Fullscreen | Visual quality and reactive gain |
 | Save and import playlists | Separate projections | Custom AURS scenes and AURP projections |
@@ -53,22 +63,61 @@ Already have Aureon installed? Start with the [user guide](docs/user-guide.md).
 
 <table>
 <tr>
-<td align="center" width="33%"><img width="220" src="assets/readme/satellite.jpg" alt="Aureon Satellite"><br><strong>Aureon Satellite</strong></td>
-<td align="center" width="33%"><img width="220" src="assets/readme/sun.jpg" alt="Orbital Sun"><br><strong>Orbital Sun</strong></td>
-<td align="center" width="33%"><img width="220" src="assets/readme/storm.jpg" alt="Storm Tornado"><br><strong>Storm Tornado</strong></td>
+<td align="center" width="33%"><img width="220" src="assets/readme/animated/satellite.webp" alt="Aureon Satellite"><br><strong>Aureon Satellite</strong></td>
+<td align="center" width="33%"><img width="220" src="assets/readme/animated/sun.webp" alt="Orbital Sun"><br><strong>Orbital Sun</strong></td>
+<td align="center" width="33%"><img width="220" src="assets/readme/animated/storm.webp" alt="Storm Tornado"><br><strong>Storm Tornado</strong></td>
 </tr>
 <tr>
-<td align="center"><img width="220" src="assets/readme/dawn.jpg" alt="Orbital Dawn"><br><strong>Orbital Dawn</strong></td>
-<td align="center"><img width="220" src="assets/readme/stellar.jpg" alt="Stellar Horizon"><br><strong>Stellar Horizon</strong></td>
-<td align="center"><img width="220" src="assets/readme/volcanic.jpg" alt="Volcanic Valley"><br><strong>Volcanic Valley</strong></td>
+<td align="center" width="33%"><img width="220" src="assets/readme/animated/dawn.webp" alt="Orbital Dawn"><br><strong>Orbital Dawn</strong></td>
+<td align="center" width="33%"><img width="220" src="assets/readme/animated/stellar.webp" alt="Stellar Horizon"><br><strong>Stellar Horizon</strong></td>
+<td align="center" width="33%"><img width="220" src="assets/readme/animated/volcanic.webp" alt="Volcanic Valley"><br><strong>Volcanic Valley</strong></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><img width="220" src="assets/readme/animated/warp.webp" alt="Warp"><br><strong>Warp</strong></td>
 </tr>
 </table>
 
-**Warp** is also included. Switch scenes by clicking the scene name inside the player. [Watch the tutorial →](docs/tutorials/03_Choose_Scene.md)
+The built-in catalog contains **8 scenes and 4 projections**; **Warp** is also included. Switch scenes by clicking the scene name inside the player. [Watch the tutorial →](docs/tutorials/03_Choose_Scene.md)
+
+## AURS catalog
+
+Scroll horizontally and choose a scene.
+
+<table>
+<tr>
+<td align="center" valign="top" width="260"><a href="library/scenes/nacre-helix/README.md"><img src="assets/readme/library/nacre-helix.webp" alt="Nacre Helix" width="240" height="135"><br><strong>Nacre Helix</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/amber-horizon/README.md"><img src="assets/readme/library/amber-horizon.webp" alt="Amber Horizon" width="240" height="135"><br><strong>Amber Horizon</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/aureon-voyager/README.md"><img src="assets/readme/library/aureon-voyager.webp" alt="Aureon Voyager" width="240" height="135"><br><strong>Aureon Voyager</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/acheron-drift/README.md"><img src="assets/readme/library/acheron-drift.webp" alt="Acheron Drift" width="240" height="135"><br><strong>Acheron Drift</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/asteroid-belt/README.md"><img src="assets/readme/library/asteroid-belt.webp" alt="Asteroid Belt" width="240" height="135"><br><strong>Asteroid Belt</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/aurelia-station/README.md"><img src="assets/readme/library/aurelia-station.webp" alt="Aurelia Station" width="240" height="135"><br><strong>Aurelia Station</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/ember-reach/README.md"><img src="assets/readme/library/ember-reach.webp" alt="Ember Reach" width="240" height="135"><br><strong>Ember Reach</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/orbital-city/README.md"><img src="assets/readme/library/orbital-city.webp" alt="Orbital City" width="240" height="135"><br><strong>Orbital City</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/thalassa-drift/README.md"><img src="assets/readme/library/thalassa-drift.webp" alt="Thalassa Drift" width="240" height="135"><br><strong>Thalassa Drift</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/afterhours-spire/README.md"><img src="assets/readme/library/afterhours-spire.webp" alt="Afterhours Spire" width="240" height="135"><br><strong>Afterhours Spire</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/sublevel-88/README.md"><img src="assets/readme/library/sublevel-88.webp" alt="Sublevel 88" width="240" height="135"><br><strong>Sublevel 88</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/dead-air/README.md"><img src="assets/readme/library/dead-air.webp" alt="Dead Air" width="240" height="135"><br><strong>Dead Air</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/drowned-current/README.md"><img src="assets/readme/library/drowned-current.webp" alt="Drowned Current" width="240" height="135"><br><strong>Drowned Current</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/gravity-choir/README.md"><img src="assets/readme/library/gravity-choir.webp" alt="Gravity Choir" width="240" height="135"><br><strong>Gravity Choir</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/liminal-relay/README.md"><img src="assets/readme/library/liminal-relay.webp" alt="Liminal Relay" width="240" height="135"><br><strong>Liminal Relay</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/neon-tenement/README.md"><img src="assets/readme/library/neon-tenement.webp" alt="Neon Tenement" width="240" height="135"><br><strong>Neon Tenement</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/red-chamber/README.md"><img src="assets/readme/library/red-chamber.webp" alt="Red Chamber" width="240" height="135"><br><strong>Red Chamber</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/vesper-transit/README.md"><img src="assets/readme/library/vesper-transit.webp" alt="Vesper Transit" width="240" height="135"><br><strong>Vesper Transit</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/neon-concourse/README.md"><img src="assets/readme/library/neon-concourse.webp" alt="Neon Concourse" width="240" height="135"><br><strong>Neon Concourse</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/neon-rain/README.md"><img src="assets/readme/library/neon-rain.webp" alt="Neon Rain" width="240" height="135"><br><strong>Neon Rain</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/orbital-descent/README.md"><img src="assets/readme/library/orbital-descent.webp" alt="Orbital Descent" width="240" height="135"><br><strong>Orbital Descent</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/orbital-habitat/README.md"><img src="assets/readme/library/orbital-habitat.webp" alt="Orbital Habitat" width="240" height="135"><br><strong>Orbital Habitat</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" valign="top" width="260"><a href="library/scenes/wind-atlas/README.md"><img src="assets/readme/library/wind-atlas.webp" alt="Wind Atlas" width="240" height="135"><br><strong>Wind Atlas</strong></a><br><span aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+</tr>
+</table>
+
+[Full catalog →](library/README.md)
 
 ## AURS / AURP library
 
 Expand Aureon with custom visual scenes and floating projections.
+
+[AURS catalog →](library/README.md)
 
 | Package | Adds to Aureon | Import from |
 | --- | --- | --- |
@@ -77,39 +126,26 @@ Expand Aureon with custom visual scenes and floating projections.
 
 **[Open the AURS / AURP library →](library/README.md)**
 
-### Create your own scene or projection
+## Tested systems
 
-The **[Authoring API reference (EN)](library/api/README.md)** covers AURS standard library API **1.1**, five editable technical starters, and packaging / validation tools.
-
-[Getting started](library/api/GETTING_STARTED.md) · [API reference](library/api/API_REFERENCE.md) · [Download the authoring kit](library/aureon-authoring-api-en.zip)
-
-## System requirements
-
-**Windows x64 · OpenGL 3.3 Core for GL scenes · Python and Qt included in the Windows package.**
-
-| Component | Current baseline |
-| --- | --- |
-| Windows | Windows 11 24H2 / 25H2 tested, including IoT Enterprise LTSC 24H2. The installer accepts Windows 10 build 19045+; Windows 10 runtime has not been tested here. |
-| Graphics | OpenGL 3.3 Core driver for the five GL scenes. Orbital Dawn and Warp use QPainter. Iris Xe, GTX 1050 and RTX 3070 tested. |
-| CPU / RAM | Minimum not measured. **Core i5-7300HQ / 12 GB** is the lowest tested configuration; it does not establish a 12 GB RAM requirement. |
-
-### Tested on three Windows systems
-
-| System | CPU / RAM | GPU | Windows | FPS guideline |
+| System | CPU / RAM | GPU | OS / environment | Result |
 | --- | --- | --- | --- | --- |
-| HP OMEN | i5-7300HQ / 12 GB | GTX 1050 · 2 GB | IoT Enterprise LTSC 24H2 · 26100.9550 | **Up to 60 FPS** |
-| MSI Evo E13 Flip | i7-1185G7 / 16 GB | Iris Xe · shared memory | 25H2 · 26200.9457 | **Up to 60 FPS** |
-| Desktop | i5-13600KF / 32 GB | RTX 3070 · 8 GB | Pro 25H2 · current build 26200.9457 | **60+ FPS** |
+| HP OMEN | i5-7300HQ / 12 GB | GTX 1050 · 2 GB | Windows 11 IoT Enterprise LTSC 24H2 · 26100.9550 | Tested; up to 60 FPS¹ |
+| MSI Evo E13 Flip | i7-1185G7 / 16 GB | Iris Xe | Windows 11 25H2 · 26200.9457 | Tested; up to 60 FPS¹ |
+| Desktop | i5-13600KF / 32 GB | RTX 3070 · 8 GB | **Windows 11 26H2 · 26300.9711** | **Tests passed**; 60+ FPS¹ |
+| Linux · VM | — | VMware SVGA3D | Mint 22.3 Cinnamon / X11 · x86_64 | 324 passed, 15 skipped; tray, mini-player, projections and packages |
+| macOS · VM | Intel x86_64 | — | macOS · virtual machine | Baseline: 324 passed, 13 skipped²; menus, DPR, launch, signing and DMG |
+| iMac · physical device | Intel Core i3 · 4 cores · 3.6 GHz / RAM — | Radeon Pro 555X | macOS · Intel | All tested AURS scenes render correctly |
 
-Approximate guidelines when choosing quality for each device, rather than averages across all scenes. Frame rate depends on the scene, settings and window size; demanding scenes may run substantially slower. Comparable RTX 3070 measurements show approximately **61–63 drawn frames/s**.
+¹ FPS guidelines are retained from earlier Windows measurements, not new v385 measurements on 26H2. No Linux/macOS FPS values are reported. A dash means details were not provided.
 
-Start with **Auto** and per-scene calibration; use **Lowest** to reduce visual workload on slower machines.
+² Later macOS checks covered UI changes and packaging; the complete suite was not rerun.
 
-**[Full requirements and scene-by-scene measurements →](SYSTEM_REQUIREMENTS.md)**
+Start with **Auto** and per-scene calibration. [Full requirements and scene measurements →](SYSTEM_REQUIREMENTS.md)
 
 ## Tested media formats
 
-**79 samples tested: 55 video and 24 audio.**
+**79 samples previously tested on Windows: 55 video and 24 audio.** An equivalent Linux/macOS matrix is not yet reported.
 
 | Video container | Tested video codecs |
 | --- | --- |
@@ -165,7 +201,7 @@ Tested 10-bit variants include H.264 High 10, HEVC Main 10, AV1 and VP9. These r
 
 The guide covers **14 topics**, with short UI recordings.
 
-**Drag and drop:** add music from File Explorer; drop video files **directly into the queue**. In a mixed queue, **Show videos first** brings videos to the top without changing playback order.
+**Drag and drop:** add music from your file manager; drop video files **directly into the queue**. In a mixed queue, **Show videos first** brings videos to the top without changing playback order.
 
 | I want to… | Open the guide |
 | --- | --- |
