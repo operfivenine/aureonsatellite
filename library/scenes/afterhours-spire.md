@@ -6,9 +6,9 @@
 
 An additional Aureon scene, installed as a separate **.aurs** package.
 
-Package **1.1.4** · `Aureon-Afterhours-Spire-1.1.4.aurs`
+Package **1.2.2** · `Aureon-Afterhours-Spire-1.2.2.aurs`
 
-**[Download .aurs](https://github.com/operfivenine/aureonsatellite/releases/download/aurs-library-v1/Aureon-Afterhours-Spire-1.1.4.aurs)**
+**[Download .aurs](https://github.com/operfivenine/aureonsatellite/releases/download/aurs-library-v1/Aureon-Afterhours-Spire-1.2.2.aurs)**
 
 ## Installation
 

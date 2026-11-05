@@ -6,9 +6,9 @@
 
 Дополнительная сцена Aureon, устанавливается отдельным пакетом **.aurs**.
 
-Пакет **1.1.4** · `Aureon-Afterhours-Spire-1.1.4.aurs`
+Пакет **1.2.2** · `Aureon-Afterhours-Spire-1.2.2.aurs`
 
-**[Скачать .aurs](https://github.com/operfivenine/aureonsatellite/releases/download/aurs-library-v1/Aureon-Afterhours-Spire-1.1.4.aurs)**
+**[Скачать .aurs](https://github.com/operfivenine/aureonsatellite/releases/download/aurs-library-v1/Aureon-Afterhours-Spire-1.2.2.aurs)**
 
 ## Установка
 
