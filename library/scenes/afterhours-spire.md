@@ -2,7 +2,7 @@
 
 [← Scene catalog](../README.md) · [Русский](afterhours-spire.ru.md)
 
-<p align="center"><img src="../../assets/readme/library/afterhours-spire.webp?v=1.2.2" alt="Afterhours Spire" width="480" height="270"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/operfivenine/aureonsatellite/f153497f10786a9f7d42a0a2c56b237c47246fdc/assets/readme/library/afterhours-spire.webp" alt="Afterhours Spire" width="480" height="270"></p>
 
 An additional Aureon scene, installed as a separate **.aurs** package.
 
