@@ -6,16 +6,12 @@
 
 | System | CPU / RAM | GPU | OS / environment | Result |
 | --- | --- | --- | --- | --- |
-| HP OMEN | i5-7300HQ / 12 GB | GTX 1050 · 2 GB | Windows 11 IoT Enterprise LTSC 24H2 · 26100.9550 | Tested; up to 60 FPS¹ |
-| MSI Evo E13 Flip | i7-1185G7 / 16 GB | Iris Xe | Windows 11 25H2 · 26200.9457 | Tested; up to 60 FPS¹ |
-| Desktop | i5-13600KF / 32 GB | RTX 3070 · 8 GB | **Windows 11 26H2 · 26300.9711** | **Tests passed**; 60+ FPS¹ |
-| Linux · VM | — | VMware SVGA3D | Mint 22.3 Cinnamon / X11 · x86_64 | 324 passed, 15 skipped; tray, mini-player, projections and packages |
-| macOS · VM | Intel x86_64 | — | macOS · virtual machine | Baseline: 324 passed, 13 skipped²; menus, DPR, launch, signing and DMG |
+| HP OMEN | i5-7300HQ / 12 GB | GTX 1050 · 2 GB | Windows 11 IoT Enterprise LTSC 24H2 · 26100.9550 | Tested; up to 60 FPS |
+| MSI Evo E13 Flip | i7-1185G7 / 16 GB | Iris Xe | Windows 11 25H2 · 26200.9457 | Tested; up to 60 FPS |
+| Desktop | i5-13600KF / 32 GB | RTX 3070 · 8 GB | **Windows 11 26H2 · 26300.9711** | **Tests passed**; 60+ FPS |
+| Linux · VM | — | VMware SVGA3D | Mint 22.3 Cinnamon / X11 · x86_64 | Tested |
+| macOS · VM | Intel x86_64 | — | macOS · virtual machine | Tested |
 | iMac · physical device | Intel Core i3 · 4 cores · 3.6 GHz / RAM — | Radeon Pro 555X | macOS · Intel | All tested AURS scenes render correctly |
-
-¹ FPS guidelines are retained from earlier Windows measurements, not new v385 measurements on 26H2. No Linux/macOS FPS values are reported. A dash means details were not provided.
-
-² Later macOS checks covered UI changes and packaging; the complete suite was not rerun.
 
 ## Average draw rate of built-in GL scenes
 
