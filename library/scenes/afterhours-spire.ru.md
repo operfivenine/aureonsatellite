@@ -2,7 +2,7 @@
 
 [← Каталог сцен](../README.ru.md) · [English](afterhours-spire.md)
 
-<p align="center"><img src="../../assets/readme/library/afterhours-spire.webp" alt="Afterhours Spire" width="480" height="270"></p>
+<p align="center"><img src="../../assets/readme/library/afterhours-spire.webp?v=1.2.2" alt="Afterhours Spire" width="480" height="270"></p>
 
 Дополнительная сцена Aureon, устанавливается отдельным пакетом **.aurs**.
 
