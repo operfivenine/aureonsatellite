@@ -2,7 +2,7 @@
 
 [← API](../README.md) · [Русский](authoring-recommendations.ru.md)
 
-These are authoring recommendations, not new API requirements or a promise of performance on every device. They consolidate the November archive's general techniques without shipping artistic scene implementations.
+These are authoring recommendations, not new API requirements. They consolidate the November archive's general techniques without shipping artistic scene implementations.
 
 ## Start with a readable scene
 
