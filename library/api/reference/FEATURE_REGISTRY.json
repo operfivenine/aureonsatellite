@@ -1,0 +1,768 @@
+{
+  "application": "Aureon",
+  "version": "0.23.0",
+  "build": 385,
+  "date": "2026-11-05",
+  "standard_library_api": "1.1",
+  "format_version": 1,
+  "engine_api_major": 1,
+  "profiles": {
+    "scene.fullscreen_frag.v1": [
+      "behavior.envelope.v1",
+      "behavior.expression.v1",
+      "behavior.integrator.v1",
+      "scene.fullscreen_frag.v1",
+      "scene.quality.v1",
+      "scene.uniforms.v1"
+    ],
+    "scene.fullscreen_frag.v2": [
+      "behavior.camera.v2",
+      "behavior.envelope.v1",
+      "behavior.events.v2",
+      "behavior.expression.v1",
+      "behavior.history.v2",
+      "behavior.integrator.v1",
+      "behavior.math.v2",
+      "behavior.modes.v2",
+      "behavior.presets.v2",
+      "behavior.reactive_controls.v1",
+      "behavior.state.v2",
+      "behavior.temporal.v2",
+      "behavior.transport.v1",
+      "scene.atmosphere_core.v1",
+      "scene.attachments.v1",
+      "scene.audio_texture.experimental.v1",
+      "scene.camera_cuts.experimental.v1",
+      "scene.camera_manual.experimental.v1",
+      "scene.camera_presets.experimental.v1",
+      "scene.environment_core.v1",
+      "scene.fullscreen_frag.v1",
+      "scene.fullscreen_frag.v2",
+      "scene.graphics_advanced.v1",
+      "scene.instances.v1",
+      "scene.lighting_rig.v1",
+      "scene.lights_config.experimental.v1",
+      "scene.motion_core.v1",
+      "scene.multipass.experimental.v1",
+      "scene.normal_filtering.experimental.v1",
+      "scene.normal_mapping.experimental.v1",
+      "scene.object_core.v1",
+      "scene.object_motion.v1",
+      "scene.presentation_core.v1",
+      "scene.preview.v1",
+      "scene.quality.v1",
+      "scene.quality_extreme.experimental.v1",
+      "scene.scene_lights.experimental.v1",
+      "scene.shaderlib.v1",
+      "scene.spectrum.v2",
+      "scene.spectrum_panels.v1",
+      "scene.standard_library.v1",
+      "scene.texture_materials.experimental.v1",
+      "scene.textures2d.experimental.v1",
+      "scene.track_palette.experimental.v1",
+      "scene.trails_lod.v1",
+      "scene.triplanar.experimental.v1",
+      "scene.uniforms.v1"
+    ],
+    "scene.mesh.experimental.v1": [
+      "behavior.reactive_controls.v1",
+      "scene.graphics_advanced.v1",
+      "scene.mesh.experimental.v1",
+      "scene.preview.v1",
+      "scene.quality.v1",
+      "scene.track_palette.experimental.v1"
+    ],
+    "scene.hybrid_mesh.experimental.v1": [
+      "behavior.reactive_controls.v1",
+      "scene.audio_texture.experimental.v1",
+      "scene.graphics_advanced.v1",
+      "scene.hybrid_background_inputs.experimental.v1",
+      "scene.hybrid_mesh.experimental.v1",
+      "scene.hybrid_texture_inputs.experimental.v1",
+      "scene.mesh.experimental.v1",
+      "scene.mesh_animation.experimental.v1",
+      "scene.mesh_bindings.experimental.v1",
+      "scene.mesh_camera_clock.experimental.v1",
+      "scene.mesh_camera_settings.experimental.v1",
+      "scene.mesh_history_signals.experimental.v1",
+      "scene.mesh_light_selection.experimental.v1",
+      "scene.mesh_materials.experimental.v1",
+      "scene.mesh_objects.experimental.v1",
+      "scene.mesh_procedural_instances.experimental.v1",
+      "scene.mesh_reflection_resolution.experimental.v1",
+      "scene.mesh_reflections.experimental.v1",
+      "scene.mesh_texture_bindings.experimental.v1",
+      "scene.mesh_transparency.experimental.v1",
+      "scene.mesh_uv_tangent.experimental.v1",
+      "scene.mesh_volley_clock.experimental.v1",
+      "scene.mesh_volley_patterns.experimental.v1",
+      "scene.mesh_volley_signals.experimental.v1",
+      "scene.mesh_volleys.experimental.v1",
+      "scene.mesh_volumetric_fog.experimental.v1",
+      "scene.multipass.experimental.v1",
+      "scene.post_geometry.experimental.v1",
+      "scene.preview.v1",
+      "scene.quality.v1",
+      "scene.standard_library.v1",
+      "scene.textures2d.experimental.v1",
+      "scene.track_palette.experimental.v1",
+      "scene.track_text.experimental.v1"
+    ]
+  },
+  "general_limits": {
+    "archive_bytes": 838860800,
+    "expanded_bytes": 1677721600,
+    "resource_bytes": 419430400,
+    "json_bytes": 52428800,
+    "archive_entries": 7200,
+    "signals": 4800,
+    "expression_chars": 25600,
+    "expression_nodes": 9600,
+    "expression_depth": 1200,
+    "shader_bytes": 13107200,
+    "quality_defines": 1600,
+    "uniforms": 4800,
+    "textures": 400,
+    "image_axis": 204800,
+    "texture_bytes": 3355443200,
+    "lights": 400,
+    "camera_shots": 800,
+    "camera_presets": 800,
+    "camera_impulses": 800,
+    "event_types": 400,
+    "event_slots": 800,
+    "v1_loops": 800,
+    "v1_loop_budget": 409600,
+    "v2_loops": 3200,
+    "v2_loop_budget": 3276800,
+    "loop_iterations": 25600,
+    "loop_depth": 400,
+    "canvas_axis": 51200,
+    "supersample": 300,
+    "raster_scale": 400,
+    "projection_nodes": 12800,
+    "projection_depth": 800,
+    "holograms": 200,
+    "polygon_points": 12800,
+    "projection_image_pixels": 419430400
+  },
+  "mesh_asset_limits": {
+    "shader_bytes": 13107200,
+    "texture_count": 128,
+    "texture_axis": 16384,
+    "texture_file_bytes": 134217728,
+    "texture_bytes": 1073741824,
+    "texture_slots": 32,
+    "mesh_vertices": 8000000,
+    "mesh_batches": 1024,
+    "materials": 256,
+    "material_uniforms": 64,
+    "mesh_signals": 512
+  },
+  "multipass_limits": {
+    "passes": 8,
+    "inputs": 8,
+    "axis": 8192,
+    "bytes": 536870912
+  },
+  "note": "Manifest-level support. Field dependencies, schema checks and actual GL limits must also pass.",
+  "source_release_date": "2026-10-28",
+  "edition": "November 2026",
+  "api_status": "stable",
+  "projection_features": [
+    "behavior.envelope.v1",
+    "behavior.expression.v1",
+    "behavior.integrator.v1",
+    "projection.arc.v1",
+    "projection.ellipse.v1",
+    "projection.gradient.v1",
+    "projection.group.v1",
+    "projection.gyro_rings.experimental.v1",
+    "projection.hologram.experimental.v1",
+    "projection.image.v1",
+    "projection.light_canvas.experimental.v1",
+    "projection.line.v1",
+    "projection.polygon.v1",
+    "projection.polyline.v1",
+    "projection.radial_glow.v1",
+    "projection.ring.v1",
+    "projection.spectrum64.experimental.v2",
+    "projection.standard_library.experimental.v1",
+    "projection.surface.experimental.v2",
+    "projection.transform.v1"
+  ],
+  "feature_status": {
+    "behavior.camera.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.envelope.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.events.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.expression.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.history.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.integrator.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.math.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.modes.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.presets.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.reactive_controls.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.state.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.temporal.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "behavior.transport.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.arc.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.ellipse.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.gradient.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.group.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.gyro_rings.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "projection.hologram.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "projection.image.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.light_canvas.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "projection.line.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.polygon.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.polyline.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.radial_glow.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.ring.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "projection.spectrum64.experimental.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "projection.standard_library.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "projection.surface.experimental.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "projection.transform.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.atmosphere_core.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.attachments.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.audio_texture.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.camera_cuts.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.camera_manual.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.camera_presets.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.environment_core.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.fullscreen_frag.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.fullscreen_frag.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.graphics_advanced.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.hybrid_background_inputs.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.hybrid_mesh.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.hybrid_texture_inputs.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.instances.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.lighting_rig.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.lights_config.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_animation.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_bindings.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_camera_clock.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_camera_settings.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_history_signals.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_light_selection.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_materials.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_objects.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_procedural_instances.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_reflection_resolution.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_reflections.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_texture_bindings.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_transparency.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_uv_tangent.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_volley_clock.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_volley_patterns.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_volley_signals.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_volleys.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.mesh_volumetric_fog.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.motion_core.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.multipass.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.normal_filtering.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.normal_mapping.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.object_core.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.object_motion.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.post_geometry.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.presentation_core.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.preview.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.quality.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.quality_extreme.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.scene_lights.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.shaderlib.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.spectrum.v2": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.spectrum_panels.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.standard_library.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.texture_materials.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.textures2d.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.track_palette.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.track_text.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.trails_lod.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    },
+    "scene.triplanar.experimental.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": true
+    },
+    "scene.uniforms.v1": {
+      "status": "stable",
+      "stable_since": "2026-11-05",
+      "technical_id_unchanged": true,
+      "formerly_experimental": false
+    }
+  },
+  "renderer_status": {
+    "scene.fullscreen_frag.v1": {
+      "status": "stable",
+      "technical_id_unchanged": true
+    },
+    "scene.fullscreen_frag.v2": {
+      "status": "stable",
+      "technical_id_unchanged": true
+    },
+    "scene.mesh.experimental.v1": {
+      "status": "stable",
+      "technical_id_unchanged": true
+    },
+    "scene.hybrid_mesh.experimental.v1": {
+      "status": "stable",
+      "technical_id_unchanged": true
+    },
+    "projection.canvas.v1": {
+      "status": "stable",
+      "technical_id_unchanged": true
+    },
+    "projection.surface.experimental.v2": {
+      "status": "stable",
+      "technical_id_unchanged": true
+    }
+  },
+  "capability_status": {
+    "audio.events.v1": "stable",
+    "audio.reactive.v1": "stable",
+    "audio.regional_attacks.v2": "stable",
+    "audio.spectrum.v1": "stable",
+    "time.elapsed.v1": "stable"
+  },
+  "library_status": {
+    "aurs.standard": "stable",
+    "aurs.geometry.experimental": "stable"
+  },
+  "compatibility_note": "experimental in existing wire identifiers is historical spelling, not current stability status; no new aliases or host requirements."
+}

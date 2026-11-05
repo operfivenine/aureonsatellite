@@ -1,0 +1,1264 @@
+{
+  "api": "1.1",
+  "public_libraries": [
+    "aurs.standard"
+  ],
+  "legacy_libraries": [
+    "core.atmosphere",
+    "core.camera",
+    "core.color",
+    "core.composition",
+    "core.environment",
+    "core.geometry",
+    "core.lighting",
+    "core.materials",
+    "core.math",
+    "core.motion",
+    "core.noise",
+    "core.object",
+    "core.presentation",
+    "core.scene_lighting",
+    "core.sdf",
+    "core.world"
+  ],
+  "modules": [
+    {
+      "module": "core.math",
+      "requires": [],
+      "functions": [
+        {
+          "name": "aur_sat",
+          "arguments": "float x",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_sat",
+          "arguments": "vec2 x",
+          "return_type": "vec2"
+        },
+        {
+          "name": "aur_sat",
+          "arguments": "vec3 x",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_remap",
+          "arguments": "float x, float a, float b, float c, float d",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_rot2",
+          "arguments": "float a",
+          "return_type": "mat2"
+        },
+        {
+          "name": "aur_smin",
+          "arguments": "float a, float b, float k",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_repeat1",
+          "arguments": "float x, float spacing",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_repeat2",
+          "arguments": "vec2 p, vec2 spacing",
+          "return_type": "vec2"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.noise",
+      "requires": [
+        "core.math"
+      ],
+      "functions": [
+        {
+          "name": "aur_hash11",
+          "arguments": "float p",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_hash21",
+          "arguments": "vec2 p",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_hash22",
+          "arguments": "vec2 p",
+          "return_type": "vec2"
+        },
+        {
+          "name": "aur_hash31",
+          "arguments": "vec3 p",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_noise2",
+          "arguments": "vec2 p",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_noise3",
+          "arguments": "vec3 p",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_fbm2",
+          "arguments": "vec2 p",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_fbm3",
+          "arguments": "vec3 p",
+          "return_type": "float"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.sdf",
+      "requires": [
+        "core.math"
+      ],
+      "functions": [
+        {
+          "name": "aur_sdSphere",
+          "arguments": "vec3 p, float r",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_sdBox",
+          "arguments": "vec3 p, vec3 b",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_sdRoundBox",
+          "arguments": "vec3 p, vec3 b, float r",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_sdCylinderY",
+          "arguments": "vec3 p, vec2 h",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_sdCapsule",
+          "arguments": "vec3 p, vec3 a, vec3 b, float r",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_sdTorus",
+          "arguments": "vec3 p, vec2 t",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_opUnion",
+          "arguments": "float a, float b",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_opIntersect",
+          "arguments": "float a, float b",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_opSubtract",
+          "arguments": "float a, float b",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_opSmoothUnion",
+          "arguments": "float a, float b, float k",
+          "return_type": "float"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.lighting",
+      "requires": [
+        "core.math"
+      ],
+      "functions": [
+        {
+          "name": "aur_diffuse",
+          "arguments": "vec3 n, vec3 l",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_fresnel",
+          "arguments": "vec3 n, vec3 v, float power",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_rim",
+          "arguments": "vec3 n, vec3 v, float width, float power",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_specular",
+          "arguments": "vec3 n, vec3 l, vec3 v, float roughness",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_attenuation",
+          "arguments": "float distanceToLight, float radius",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_shadowTerm",
+          "arguments": "float currentShadow, float fieldDistance, float travel, float softness",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_lit",
+          "arguments": "vec3 baseColor, vec3 n, vec3 l, vec3 v, vec3 lightColor, float diffuseGain, float specularGain, float roughness",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.environment",
+      "requires": [
+        "core.math"
+      ],
+      "functions": [
+        {
+          "name": "aur_fogExp",
+          "arguments": "float distanceValue, float density",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_fogExp2",
+          "arguments": "float distanceValue, float density",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_depthFade",
+          "arguments": "float distanceValue, float nearDistance, float farDistance",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_heightFog",
+          "arguments": "float worldY, float baseHeight, float falloff",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_applyFog",
+          "arguments": "vec3 color, vec3 fogColor, float fogAmount",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.color",
+      "requires": [
+        "core.math"
+      ],
+      "functions": [
+        {
+          "name": "aur_palette",
+          "arguments": "float t, vec3 a, vec3 b, vec3 c, vec3 d",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_tonemapReinhard",
+          "arguments": "vec3 c",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_tonemapAces",
+          "arguments": "vec3 x",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_saturation",
+          "arguments": "vec3 c, float amount",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_contrast",
+          "arguments": "vec3 c, float amount",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.composition",
+      "requires": [
+        "core.math"
+      ],
+      "functions": [
+        {
+          "name": "aur_glow",
+          "arguments": "float signedDistance, float width, float intensity",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_lineMask",
+          "arguments": "float distanceValue, float width, float softness",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_vignette",
+          "arguments": "vec2 centeredUv, float strength",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_screen",
+          "arguments": "vec3 base, vec3 layer",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.camera",
+      "requires": [
+        "core.math"
+      ],
+      "functions": [
+        {
+          "name": "aur_lookAt",
+          "arguments": "vec3 ro, vec3 target, float roll",
+          "return_type": "mat3"
+        },
+        {
+          "name": "aur_cameraRay",
+          "arguments": "vec2 centeredUv, float aspect, vec3 ro, vec3 target, float fovDeg, float roll",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.geometry",
+      "requires": [
+        "core.math",
+        "core.sdf"
+      ],
+      "functions": [
+        {
+          "name": "aur_rotateX",
+          "arguments": "vec3 p, float a",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_rotateY",
+          "arguments": "vec3 p, float a",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_rotateZ",
+          "arguments": "vec3 p, float a",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_twistY",
+          "arguments": "vec3 p, float amount",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_bendX",
+          "arguments": "vec3 p, float amount",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_repeat3",
+          "arguments": "vec3 p, vec3 spacing",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_polarRepeat",
+          "arguments": "vec2 p, float count",
+          "return_type": "vec2"
+        },
+        {
+          "name": "aur_opOnion",
+          "arguments": "float d, float thickness",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_opRound",
+          "arguments": "float d, float radius",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_opChamferUnion",
+          "arguments": "float a, float b, float radius",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_sdPlane",
+          "arguments": "vec3 p, vec3 normal, float offset",
+          "return_type": "float"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.materials",
+      "requires": [
+        "core.math",
+        "core.lighting"
+      ],
+      "functions": [
+        {
+          "name": "aur_material",
+          "arguments": "vec3 baseColor, float roughness, float metalness, vec3 emission, float ao",
+          "return_type": "AurMaterial"
+        },
+        {
+          "name": "aur_materialVariation",
+          "arguments": "vec3 baseColor, float variation, float amount",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_shadeMaterial",
+          "arguments": "AurMaterial m, vec3 n, vec3 l, vec3 v, vec3 lightColor, float lightStrength, float shadow",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_addRim",
+          "arguments": "vec3 color, vec3 rimColor, vec3 n, vec3 v, float power, float strength",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [
+        "AurMaterial"
+      ],
+      "struct_fields": {
+        "AurMaterial": [
+          "vec3 baseColor",
+          "vec3 emission",
+          "float roughness",
+          "float metalness",
+          "float ao"
+        ]
+      }
+    },
+    {
+      "module": "core.scene_lighting",
+      "requires": [
+        "core.math",
+        "core.lighting",
+        "core.materials"
+      ],
+      "functions": [
+        {
+          "name": "aur_lightRig",
+          "arguments": "vec3 ambientColor, float ambientStrength, vec3 keyDirection, vec3 keyColor, float keyIntensity, vec3 fillDirection, vec3 fillColor, float fillIntensity, vec3 rimDirection, vec3 rimColor, float rimIntensity",
+          "return_type": "AurLightRig"
+        },
+        {
+          "name": "aur_fresnelSchlick",
+          "arguments": "float cosTheta, vec3 f0",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_distributionGGX",
+          "arguments": "vec3 n, vec3 h, float roughness",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_geometrySchlickGGX",
+          "arguments": "float ndv, float roughness",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_geometrySmith",
+          "arguments": "vec3 n, vec3 v, vec3 l, float roughness",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_brdfLight",
+          "arguments": "AurMaterial m, vec3 n, vec3 v, vec3 l, vec3 lightColor, float intensity, float shadow",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_ambientMaterial",
+          "arguments": "AurMaterial m, vec3 ambientColor, float strength",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_rimLight",
+          "arguments": "vec3 n, vec3 v, vec3 lightDirection, vec3 color, float intensity",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_shadeLightRig",
+          "arguments": "AurMaterial m, vec3 n, vec3 v, AurLightRig rig, float keyShadow",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_pointLight",
+          "arguments": "AurMaterial m, vec3 n, vec3 v, vec3 p, vec3 lightPosition, vec3 lightColor, float intensity, float radius, float shadow",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_spotCone",
+          "arguments": "vec3 fromLightToPoint, vec3 lightForward, float innerCos, float outerCos",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_spotLight",
+          "arguments": "AurMaterial m, vec3 n, vec3 v, vec3 p, vec3 lightPosition, vec3 lightForward, vec3 lightColor, float intensity, float radius, float innerCos, float outerCos, float shadow",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_emissiveSpill",
+          "arguments": "vec3 p, vec3 sourcePosition, vec3 sourceColor, float intensity, float radius",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [
+        "AurLightRig"
+      ],
+      "struct_fields": {
+        "AurLightRig": [
+          "vec3 ambientColor",
+          "float ambientStrength",
+          "vec3 keyDirection",
+          "vec3 keyColor",
+          "float keyIntensity",
+          "vec3 fillDirection",
+          "vec3 fillColor",
+          "float fillIntensity",
+          "vec3 rimDirection",
+          "vec3 rimColor",
+          "float rimIntensity"
+        ]
+      }
+    },
+    {
+      "module": "core.atmosphere",
+      "requires": [
+        "core.math",
+        "core.noise",
+        "core.environment",
+        "core.composition"
+      ],
+      "functions": [
+        {
+          "name": "aur_phaseHG",
+          "arguments": "float cosTheta, float g",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_layerBand",
+          "arguments": "float worldY, float centerY, float halfWidth, float feather",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_heightFogDensity",
+          "arguments": "vec3 p, float baseHeight, float density, float falloff",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_hazeDensity",
+          "arguments": "float travel, float startDistance, float endDistance, float density",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_segmentDistance",
+          "arguments": "vec3 p, vec3 a, vec3 b",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_beamTube",
+          "arguments": "vec3 p, vec3 a, vec3 b, float radius, float feather",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_beamCone",
+          "arguments": "vec3 p, vec3 origin, vec3 direction, float lengthValue, float radiusNear, float radiusFar, float feather",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_hash33",
+          "arguments": "vec3 p",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_dustField",
+          "arguments": "vec3 p, float cellSize, float particleRadius, float density, float seed",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_fogNoise",
+          "arguments": "vec3 p, float scale, float amount",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_softBloomMask",
+          "arguments": "float luminanceValue, float threshold, float knee",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_bloomContribution",
+          "arguments": "vec3 emissionColor, float mask, float strength",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.motion",
+      "requires": [
+        "core.math",
+        "core.geometry"
+      ],
+      "functions": [
+        {
+          "name": "aur_motionSine",
+          "arguments": "float t, float speed, float phase",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_motionCycle",
+          "arguments": "float t, float speed, float phase",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_motionTriangle",
+          "arguments": "float t, float speed, float phase",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_motionPingPong",
+          "arguments": "float t, float speed, float phase",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_motionSmoothCycle",
+          "arguments": "float t, float speed, float phase",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_sequenceWindow",
+          "arguments": "float t, float period, float start, float duration, float feather",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_easeInOut",
+          "arguments": "float x",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_easeSmoother",
+          "arguments": "float x",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_pivotRotateX",
+          "arguments": "vec3 p, vec3 pivot, float angle",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_pivotRotateY",
+          "arguments": "vec3 p, vec3 pivot, float angle",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_pivotRotateZ",
+          "arguments": "vec3 p, vec3 pivot, float angle",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_slideTransform",
+          "arguments": "vec3 p, vec3 direction, float distanceValue, float amount",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_secondarySway",
+          "arguments": "float t, float speed, float primary, float lag, float amplitude",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_followMix",
+          "arguments": "float currentLike, float targetLike, float amount",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventActive",
+          "arguments": "vec4 e",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventProgress",
+          "arguments": "vec4 e",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventStrength",
+          "arguments": "vec4 e",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventSeed",
+          "arguments": "vec4 e",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventGroup",
+          "arguments": "vec4 e",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventEaseOut",
+          "arguments": "vec4 e, float powerValue",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventPulse",
+          "arguments": "vec4 e, float attackFraction, float decayPower",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventRing",
+          "arguments": "vec4 e, float phase, float width",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventVariant",
+          "arguments": "vec4 e, float count",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_eventSigned",
+          "arguments": "vec4 e",
+          "return_type": "float"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.presentation",
+      "requires": [
+        "core.math",
+        "core.noise",
+        "core.color",
+        "core.composition",
+        "core.atmosphere"
+      ],
+      "functions": [
+        {
+          "name": "aur_luminance",
+          "arguments": "vec3 c",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_qualityLevel",
+          "arguments": "",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_qualitySelect",
+          "arguments": "float lowValue, float mediumValue, float highValue",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_qualitySelect",
+          "arguments": "vec3 lowValue, vec3 mediumValue, vec3 highValue",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_qualitySelect",
+          "arguments": "float lowValue, float mediumValue, float highValue, float extremeValue",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_qualitySelect",
+          "arguments": "vec3 lowValue, vec3 mediumValue, vec3 highValue, vec3 extremeValue",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_detailScale",
+          "arguments": "float lowValue, float mediumValue, float highValue",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_aaCoverage",
+          "arguments": "float signedDistance",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_aaLine",
+          "arguments": "float signedDistance, float halfWidth",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_subpixelOffset",
+          "arguments": "int sampleIndex",
+          "return_type": "vec2"
+        },
+        {
+          "name": "aur_exposure",
+          "arguments": "vec3 color, float stops",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_liftGammaGain",
+          "arguments": "vec3 color, vec3 lift, vec3 gammaValue, vec3 gain",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_grade",
+          "arguments": "vec3 color, float contrastValue, float saturationValue, vec3 tint",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_softClip",
+          "arguments": "vec3 color, float shoulder",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_filmGrain",
+          "arguments": "vec2 pixel, float timeValue, float amount",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_dither",
+          "arguments": "vec3 color, vec2 pixel, float amount",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_presentation",
+          "arguments": "float exposureValue, float contrastValue, float saturationValue, float vignetteValue, float bloomThreshold, float bloomKnee, float bloomStrength, float grainValue, float ditherValue, vec3 tintValue",
+          "return_type": "AurPresentation"
+        },
+        {
+          "name": "aur_present",
+          "arguments": "vec3 hdrColor, vec2 centeredUv, vec2 fragCoord, float timeValue, AurPresentation p",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [
+        "AurPresentation"
+      ],
+      "struct_fields": {
+        "AurPresentation": [
+          "float exposure",
+          "float contrast",
+          "float saturation",
+          "float vignette",
+          "float bloomThreshold",
+          "float bloomKnee",
+          "float bloomStrength",
+          "float grain",
+          "float dither",
+          "vec3 tint"
+        ]
+      }
+    },
+    {
+      "module": "core.object",
+      "requires": [
+        "core.math",
+        "core.noise",
+        "core.sdf",
+        "core.geometry",
+        "core.lighting",
+        "core.materials"
+      ],
+      "functions": [],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.world",
+      "requires": [
+        "core.math",
+        "core.noise",
+        "core.sdf",
+        "core.lighting",
+        "core.environment",
+        "core.color",
+        "core.composition",
+        "core.camera"
+      ],
+      "functions": [],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.object_motion",
+      "requires": [
+        "core.math"
+      ],
+      "functions": [
+        {
+          "name": "aur_objectUnit",
+          "arguments": "vec3 v, vec3 fallbackValue",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_objectFrame",
+          "arguments": "vec3 forwardValue, vec3 upHint",
+          "return_type": "mat3"
+        },
+        {
+          "name": "aur_objectEuler",
+          "arguments": "vec3 angles",
+          "return_type": "mat3"
+        },
+        {
+          "name": "aur_objectPose",
+          "arguments": "vec3 positionValue, vec3 angles, float scaleValue",
+          "return_type": "AurObjectPose"
+        },
+        {
+          "name": "aur_objectFollow",
+          "arguments": "AurPathSample path, vec3 upHint, vec3 fallbackForward, float scaleValue",
+          "return_type": "AurObjectPose"
+        },
+        {
+          "name": "aur_objectToLocal",
+          "arguments": "AurObjectPose o,vec3 worldPosition",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_objectToWorld",
+          "arguments": "AurObjectPose o,vec3 localPosition",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_objectNormal",
+          "arguments": "AurObjectPose o,vec3 localNormal",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_objectDistance",
+          "arguments": "AurObjectPose o,float localDistance",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_pathLine",
+          "arguments": "vec3 origin,vec3 velocity,float timeValue",
+          "return_type": "AurPathSample"
+        },
+        {
+          "name": "aur_pathOrbit",
+          "arguments": "vec3 center,vec3 axis,float radius,float angularSpeed,float phase,float timeValue",
+          "return_type": "AurPathSample"
+        },
+        {
+          "name": "aur_pathShuttle",
+          "arguments": "vec3 a,vec3 b,float period,float phase,float timeValue",
+          "return_type": "AurPathSample"
+        },
+        {
+          "name": "aur_shuttleHeading",
+          "arguments": "vec3 a,vec3 b,vec3 upHint,float period,float phase,float timeValue,float turnFraction",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [
+        "AurPathSample",
+        "AurObjectPose"
+      ],
+      "struct_fields": {
+        "AurPathSample": [
+          "vec3 position",
+          "vec3 velocity"
+        ],
+        "AurObjectPose": [
+          "vec3 position",
+          "mat3 rotation",
+          "float scale"
+        ]
+      }
+    },
+    {
+      "module": "core.attachments",
+      "requires": [
+        "core.object_motion"
+      ],
+      "functions": [
+        {
+          "name": "aur_objectCompose",
+          "arguments": "AurObjectPose parent, AurObjectPose child",
+          "return_type": "AurObjectPose"
+        },
+        {
+          "name": "aur_objectSocket",
+          "arguments": "AurObjectPose parent,vec3 localPosition,vec3 localAngles",
+          "return_type": "AurObjectPose"
+        },
+        {
+          "name": "aur_objectDirection",
+          "arguments": "AurObjectPose pose,vec3 direction",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_attachmentJet",
+          "arguments": "vec3 worldPoint,AurObjectPose socket,float lengthValue,float radius,float timeValue,float strength",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_attachmentBeacon",
+          "arguments": "vec3 worldPoint,AurObjectPose socket,float radius,float timeValue,float frequency,float phase",
+          "return_type": "float"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "core.instances",
+      "requires": [
+        "core.noise",
+        "core.object_motion"
+      ],
+      "functions": [
+        {
+          "name": "aur_instance",
+          "arguments": "int index,float groupSeed,vec2 speedRange,vec2 scaleRange,vec2 gainRange",
+          "return_type": "AurInstance"
+        },
+        {
+          "name": "aur_instanceReaction",
+          "arguments": "AurInstance instance,float bandValue,float broadValue,float broadMix",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_instanceRing",
+          "arguments": "int index,int count,float radius,float phase",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [
+        "AurInstance"
+      ],
+      "struct_fields": {
+        "AurInstance": [
+          "float seed",
+          "float phase",
+          "float speed",
+          "float scale",
+          "float gain",
+          "int band"
+        ]
+      }
+    },
+    {
+      "module": "core.trails_lod",
+      "requires": [
+        "core.math"
+      ],
+      "functions": [
+        {
+          "name": "aur_lodWeight",
+          "arguments": "float distanceValue,float nearDistance,float farDistance",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_trailFade",
+          "arguments": "float age,float lifetime",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_trailSegment",
+          "arguments": "vec3 ro,vec3 rd,float depth,vec3 a,vec3 b,float radius",
+          "return_type": "float"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "aurs.standard",
+      "requires": [
+        "core.world",
+        "core.object",
+        "core.scene_lighting",
+        "core.atmosphere",
+        "core.motion",
+        "core.presentation",
+        "core.object_motion",
+        "core.attachments",
+        "core.instances",
+        "core.trails_lod"
+      ],
+      "functions": [],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "experimental.texture_materials",
+      "requires": [
+        "core.materials"
+      ],
+      "functions": [
+        {
+          "name": "aur_textureMaterial",
+          "arguments": "vec3 colorSample, vec3 ormSample, vec3 emissionSample, vec3 tint, float roughnessScale, float metalnessScale, float aoStrength, float emissionStrength",
+          "return_type": "AurMaterial"
+        },
+        {
+          "name": "aur_packORM",
+          "arguments": "float occlusion, float roughness, float metalness",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_textureUV",
+          "arguments": "vec2 uv, vec2 tiling, vec2 offset",
+          "return_type": "vec2"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "experimental.normal_mapping",
+      "requires": [],
+      "functions": [
+        {
+          "name": "aur_decodeNormal",
+          "arguments": "vec3 sampleValue, float strength, float greenSign",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_normalMap",
+          "arguments": "vec3 geometricNormal, vec3 tangentU, vec3 tangentV, vec3 sampleValue, float strength, float greenSign",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    },
+    {
+      "module": "experimental.triplanar",
+      "requires": [
+        "experimental.normal_mapping"
+      ],
+      "functions": [
+        {
+          "name": "aur_triplanar",
+          "arguments": "vec3 position, vec3 normal, float scale, float sharpness",
+          "return_type": "AurTriplanar"
+        },
+        {
+          "name": "aur_triplanarBlend",
+          "arguments": "AurTriplanar p, vec3 x, vec3 y, vec3 z",
+          "return_type": "vec3"
+        },
+        {
+          "name": "aur_triplanarNormal",
+          "arguments": "AurTriplanar p, vec3 x, vec3 y, vec3 z, float strength, float greenSign",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [
+        "AurTriplanar"
+      ],
+      "struct_fields": {
+        "AurTriplanar": [
+          "vec2 uvX",
+          "vec2 uvY",
+          "vec2 uvZ",
+          "vec3 weights",
+          "vec3 signs",
+          "vec3 normal"
+        ]
+      }
+    },
+    {
+      "module": "experimental.scene_lights",
+      "requires": [
+        "core.scene_lighting",
+        "core.object_motion"
+      ],
+      "functions": [
+        {
+          "name": "aur_sceneDirectional",
+          "arguments": "vec3 direction, vec3 color, float intensity",
+          "return_type": "AurSceneLight"
+        },
+        {
+          "name": "aur_scenePoint",
+          "arguments": "vec3 position, vec3 color, float intensity, float radius",
+          "return_type": "AurSceneLight"
+        },
+        {
+          "name": "aur_sceneSpot",
+          "arguments": "vec3 position, vec3 direction, vec3 color, float intensity, float radius, float innerDegrees, float outerDegrees",
+          "return_type": "AurSceneLight"
+        },
+        {
+          "name": "aur_sceneLightAttach",
+          "arguments": "AurSceneLight l, AurObjectPose pose",
+          "return_type": "AurSceneLight"
+        },
+        {
+          "name": "aur_sceneLightGain",
+          "arguments": "AurSceneLight l, float gain",
+          "return_type": "AurSceneLight"
+        },
+        {
+          "name": "aur_sceneLightShade",
+          "arguments": "AurSceneLight l, AurMaterial material, vec3 position, vec3 normal, vec3 viewDirection, float visibility",
+          "return_type": "vec3"
+        }
+      ],
+      "structs": [
+        "AurSceneLight"
+      ],
+      "struct_fields": {
+        "AurSceneLight": [
+          "int kind",
+          "vec3 position",
+          "vec3 direction",
+          "vec3 color",
+          "float intensity",
+          "float radius",
+          "float innerCos",
+          "float outerCos"
+        ]
+      }
+    },
+    {
+      "module": "experimental.normal_filtering",
+      "requires": [
+        "experimental.normal_mapping",
+        "core.materials"
+      ],
+      "functions": [
+        {
+          "name": "aur_normalVariance5",
+          "arguments": "vec3 centerSample, vec3 plusU, vec3 minusU, vec3 plusV, vec3 minusV, float strength, float greenSign",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_filteredRoughness",
+          "arguments": "float roughness, float normalVariance",
+          "return_type": "float"
+        },
+        {
+          "name": "aur_filterNormalMaterial",
+          "arguments": "AurMaterial material, float normalVariance",
+          "return_type": "AurMaterial"
+        }
+      ],
+      "structs": [],
+      "struct_fields": {}
+    }
+  ]
+}
