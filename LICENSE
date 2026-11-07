@@ -1,0 +1,82 @@
+AUREON SOFTWARE LICENSE
+Freeware — Proprietary Software
+
+Copyright (c) 2026 operfivenine (oper59).
+All rights reserved, except for the permissions expressly granted below.
+
+1. SCOPE
+
+This license applies to the Aureon media player and the original first-party
+software, executable files, and accompanying materials distributed as part of
+the Aureon application (the "Software"), unless a specific component states
+that it is governed by different terms.
+
+Aureon is freeware, not open-source software. Making the Software available
+at no charge or publishing project information in a public repository does
+not grant permission to reuse its source code or redistribute modified builds.
+
+2. PERMITTED USE
+
+You may download, install, and run unmodified official copies of the Software
+free of charge for personal, educational, and commercial activities. You may
+make copies reasonably necessary for your own installation and backup.
+
+You may use the Software to play, visualize, create, or export content. The
+copyright holder of Aureon makes no ownership claim over your original media,
+scenes, visual packages, or other content merely because you used the Software.
+You remain responsible for obtaining any rights required for third-party
+music, video, images, or other materials you use.
+
+3. RESTRICTIONS
+
+Except where expressly authorized by the copyright holder, an applicable
+third-party license, or mandatory law, you may not:
+
+- distribute, sell, sublicense, or repackage the Software or its modified
+  versions;
+- remove or misrepresent copyright, attribution, or trademark notices;
+- present an unofficial build as an official Aureon release;
+- reverse engineer or decompile the Software for purposes not permitted by
+  applicable law.
+
+You may share links to official download locations without restriction under
+this license. Permission to distribute third-party components is governed by
+their own licenses, not this restriction.
+
+4. AURS, AURP, AND USER CONTENT
+
+The AURS and AURP format names, the Aureon application, and the original
+first-party assets remain subject to their respective intellectual-property
+rights. An AURS scene or AURP projection created by a third party is not
+transferred to the Aureon copyright holder by its use or compatibility with
+Aureon. Its creator or other rightsholder determines the terms of that
+package, subject to any third-party materials it contains.
+
+Any separately published AURS authoring documentation, examples, SDKs, tools,
+or repositories may carry their own licensing terms. This license does not
+supersede them.
+
+5. THIRD-PARTY SOFTWARE
+
+The Software may bundle or interoperate with third-party components, including
+Qt/PySide, FFmpeg, and other libraries. Those components are governed by their
+own copyright notices and licenses. Nothing in this license reduces rights or
+obligations established by those third-party licenses. Accompanying third-party
+notices and required license texts must be preserved as applicable.
+
+6. NO WARRANTY; LIMITATION OF LIABILITY
+
+To the extent permitted by applicable law, the Software is provided "AS IS",
+without warranties of any kind, express or implied. The copyright holder is
+not liable for damages resulting from the use or inability to use the Software,
+except where such liability cannot lawfully be excluded.
+
+7. PERMISSIONS AND CONTACT
+
+For redistribution, modification, incorporation into another product, or other
+permissions not granted above, contact the project copyright holder through
+the official Aureon project repository:
+
+https://github.com/operfivenine/aureonsatellite
+
+These terms do not waive rights that cannot be waived under applicable law.
