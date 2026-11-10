@@ -1,21 +1,12 @@
-# Библиотека AURS / AURP
+# Каталог AURS / AURP
 
 [← Aureon](../README.ru.md) · [English](README.md)
 
-Пользовательские сцены и проекции для Aureon. Выберите сцену в каталоге и скачайте отдельный пакет.
-
-| Тип пакета | Что добавляет | Импорт |
-| --- | --- | --- |
-| **AURS** | Визуальную сцену | Settings → Visuals → Import scene |
-| **AURP** | Проекцию | Settings → Tray |
-
 ## AURS — каталог сцен
 
-Сцены распространяются отдельными пакетами `.aurs`.
+Откройте страницу сцены, чтобы посмотреть превью и скачать пакет.
 
-Откройте страницу сцены, чтобы посмотреть анимированное превью и скачать пакет.
-
-| Сцена | Пакет | Страница |
+| Сцена | Формат | Страница |
 | --- | --- | --- |
 | **Acheron Drift** | `.aurs` | [Открыть →](scenes/acheron-drift.ru.md) |
 | **Afterhours Spire** | `.aurs` | [Открыть →](scenes/afterhours-spire.ru.md) |
@@ -24,6 +15,7 @@
 | **Aurelia Station** | `.aurs` | [Открыть →](scenes/aurelia-station.ru.md) |
 | **Aureon Voyager** | `.aurs` | [Открыть →](scenes/aureon-voyager.ru.md) |
 | **Dead Air** | `.aurs` | [Открыть →](scenes/dead-air.ru.md) |
+| **Desert World** | `.aurs` | [Открыть →](scenes/desert-world.ru.md) |
 | **Drowned Current** | `.aurs` | [Открыть →](scenes/drowned-current.ru.md) |
 | **Ember Reach** | `.aurs` | [Открыть →](scenes/ember-reach.ru.md) |
 | **Gravity Choir** | `.aurs` | [Открыть →](scenes/gravity-choir.ru.md) |
@@ -35,26 +27,18 @@
 | **Orbital City** | `.aurs` | [Открыть →](scenes/orbital-city.ru.md) |
 | **Orbital Descent** | `.aurs` | [Открыть →](scenes/orbital-descent.ru.md) |
 | **Orbital Habitat** | `.aurs` | [Открыть →](scenes/orbital-habitat.ru.md) |
+| **Phase Lattice** | `.aurs` | [Открыть →](scenes/phase-lattice.ru.md) |
+| **Prism Reverie** | `.aurs` | [Открыть →](scenes/prism-reverie.ru.md) |
 | **Red Chamber** | `.aurs` | [Открыть →](scenes/red-chamber.ru.md) |
 | **Sublevel 88** | `.aurs` | [Открыть →](scenes/sublevel-88.ru.md) |
 | **Thalassa Drift** | `.aurs` | [Открыть →](scenes/thalassa-drift.ru.md) |
 | **Vesper Transit** | `.aurs` | [Открыть →](scenes/vesper-transit.ru.md) |
 | **Wind Atlas** | `.aurs` | [Открыть →](scenes/wind-atlas.ru.md) |
 
+## Импорт сцен
+
+Откройте **Settings → Visuals → Import scene** и выберите пакет. [Инструкция по импорту](../docs/tutorials/19_Import_AURS_Scene.ru.md)
+
 ## Проекции AURP
 
-Здесь появятся превью проекций, описания, версии пакетов и ссылки на скачивание.
-
-## API для авторов
-
-[AURS API 1.1 — справочник](api/README.ru.md) · [English](api/README.md) · [Скачать документацию ZIP](https://github.com/operfivenine/aureonsatellite/raw/refs/heads/main/library/Aureon-AURS-API-1.1-2026-11.zip)
-
-Контракт, структура пакета и рекомендации по созданию сцен. Начните с [первого пакета](api/docs/getting-started.ru.md) и [рекомендаций автору](api/docs/authoring-recommendations.ru.md).
-
-## Как установить
-
-1. Скачайте пакет **.aurs** или **.aurp**.
-2. Импортируйте сцену AURS в **Settings → Visuals → Import scene**, проекцию AURP — в **Settings → Tray**.
-3. Выберите импортированную сцену или проекцию в соответствующих настройках.
-
-[Инструкция по импорту сцен](../docs/tutorials/19_Import_AURS_Scene.ru.md) · [Трей и проекции](../docs/tutorials/20_Tray_Mini_Player.ru.md)
+Пакеты `.aurp` добавляют отдельные проекции. Импорт находится в **Settings → Tray**. [Режим трея и проекции](../docs/tutorials/20_Tray_Mini_Player.ru.md)
